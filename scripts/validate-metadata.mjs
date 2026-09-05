@@ -1,9 +1,10 @@
 import { loadModel, runCLI, coursePath, modulePath } from './lib/repository.mjs';
 import { checkSchema, validateSchema } from './lib/schema.mjs';
+import { AUDIT_JSON } from './validate-provenance.mjs';
 
 export function validateMetadata(m) {
   const errors = [];
-  const knownJSON = new Set([...Object.values(m.paths).flat(), 'sources/repositories.json', 'sources/evidence/ssri-coverage.json',
+  const knownJSON = new Set([...AUDIT_JSON, ...Object.values(m.paths).flat(), 'sources/repositories.json', 'sources/evidence/ssri-coverage.json',
     'sources/evidence/ironmath-requirements.json', 'sources/taxonomies/roadmap-sh.json', 'catalog/taxonomy-allowlist.json',
     'governance/scope.json', 'graph/knowledge-graph.json', 'progress/learner-profile.example.json']);
   for (const p of m.files) {

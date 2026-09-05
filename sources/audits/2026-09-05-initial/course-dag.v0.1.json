@@ -1,0 +1,342 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-09-05",
+  "title": "Engineering Atlas — macro-course prerequisite graph",
+  "scope": "Curriculum bridge between the knowledge evidenced in cybersec_unimi_ssri2.0 and the knowledge required to understand and maintain IronMath end-to-end.",
+  "sourceSnapshots": [
+    {
+      "repository": "samuelecorra/cybersec_unimi_ssri2.0",
+      "branch": "main",
+      "commit": "7467a51576a7c1514edacb26d9408bf0c1444a7d"
+    },
+    {
+      "repository": "samuelecorra/ironmath",
+      "branch": "mvp-final",
+      "commit": "22da98929d9c70e20a5a3a9d6fabfe2bd0279431"
+    }
+  ],
+  "masteryScale": [
+    {
+      "id": "M0",
+      "label": "Recognize",
+      "criterion": "Recognizes the term and can locate it in the repository, but cannot yet explain or use it reliably."
+    },
+    {
+      "id": "M1",
+      "label": "Explain",
+      "criterion": "Explains the concept, vocabulary, purpose, and main failure modes with a small example."
+    },
+    {
+      "id": "M2",
+      "label": "Apply with guidance",
+      "criterion": "Completes a bounded task with a checklist, examples, or review assistance and can verify the result."
+    },
+    {
+      "id": "M3",
+      "label": "Work independently",
+      "criterion": "Implements, tests, diagnoses, and recovers from realistic failures independently in a clean environment."
+    },
+    {
+      "id": "M4",
+      "label": "Maintain and design",
+      "criterion": "Changes unfamiliar cross-cutting code safely, justifies trade-offs, designs migrations and guardrails, and can review another implementation."
+    }
+  ],
+  "coverageScale": [
+    {
+      "id": "C0",
+      "label": "No curricular evidence"
+    },
+    {
+      "id": "C1",
+      "label": "Mentioned or conceptual overview"
+    },
+    {
+      "id": "C2",
+      "label": "Taught with examples or guided exercises"
+    },
+    {
+      "id": "C3",
+      "label": "Practised in a substantial lab or implementation"
+    },
+    {
+      "id": "C4",
+      "label": "Validated in an authentic maintained system"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "EAT-001",
+      "type": "course",
+      "order": 1,
+      "phase": "Bridge foundations",
+      "title": "Engineering workstation, CLI, Markdown and reproducibility",
+      "priority": "P0",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["Linux", "Shell / Bash", "Technical Writer"],
+      "gapSkills": ["filesystem and process navigation", "safe shell use", "environment variables", "cross-platform paths", "PowerShell/Bash translation", "Markdown", "LaTeX/KaTeX", "reproducible setup"]
+    },
+    {
+      "id": "EAT-002",
+      "type": "course",
+      "order": 2,
+      "phase": "Bridge foundations",
+      "title": "Git and GitHub for multi-machine collaboration",
+      "priority": "P0",
+      "targetMastery": "M4",
+      "roadmapTaxonomy": ["Git and GitHub", "Code Review"],
+      "gapSkills": ["object and reference model", "working tree/index/HEAD", "fetch and pull strategies", "feature branches", "rebase", "merge conflicts", "reflog and recovery", "pull requests", "branch protection", "tags and releases", "Windows/macOS synchronization"]
+    },
+    {
+      "id": "EAT-003",
+      "type": "course",
+      "order": 3,
+      "phase": "Web runtime",
+      "title": "Modern JavaScript and the browser runtime",
+      "priority": "P0",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["JavaScript", "Frontend", "HTML", "CSS"],
+      "gapSkills": ["closures and modules", "DOM and browser events", "promises and async/await", "Fetch API", "web storage", "event loop", "error propagation", "browser security boundaries"]
+    },
+    {
+      "id": "EAT-004",
+      "type": "course",
+      "order": 4,
+      "phase": "Web runtime",
+      "title": "Node.js, npm, ESM and JavaScript toolchains",
+      "priority": "P0",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["Node.js", "Backend", "JavaScript"],
+      "gapSkills": ["Node runtime", "package.json", "npm scripts", "dependencies and devDependencies", "lockfiles", "npm ci versus npm install", "semantic versioning", "ES modules", "process and environment", "Vite and bundling"]
+    },
+    {
+      "id": "EAT-005",
+      "type": "course",
+      "order": 5,
+      "phase": "Web runtime",
+      "title": "TypeScript for contracts and refactoring",
+      "priority": "P0",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["TypeScript"],
+      "gapSkills": ["type system", "narrowing", "unions", "generics", "structural typing", "tsconfig", "declaration files", "runtime validation boundary", "safe refactoring"]
+    },
+    {
+      "id": "EAT-006",
+      "type": "course",
+      "order": 6,
+      "phase": "Web runtime",
+      "title": "React and Vite application engineering",
+      "priority": "P0",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["React", "Frontend", "Full Stack"],
+      "gapSkills": ["components and JSX", "props and state", "hooks", "context", "routing", "effects and async state", "error boundaries", "build-time configuration", "Vite aliases and lazy loading"]
+    },
+    {
+      "id": "EAT-007",
+      "type": "course",
+      "order": 7,
+      "phase": "Web runtime",
+      "title": "Frontend systems: accessibility, design, performance and math UI",
+      "priority": "P1",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["Frontend Performance", "Design System", "HTML", "CSS", "QA"],
+      "gapSkills": ["CSS architecture and tokens", "responsive components", "WCAG and ARIA in React", "keyboard interaction", "Playwright accessibility checks", "bundle and image optimization", "charts", "Markdown/KaTeX rendering", "math input", "Canvas and numerical UI"]
+    },
+    {
+      "id": "EAT-008",
+      "type": "course",
+      "order": 8,
+      "phase": "Full-stack product",
+      "title": "HTTP, API design and Fastify backend engineering",
+      "priority": "P0",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["Backend", "API Design", "Node.js", "Full Stack"],
+      "gapSkills": ["HTTP semantics", "REST resource design", "Fastify lifecycle", "plugins and middleware", "schema validation", "error contracts", "SSE streaming", "idempotency", "rate limiting", "proxy design"]
+    },
+    {
+      "id": "EAT-009",
+      "type": "course",
+      "order": 9,
+      "phase": "Full-stack product",
+      "title": "PostgreSQL and Prisma in production",
+      "priority": "P0",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["SQL", "PostgreSQL", "Data Engineer"],
+      "gapSkills": ["PostgreSQL operations", "Prisma schema", "generated client", "migrations", "seeding", "transactions", "indexes and constraints", "query plans", "connection pools", "backfills", "retention and restore"]
+    },
+    {
+      "id": "EAT-010",
+      "type": "course",
+      "order": 10,
+      "phase": "Full-stack product",
+      "title": "Authentication, tenancy, application security and privacy",
+      "priority": "P0",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["API Security", "DevSecOps", "Cyber Security", "Backend"],
+      "gapSkills": ["JWT and signed cookies", "refresh-token rotation", "password hashing", "CSRF/CORS/CSP", "IDOR prevention", "tenant scope", "field encryption", "data minimization", "DSAR and deletion", "minor data protection", "secret handling"]
+    },
+    {
+      "id": "EAT-011",
+      "type": "course",
+      "order": 11,
+      "phase": "Full-stack product",
+      "title": "Quality engineering and automated testing",
+      "priority": "P0",
+      "targetMastery": "M4",
+      "roadmapTaxonomy": ["QA", "Code Review", "Frontend", "Backend"],
+      "gapSkills": ["test strategy", "node:test", "pytest", "Playwright", "unit/integration/contract/E2E tests", "ephemeral databases", "fixtures and mocks", "regression tests", "accessibility tests", "test inventory and anti-no-op gates"]
+    },
+    {
+      "id": "EAT-012",
+      "type": "course",
+      "order": 12,
+      "phase": "Delivery and operations",
+      "title": "Docker, Compose and reproducible local stacks",
+      "priority": "P1",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["Docker", "DevOps", "Linux"],
+      "gapSkills": ["images and containers", "multi-stage Dockerfiles", "Compose services", "volumes and networks", "health checks", "dependency ordering", "resource cleanup", "container debugging", "local/CI parity"]
+    },
+    {
+      "id": "EAT-013",
+      "type": "course",
+      "order": 13,
+      "phase": "Delivery and operations",
+      "title": "GitHub Actions, CI/CD and software supply chain",
+      "priority": "P1",
+      "targetMastery": "M4",
+      "roadmapTaxonomy": ["DevOps", "DevSecOps", "Git and GitHub", "Code Review"],
+      "gapSkills": ["workflow triggers", "jobs and steps", "caching", "service containers", "artifacts", "concurrency", "least-privilege permissions", "pinned actions", "secret scanning", "dependency audit", "required checks", "release gates"]
+    },
+    {
+      "id": "EAT-014",
+      "type": "course",
+      "order": 14,
+      "phase": "Delivery and operations",
+      "title": "Cloud delivery with Cloudflare and Railway",
+      "priority": "P1",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["Cloudflare", "DevOps", "Backend"],
+      "gapSkills": ["Cloudflare Pages and Workers", "Railway services", "DNS and TLS", "staging versus production", "environment configuration", "CORS and CSP per environment", "database migrations before deploy", "smoke checks", "rollback"]
+    },
+    {
+      "id": "EAT-015",
+      "type": "course",
+      "order": 15,
+      "phase": "Delivery and operations",
+      "title": "Observability, reliability and data operations",
+      "priority": "P1",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["DevOps", "MLOps", "Data Engineer"],
+      "gapSkills": ["structured logging", "metrics", "health endpoints", "SLOs", "alerting", "data freshness", "runbooks", "incident response", "retention purge", "backup and restore drills", "capacity and pool reasoning"]
+    },
+    {
+      "id": "EAT-016",
+      "type": "course",
+      "order": 16,
+      "phase": "Python and AI",
+      "title": "Production Python and FastAPI services",
+      "priority": "P0",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["Python", "Backend", "API Design"],
+      "gapSkills": ["Python language beyond fundamentals", "venv and pip", "requirements and pyproject", "src package layout", "typing", "exceptions", "async I/O", "FastAPI", "Uvicorn", "pytest", "configuration and packaging"]
+    },
+    {
+      "id": "EAT-017",
+      "type": "course",
+      "order": 17,
+      "phase": "Python and AI",
+      "title": "LLM API and application engineering",
+      "priority": "P1",
+      "targetMastery": "M3",
+      "roadmapTaxonomy": ["AI Engineer", "AI Product Builders", "Prompt Engineering"],
+      "gapSkills": ["LLM terminology", "tokens and context", "model selection", "OpenAI Responses API", "streaming", "structured outputs", "tool use", "cost and latency", "provider errors", "privacy and data controls"]
+    },
+    {
+      "id": "EAT-018",
+      "type": "course",
+      "order": 18,
+      "phase": "Python and AI",
+      "title": "Grounded tutor systems: prompting, retrieval, safety and evaluations",
+      "priority": "P1",
+      "targetMastery": "M4",
+      "roadmapTaxonomy": ["Prompt Engineering", "AI Agents", "AI Red Teaming", "MLOps", "AI Engineer"],
+      "gapSkills": ["prompt contracts", "context assembly", "retrieval and grounding", "routing", "conversation state", "socratic tutoring", "pre-routing safety", "post-processing", "golden and red-team evals", "LLM observability", "hallucination controls"]
+    },
+    {
+      "id": "EAT-019",
+      "type": "course",
+      "order": 19,
+      "phase": "Synthesis",
+      "title": "Agentic coding and repository-scale collaboration",
+      "priority": "P1",
+      "targetMastery": "M4",
+      "roadmapTaxonomy": ["Claude Code", "AI Agents", "Git and GitHub", "Code Review"],
+      "gapSkills": ["agent instruction files", "context scoping", "task decomposition", "tool permissions", "verification loops", "diff review", "multi-agent boundaries", "worktrees", "prompt handoff", "secret discipline", "avoiding automation dependence"]
+    },
+    {
+      "id": "EAT-020",
+      "type": "course",
+      "order": 20,
+      "phase": "Synthesis",
+      "title": "Software architecture, docs-as-code, curriculum and learning analytics governance",
+      "priority": "P1",
+      "targetMastery": "M4",
+      "roadmapTaxonomy": ["System Design", "Design and Architecture", "Software Architect", "Technical Writer", "Data Engineer"],
+      "gapSkills": ["monorepo boundaries", "architecture maps", "ADRs", "dependency graphs", "canonical source models", "docs-as-code", "machine-readable curriculum", "semantic skill graphs", "analytics provenance", "calibration", "lifecycle and deprecation", "AI/GDPR governance"]
+    }
+  ],
+  "edges": [
+    {"from": "EAT-001", "to": "EAT-002", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-001", "to": "EAT-003", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-001", "to": "EAT-016", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-002", "to": "EAT-013", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-002", "to": "EAT-019", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-002", "to": "EAT-020", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-003", "to": "EAT-004", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-003", "to": "EAT-005", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-004", "to": "EAT-005", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-004", "to": "EAT-008", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-004", "to": "EAT-011", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-004", "to": "EAT-012", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-005", "to": "EAT-006", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-005", "to": "EAT-008", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-006", "to": "EAT-007", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-006", "to": "EAT-011", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-007", "to": "EAT-011", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-007", "to": "EAT-020", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-008", "to": "EAT-009", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-008", "to": "EAT-010", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-008", "to": "EAT-011", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-008", "to": "EAT-012", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-008", "to": "EAT-014", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-009", "to": "EAT-010", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-009", "to": "EAT-011", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-009", "to": "EAT-012", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-009", "to": "EAT-015", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-009", "to": "EAT-020", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-010", "to": "EAT-011", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-010", "to": "EAT-013", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-010", "to": "EAT-014", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-010", "to": "EAT-018", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-010", "to": "EAT-020", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-011", "to": "EAT-013", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-011", "to": "EAT-015", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-011", "to": "EAT-018", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-011", "to": "EAT-019", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-011", "to": "EAT-020", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-012", "to": "EAT-013", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-012", "to": "EAT-014", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-012", "to": "EAT-015", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-013", "to": "EAT-014", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-013", "to": "EAT-015", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-013", "to": "EAT-019", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-013", "to": "EAT-020", "type": "prerequisite", "strength": "recommended"},
+    {"from": "EAT-014", "to": "EAT-015", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-016", "to": "EAT-017", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-017", "to": "EAT-018", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-018", "to": "EAT-019", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-018", "to": "EAT-020", "type": "prerequisite", "strength": "required"},
+    {"from": "EAT-019", "to": "EAT-020", "type": "prerequisite", "strength": "required"}
+  ]
+}

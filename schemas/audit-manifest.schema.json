@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/audit-manifest.schema.json",
+  "title": "Historical audit manifest",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "const": "audit.2026-09-05.initial"
+    },
+    "date": {
+      "const": "2026-09-05"
+    },
+    "status": {
+      "const": "historical-snapshot"
+    },
+    "canonical": {
+      "const": false
+    },
+    "provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "enum": [
+              "audit",
+              "course-dag",
+              "inventory"
+            ]
+          },
+          "original_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "archived_path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^sources/audits/2026-09-05-initial/[a-z0-9.-]+$"
+          },
+          "expected_sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "observed_sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "archived_sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "original_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "original_lines": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "archived_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "encoding": {
+            "enum": [
+              "identity",
+              "gzip"
+            ]
+          }
+        },
+        "required": [
+          "role",
+          "original_name",
+          "archived_path",
+          "expected_sha256",
+          "observed_sha256",
+          "archived_sha256",
+          "original_bytes",
+          "original_lines",
+          "archived_bytes",
+          "encoding"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "source_snapshots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "repository_id": {
+            "enum": [
+              "ssri",
+              "ironmath"
+            ]
+          },
+          "commit": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "inventoried_files": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "repository_id",
+          "commit",
+          "inventoried_files"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "inventoried_files": {
+      "const": 10379
+    },
+    "canonical_sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "relation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operational_instructions": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publication_adr": {
+      "const": "governance/adr/ADR-0006-public-github-repository.md"
+    },
+    "baseline_checks": {
+      "type": "object",
+      "properties": {
+        "commit": {
+          "const": "6270766f06954876481d6a60cfb2096b22fc48d4"
+        },
+        "validate": {
+          "const": "passed"
+        },
+        "tests_passed": {
+          "const": 61
+        },
+        "tests_failed": {
+          "const": 0
+        },
+        "tests_skipped": {
+          "const": 0
+        },
+        "generated": {
+          "const": "passed"
+        },
+        "diff_check": {
+          "const": "passed"
+        }
+      },
+      "required": [
+        "commit",
+        "validate",
+        "tests_passed",
+        "tests_failed",
+        "tests_skipped",
+        "generated",
+        "diff_check"
+      ],
+      "additionalProperties": false
+    },
+    "inspection": {
+      "type": "string",
+      "minLength": 1
+    },
+    "compression": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "date",
+    "status",
+    "canonical",
+    "provenance",
+    "artifacts",
+    "source_snapshots",
+    "inventoried_files",
+    "canonical_sources",
+    "relation",
+    "operational_instructions",
+    "publication_adr",
+    "baseline_checks",
+    "inspection",
+    "compression"
+  ],
+  "additionalProperties": false
+}

@@ -1,6 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { loadModel, ROOT, runCLI, walk } from './lib/repository.mjs';
+import { sensitiveName, secretLooking } from './lib/content-safety.mjs';
+export { sensitiveName, secretLooking } from './lib/content-safety.mjs';
+import { AUDIT_GZIP, validateProvenance } from './validate-provenance.mjs';
 import { prose } from './validate-links.mjs';
 
 export const SECTIONS = {
@@ -33,19 +36,13 @@ export function checkContentFiles(files, scope, { requireSlice = true } = {}) {
   if (requireSlice) for (const dir of allowed) for (const name of Object.keys(SECTIONS)) if (!found.get(dir)?.has(name)) errors.push(`${dir}: contenuto richiesto assente ${name}`);
   return errors;
 }
-export const sensitiveName = p => /(^|\/)\.env(?:\..*)?$/.test(p) && !p.endsWith('/.env.example') && p !== '.env.example'
-  || /\.(?:pem|key|p12|pfx|crt|cer)$/i.test(p) || /(^|\/)(?:credentials(?:\.json)?|id_rsa|id_ed25519|\.npmrc|\.pypirc|\.netrc)$/i.test(p);
-export function secretLooking(text) {
-  return /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/.test(text)
-    || /\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{35,}|AKIA[A-Z0-9]{16}|sk-(?:proj-)?[A-Za-z0-9_-]{24,})\b/.test(text)
-    || /(?:password|api[_-]?key|access[_-]?token|secret)\s*[=:]\s*["'][A-Za-z0-9+/=_-]{24,}["']/i.test(text);
-}
 export function validateContent(root = ROOT, m = loadModel(root)) {
   const errors = [], textFiles = {};
   for (const p of walk(root)) {
     const full = path.join(root, p);
     if (sensitiveName(p)) { errors.push(`${p}: file sensibile vietato (contenuto non letto)`); continue; }
     if (fs.lstatSync(full).isSymbolicLink()) { errors.push(`${p}: symlink vietato`); continue; }
+    if (p === AUDIT_GZIP) { errors.push(...validateProvenance(root, m.graph)); continue; }
     const text = fs.readFileSync(full, 'utf8');
     if (/[\x00-\x08\x0b\x0c\x0e-\x1f]/.test(text)) errors.push(`${p}: carattere di controllo inatteso`);
     if (secretLooking(text)) errors.push(`${p}: secret-looking value`);

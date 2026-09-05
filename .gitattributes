@@ -1,1 +1,3 @@
 * text=auto eol=lf
+*.gz binary
+sources/audits/2026-09-05-initial/audit.md whitespace=-blank-at-eol

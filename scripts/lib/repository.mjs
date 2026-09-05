@@ -12,6 +12,7 @@ export function walk(root, dir = '') {
     .flatMap(entry => {
       if (ignored.has(entry.name) || entry.name.endsWith('.egg-info')) return [];
       const p = posix(path.join(dir, entry.name));
+      if (p === '.agents/skills/impeccable') return []; // Local third-party tool, never curriculum or generated data.
       if (p === 'progress/learner-profile.json') return [];
       // Symlinks are reported, never followed into another repository or private data.
       return entry.isDirectory() ? walk(root, p) : [p];

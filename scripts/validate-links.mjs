@@ -79,7 +79,10 @@ export function checkMarkdownLinks(root, file, markdown) {
 export function validateLinks(root = ROOT) {
   return walk(root).filter(p => p.endsWith('.md')).flatMap(p => {
     if (fs.lstatSync(path.join(root, p)).isSymbolicLink()) return [`${p}: symlink non consentito`];
-    return checkMarkdownLinks(root, p, fs.readFileSync(path.join(root, p), 'utf8'));
+    let markdown = fs.readFileSync(path.join(root, p), 'utf8');
+    // Resolve the single preserved historical filename without rewriting archival bytes.
+    if (p === 'sources/audits/2026-09-05-initial/audit.md') markdown = markdown.replaceAll('(./engineering-atlas-source-inventory.csv)', '(source-inventory.csv.gz)');
+    return checkMarkdownLinks(root, p, markdown);
   });
 }
 runCLI(import.meta, () => validateLinks());

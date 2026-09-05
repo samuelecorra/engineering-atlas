@@ -14,3 +14,5 @@ __pycache__/
 progress/learner-profile.json
 .lab-runs/
 .work/
+# Official project-local design tool; installation provenance is documented separately.
+.agents/skills/impeccable/
