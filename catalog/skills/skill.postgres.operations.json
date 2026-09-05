@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.postgres.operations",
+  "title": "PostgreSQL operativo",
+  "aliases": [],
+  "domain": "postgres",
+  "description": "SQL e basi distribuite non dimostrano pool, query plan, backup e restore operativi.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.db"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.prisma"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-009",
+  "roadmap_taxonomy": [
+    "PostgreSQL"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "SQL e basi distribuite non dimostrano pool, query plan, backup e restore operativi."
+  }
+}

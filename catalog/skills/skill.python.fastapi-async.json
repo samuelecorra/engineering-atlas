@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.python.fastapi-async",
+  "title": "FastAPI e async Python",
+  "aliases": [],
+  "domain": "python",
+  "description": "Mancano async I/O, lifecycle FastAPI/Uvicorn, config e gestione errori del servizio.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-python.fastapi-async",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.python-runtime"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-016",
+  "roadmap_taxonomy": [
+    "Python",
+    "Backend"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano async I/O, lifecycle FastAPI/Uvicorn, config e gestione errori del servizio."
+  }
+}

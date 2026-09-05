@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ASM-EAT-016-M01",
+  "module_id": "EAT-016-M01",
+  "target_mastery": "M2",
+  "evidence_required": [
+    "Output del test standard-library e identificazione del Python nel venv.",
+    "Diagnosi di un import fallito e schema dei file runtime, test e packaging."
+  ],
+  "rubric": [
+    {
+      "id": "R1",
+      "criterion": "Interprete e isolamento del venv",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    },
+    {
+      "id": "R2",
+      "criterion": "Import src e test significativo",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    },
+    {
+      "id": "R3",
+      "criterion": "Build metadata e dipendenze distinte",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    }
+  ],
+  "pass_rule": {
+    "minimum_score": 5,
+    "blocking_errors": [
+      "Modifica file fuori dalla directory fixture assegnata.",
+      "Usa credenziali reali o sostituisce il tentativo personale con una soluzione LLM."
+    ]
+  },
+  "retry_policy": "Ripeti su una nuova fixture, annota la causa del fallimento e conserva entrambe le prove. Attendi una nuova valutazione prima di attribuire il livello."
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/allowlist.schema.json",
+  "title": "allowlist",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "taxonomy": {
+      "const": "roadmap.sh"
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 38,
+      "maxItems": 38,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "taxonomy",
+    "labels"
+  ],
+  "additionalProperties": false
+}

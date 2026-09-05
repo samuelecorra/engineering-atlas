@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-002-M02",
+  "course_id": "EAT-002",
+  "title": "Git tra due macchine: sincronizzazione e recovery",
+  "order": 2,
+  "status": "draft",
+  "estimated_hours": 5,
+  "prerequisite_skill_ids": [
+    "skill.cli.environment"
+  ],
+  "teaches_skill_ids": [
+    "skill.git.multi-device",
+    "skill.git.internals"
+  ],
+  "reinforces_skill_ids": [],
+  "outcomes": [
+    "Riconoscere fast-forward e divergenza da upstream e commit graph.",
+    "Recuperare un conflitto tramite abort e continuazione senza perdere commit.",
+    "Motivare rebase privato, merge condiviso, stash e recupero non distruttivo."
+  ],
+  "artifacts": [
+    "fixtures/run.mjs"
+  ],
+  "assessment_id": "ASM-EAT-002-M02",
+  "ironmath_anchors": [
+    "AGENTS.md",
+    ".github/workflows/"
+  ]
+}

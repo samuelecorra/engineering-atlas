@@ -1,0 +1,13 @@
+# Sessione di misura
+
+### Risultato
+
+Il report conserva la media aritmetica delle osservazioni.
+
+[Nota locale](missing.txt)
+
+La media è $\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i$$.
+
+$$
+\sum_{i=1}^{n}(x_i-\bar{x})=0
+$

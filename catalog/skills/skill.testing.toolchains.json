@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.testing.toolchains",
+  "title": "Toolchain di test",
+  "aliases": [],
+  "domain": "testing",
+  "description": "Mancano node:test, pytest, Playwright e diagnostica delle rispettive fixture e runner.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-testing.toolchains",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.llm-test"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-011",
+  "roadmap_taxonomy": [
+    "QA"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano node:test, pytest, Playwright e diagnostica delle rispettive fixture e runner."
+  }
+}

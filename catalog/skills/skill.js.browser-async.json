@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.js.browser-async",
+  "title": "Browser e asincronia",
+  "aliases": [],
+  "domain": "js",
+  "description": "Gli esempi storici non coprono event loop, cancellation, error state e fetch in un'app mantenuta.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.js",
+      "ev.ssri.js-empty"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.web-test"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-003",
+  "roadmap_taxonomy": [
+    "JavaScript",
+    "Frontend"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Gli esempi storici non coprono event loop, cancellation, error state e fetch in un'app mantenuta."
+  }
+}

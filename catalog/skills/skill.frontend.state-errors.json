@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.frontend.state-errors",
+  "title": "Stato ed errori frontend",
+  "aliases": [],
+  "domain": "frontend",
+  "description": "Mancano ownership dello stato, async UI, error boundary e recovery dell'esperienza utente.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-frontend.state-errors",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.web-test"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-006",
+  "roadmap_taxonomy": [
+    "React",
+    "Frontend"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano ownership dello stato, async UI, error boundary e recovery dell'esperienza utente."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.cloud.cloudflare",
+  "title": "Cloudflare operativo",
+  "aliases": [],
+  "domain": "cloud",
+  "description": "Mancano confini Pages/Worker/Access, configurazione ambienti e rollback verificabile.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-cloud.cloudflare",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.status"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-014",
+  "roadmap_taxonomy": [
+    "Cloudflare"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano confini Pages/Worker/Access, configurazione ambienti e rollback verificabile."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/module.schema.json",
+  "title": "module",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^EAT-\\d{3}-M\\d{2}$"
+    },
+    "course_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^EAT-\\d{3}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "draft",
+        "reviewed",
+        "validated",
+        "deferred",
+        "deprecated"
+      ]
+    },
+    "estimated_hours": {
+      "type": "number",
+      "minimum": 0.5,
+      "maximum": 20
+    },
+    "prerequisite_skill_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^skill\\.[a-z0-9]+(?:[.-][a-z0-9]+)+$"
+      },
+      "uniqueItems": true
+    },
+    "teaches_skill_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^skill\\.[a-z0-9]+(?:[.-][a-z0-9]+)+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "reinforces_skill_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^skill\\.[a-z0-9]+(?:[.-][a-z0-9]+)+$"
+      },
+      "uniqueItems": true
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^(?!/)(?![A-Za-z]:)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "assessment_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^ASM-EAT-\\d{3}-M\\d{2}$"
+    },
+    "ironmath_anchors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^(?!/)(?![A-Za-z]:)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "course_id",
+    "title",
+    "order",
+    "status",
+    "estimated_hours",
+    "prerequisite_skill_ids",
+    "teaches_skill_ids",
+    "reinforces_skill_ids",
+    "outcomes",
+    "artifacts",
+    "assessment_id",
+    "ironmath_anchors"
+  ],
+  "additionalProperties": false
+}

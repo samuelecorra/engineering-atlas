@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-016",
+  "slug": "python-fastapi",
+  "title": "Production Python and FastAPI services",
+  "phase": "intelligence",
+  "order": 16,
+  "priority": "P0",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-001"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.python.language",
+    "skill.python.packaging",
+    "skill.python.fastapi-async"
+  ],
+  "reinforced_skill_ids": [
+    "skill.cli.environment"
+  ],
+  "roadmap_taxonomy": [
+    "Python",
+    "Backend"
+  ],
+  "outcomes": [
+    "Leggere e testare un servizio Python con package src e ambiente isolato."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-016-M01",
+      "title": "Python: ambiente, package src e test standard-library; richiamo al core",
+      "outcome": "Creare un venv locale e identificare interprete e import path. Eseguire un package src e un test standard-library senza installazioni di rete. Spiegare requirements, pyproject ed editable install distinguendoli dal test diretto.",
+      "status": "draft"
+    },
+    {
+      "id": "EAT-016-M02",
+      "title": "Venv/pip",
+      "outcome": "Produrre e spiegare una prova delimitata di venv/pip, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-016-M03",
+      "title": "Requirements/pyproject",
+      "outcome": "Produrre e spiegare una prova delimitata di requirements/pyproject, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-016-M04",
+      "title": "Package `src`",
+      "outcome": "Produrre e spiegare una prova delimitata di package `src`, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-016-M05",
+      "title": "Typing/error",
+      "outcome": "Produrre e spiegare una prova delimitata di typing/error, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-016-M06",
+      "title": "Pytest",
+      "outcome": "Produrre e spiegare una prova delimitata di pytest, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-016-M07",
+      "title": "Async I/O",
+      "outcome": "Produrre e spiegare una prova delimitata di async I/O, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-016-M08",
+      "title": "FastAPI/Uvicorn",
+      "outcome": "Produrre e spiegare una prova delimitata di FastAPI/Uvicorn, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-016-M09",
+      "title": "Config e packaging",
+      "outcome": "Produrre e spiegare una prova delimitata di config e packaging, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "in_progress"
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-006",
+  "slug": "react-vite",
+  "title": "React and Vite application engineering",
+  "phase": "application",
+  "order": 6,
+  "priority": "P0",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-005"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.react.application",
+    "skill.frontend.state-errors"
+  ],
+  "reinforced_skill_ids": [
+    "skill.node.esm-vite"
+  ],
+  "roadmap_taxonomy": [
+    "React",
+    "Frontend"
+  ],
+  "outcomes": [
+    "Implementare un flusso React con stato, router e recupero dagli errori."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-006-M01",
+      "title": "Componenti/JSX",
+      "outcome": "Produrre e spiegare una prova delimitata di componenti/JSX, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-006-M02",
+      "title": "Props/state",
+      "outcome": "Produrre e spiegare una prova delimitata di props/state, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-006-M03",
+      "title": "Hooks/effect",
+      "outcome": "Produrre e spiegare una prova delimitata di hooks/effect, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-006-M04",
+      "title": "Context",
+      "outcome": "Produrre e spiegare una prova delimitata di context, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-006-M05",
+      "title": "Router",
+      "outcome": "Produrre e spiegare una prova delimitata di Router, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-006-M06",
+      "title": "Async UI",
+      "outcome": "Produrre e spiegare una prova delimitata di async UI, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-006-M07",
+      "title": "Error boundary",
+      "outcome": "Produrre e spiegare una prova delimitata di error boundary, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-006-M08",
+      "title": "Persistence",
+      "outcome": "Produrre e spiegare una prova delimitata di persistence, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-006-M09",
+      "title": "Asset/alias/lazy loading Vite",
+      "outcome": "Produrre e spiegare una prova delimitata di asset/alias/lazy loading Vite, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

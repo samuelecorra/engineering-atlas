@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.web.html-semantic",
+  "title": "HTML semantico",
+  "aliases": [],
+  "domain": "web",
+  "description": "Riutilizzare la baseline HTML verificando semantica nel rendering React; evitare un corso HTML duplicato.",
+  "ssri_coverage": {
+    "level": "C3",
+    "evidence_ids": [
+      "ev.ssri.web"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M2",
+    "evidence_ids": [
+      "ev.ironmath.web"
+    ]
+  },
+  "priority": "P2",
+  "primary_course_id": "EAT-003",
+  "roadmap_taxonomy": [
+    "HTML"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Riutilizzare la baseline HTML verificando semantica nel rendering React; evitare un corso HTML duplicato."
+  }
+}

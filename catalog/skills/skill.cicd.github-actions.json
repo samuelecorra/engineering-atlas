@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.cicd.github-actions",
+  "title": "GitHub Actions e CI/CD",
+  "aliases": [],
+  "domain": "cicd",
+  "description": "La CI concettuale non dimostra eventi, permission, concurrency, artifact e release gate.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.pss-devops"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.workflow"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-013",
+  "roadmap_taxonomy": [
+    "Git and GitHub",
+    "DevOps"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "La CI concettuale non dimostra eventi, permission, concurrency, artifact e release gate."
+  }
+}

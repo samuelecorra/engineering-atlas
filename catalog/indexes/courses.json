@@ -1,0 +1,127 @@
+{
+  "generated": true,
+  "source": "canonical course/module metadata",
+  "regenerate": "npm run build:indexes",
+  "entries": [
+    {
+      "id": "EAT-001",
+      "title": "Engineering workstation, CLI, Markdown and reproducibility",
+      "status": "in_progress",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/course.json"
+    },
+    {
+      "id": "EAT-002",
+      "title": "Git and GitHub for multi-machine collaboration",
+      "status": "in_progress",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/course.json"
+    },
+    {
+      "id": "EAT-003",
+      "title": "Modern JavaScript and the browser runtime",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-003-modern-javascript-browser/course.json"
+    },
+    {
+      "id": "EAT-004",
+      "title": "Node.js, npm, ESM and JavaScript toolchains",
+      "status": "in_progress",
+      "path": "curriculum/courses/EAT-004-node-npm-esm/course.json"
+    },
+    {
+      "id": "EAT-005",
+      "title": "TypeScript for contracts and refactoring",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-005-typescript-contracts/course.json"
+    },
+    {
+      "id": "EAT-006",
+      "title": "React and Vite application engineering",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-006-react-vite/course.json"
+    },
+    {
+      "id": "EAT-007",
+      "title": "Frontend systems: accessibility, design, performance and math UI",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-007-frontend-systems/course.json"
+    },
+    {
+      "id": "EAT-008",
+      "title": "HTTP, API design and Fastify backend engineering",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-008-http-api-fastify/course.json"
+    },
+    {
+      "id": "EAT-009",
+      "title": "PostgreSQL and Prisma in production",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-009-postgres-prisma/course.json"
+    },
+    {
+      "id": "EAT-010",
+      "title": "Authentication, tenancy, application security and privacy",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-010-security-privacy/course.json"
+    },
+    {
+      "id": "EAT-011",
+      "title": "Quality engineering and automated testing",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-011-quality-testing/course.json"
+    },
+    {
+      "id": "EAT-012",
+      "title": "Docker, Compose and reproducible local stacks",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-012-docker-compose/course.json"
+    },
+    {
+      "id": "EAT-013",
+      "title": "GitHub Actions, CI/CD and software supply chain",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-013-github-actions-supply-chain/course.json"
+    },
+    {
+      "id": "EAT-014",
+      "title": "Cloud delivery with Cloudflare and Railway",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-014-cloud-delivery/course.json"
+    },
+    {
+      "id": "EAT-015",
+      "title": "Observability, reliability and data operations",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-015-observability-data-operations/course.json"
+    },
+    {
+      "id": "EAT-016",
+      "title": "Production Python and FastAPI services",
+      "status": "in_progress",
+      "path": "curriculum/courses/EAT-016-python-fastapi/course.json"
+    },
+    {
+      "id": "EAT-017",
+      "title": "LLM API and application engineering",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-017-llm-api/course.json"
+    },
+    {
+      "id": "EAT-018",
+      "title": "Grounded tutor systems: prompting, retrieval, safety and evaluations",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-018-grounded-tutor-systems/course.json"
+    },
+    {
+      "id": "EAT-019",
+      "title": "Agentic coding and repository-scale collaboration",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-019-agentic-coding/course.json"
+    },
+    {
+      "id": "EAT-020",
+      "title": "Software architecture, docs-as-code, curriculum and learning analytics governance",
+      "status": "planned",
+      "path": "curriculum/courses/EAT-020-architecture-curriculum-governance/course.json"
+    }
+  ]
+}

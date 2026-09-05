@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-009",
+  "slug": "postgres-prisma",
+  "title": "PostgreSQL and Prisma in production",
+  "phase": "application",
+  "order": 9,
+  "priority": "P0",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-008"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.db.sql-transactions",
+    "skill.postgres.operations",
+    "skill.prisma.migrations"
+  ],
+  "reinforced_skill_ids": [
+    "skill.api.contracts-validation"
+  ],
+  "roadmap_taxonomy": [
+    "SQL",
+    "PostgreSQL",
+    "Backend"
+  ],
+  "outcomes": [
+    "Progettare e provare una migrazione Prisma con controllo transazioni e recovery."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-009-M01",
+      "title": "Postgres operativo",
+      "outcome": "Produrre e spiegare una prova delimitata di Postgres operativo, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-009-M02",
+      "title": "Prisma schema/client",
+      "outcome": "Produrre e spiegare una prova delimitata di Prisma schema/client, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-009-M03",
+      "title": "Migrazioni",
+      "outcome": "Produrre e spiegare una prova delimitata di migrazioni, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-009-M04",
+      "title": "Seed",
+      "outcome": "Produrre e spiegare una prova delimitata di seed, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-009-M05",
+      "title": "Transazioni",
+      "outcome": "Produrre e spiegare una prova delimitata di transazioni, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-009-M06",
+      "title": "Index/constraint/query plan",
+      "outcome": "Produrre e spiegare una prova delimitata di index/constraint/query plan, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-009-M07",
+      "title": "Pool",
+      "outcome": "Produrre e spiegare una prova delimitata di pool, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-009-M08",
+      "title": "Backfill",
+      "outcome": "Produrre e spiegare una prova delimitata di backfill, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-009-M09",
+      "title": "Retention",
+      "outcome": "Produrre e spiegare una prova delimitata di retention, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-009-M10",
+      "title": "Backup/restore",
+      "outcome": "Produrre e spiegare una prova delimitata di backup/restore, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

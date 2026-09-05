@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-017",
+  "slug": "llm-api",
+  "title": "LLM API and application engineering",
+  "phase": "intelligence",
+  "order": 17,
+  "priority": "P1",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-016"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.llm.foundations",
+    "skill.llm.responses-streaming"
+  ],
+  "reinforced_skill_ids": [
+    "skill.python.packaging"
+  ],
+  "roadmap_taxonomy": [
+    "AI Engineer",
+    "AI Product Builders"
+  ],
+  "outcomes": [
+    "Progettare un client LLM con streaming, budget ed error recovery osservabile."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-017-M01",
+      "title": "Terminologia/tokens/context",
+      "outcome": "Produrre e spiegare una prova delimitata di terminologia/tokens/context, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-017-M02",
+      "title": "Model selection",
+      "outcome": "Produrre e spiegare una prova delimitata di model selection, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-017-M03",
+      "title": "API/streaming",
+      "outcome": "Produrre e spiegare una prova delimitata di API/streaming, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-017-M04",
+      "title": "Structured output/tool use",
+      "outcome": "Produrre e spiegare una prova delimitata di structured output/tool use, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-017-M05",
+      "title": "Cost/latency",
+      "outcome": "Produrre e spiegare una prova delimitata di cost/latency, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-017-M06",
+      "title": "Provider error/retry",
+      "outcome": "Produrre e spiegare una prova delimitata di provider error/retry, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-017-M07",
+      "title": "Privacy e data control",
+      "outcome": "Produrre e spiegare una prova delimitata di privacy e data control, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

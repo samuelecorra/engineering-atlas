@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/repositories.schema.json",
+  "title": "repositories",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "audit_date": {
+      "type": "string",
+      "minLength": 1,
+      "format": "date"
+    },
+    "repositories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "ssri",
+              "ironmath"
+            ]
+          },
+          "repository": {
+            "type": "string",
+            "minLength": 1
+          },
+          "branch": {
+            "type": "string",
+            "minLength": 1
+          },
+          "audited_commit": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "audited_tracked_files": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "observed_local_commit": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "observed_local_branch": {
+            "type": "string",
+            "minLength": 1
+          },
+          "observed_tracked_files": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "observed_at": {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          "drift_status": {
+            "type": "string",
+            "enum": [
+              "ahead",
+              "different-audit-unavailable",
+              "matches"
+            ]
+          },
+          "audit_snapshot_available": {
+            "type": "boolean"
+          },
+          "local_worktree_clean": {
+            "type": "boolean"
+          },
+          "verification_note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "repository",
+          "branch",
+          "audited_commit",
+          "audited_tracked_files",
+          "observed_local_commit",
+          "observed_local_branch",
+          "observed_tracked_files",
+          "observed_at",
+          "drift_status",
+          "audit_snapshot_available",
+          "local_worktree_clean",
+          "verification_note"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    }
+  },
+  "required": [
+    "schema_version",
+    "audit_date",
+    "repositories"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.containers.compose",
+  "title": "Compose e stack locali",
+  "aliases": [],
+  "domain": "containers",
+  "description": "Mancano gestione operativa di network, volume, health dependency e cleanup selettivo.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.pss-devops"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.compose"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-012",
+  "roadmap_taxonomy": [
+    "Docker",
+    "DevOps"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano gestione operativa di network, volume, health dependency e cleanup selettivo."
+  }
+}

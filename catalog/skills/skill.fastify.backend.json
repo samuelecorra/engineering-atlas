@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.fastify.backend",
+  "title": "Backend Fastify",
+  "aliases": [],
+  "domain": "fastify",
+  "description": "Mancano lifecycle/plugin Fastify, routing e test di integrazione del servizio.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-fastify.backend",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.api"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-008",
+  "roadmap_taxonomy": [
+    "Backend",
+    "Node.js"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano lifecycle/plugin Fastify, routing e test di integrazione del servizio."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.llm.conversation-pedagogy",
+  "title": "Conversazione e pedagogia",
+  "aliases": [],
+  "domain": "llm",
+  "description": "Mancano stato conversazionale, tutoring socratico e distinzione tra aiuto e soluzione.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-llm.conversation-pedagogy",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.prompt"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-018",
+  "roadmap_taxonomy": [
+    "AI Product Builders"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano stato conversazionale, tutoring socratico e distinzione tra aiuto e soluzione."
+  }
+}

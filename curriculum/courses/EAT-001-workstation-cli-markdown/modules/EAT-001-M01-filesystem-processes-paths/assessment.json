@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ASM-EAT-001-M01",
+  "module_id": "EAT-001-M01",
+  "target_mastery": "M2",
+  "evidence_required": [
+    "Trascrizione sanitizzata con cwd, comando, stdout, stderr ed exit code.",
+    "Tabella che collega PID, porta e processo locale senza terminare processi altrui."
+  ],
+  "rubric": [
+    {
+      "id": "R1",
+      "criterion": "Cwd e risoluzione path",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    },
+    {
+      "id": "R2",
+      "criterion": "Interpretazione di stream ed exit code",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    },
+    {
+      "id": "R3",
+      "criterion": "Associazione PID e porta e confine read-only",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    }
+  ],
+  "pass_rule": {
+    "minimum_score": 5,
+    "blocking_errors": [
+      "Modifica file fuori dalla directory fixture assegnata.",
+      "Usa credenziali reali o sostituisce il tentativo personale con una soluzione LLM."
+    ]
+  },
+  "retry_policy": "Ripeti su una nuova fixture, annota la causa del fallimento e conserva entrambe le prove. Attendi una nuova valutazione prima di attribuire il livello."
+}

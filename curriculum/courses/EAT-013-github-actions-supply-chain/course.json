@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-013",
+  "slug": "github-actions-supply-chain",
+  "title": "GitHub Actions, CI/CD and software supply chain",
+  "phase": "operations",
+  "order": 13,
+  "priority": "P1",
+  "target_mastery": "M4",
+  "required_prerequisite_course_ids": [
+    "EAT-002",
+    "EAT-011",
+    "EAT-012"
+  ],
+  "recommended_prerequisite_course_ids": [
+    "EAT-010"
+  ],
+  "primary_skill_ids": [
+    "skill.cicd.github-actions",
+    "skill.supply-chain.dependencies"
+  ],
+  "reinforced_skill_ids": [
+    "skill.testing.cross-layer"
+  ],
+  "roadmap_taxonomy": [
+    "Git and GitHub",
+    "DevOps",
+    "DevSecOps"
+  ],
+  "outcomes": [
+    "Revieware una pipeline CI con permessi minimi, supply chain e release gate."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-013-M01",
+      "title": "Event/job/step",
+      "outcome": "Produrre e spiegare una prova delimitata di event/job/step, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-013-M02",
+      "title": "Cache/service container/artifact",
+      "outcome": "Produrre e spiegare una prova delimitata di cache/service container/artifact, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-013-M03",
+      "title": "Permission e secret",
+      "outcome": "Produrre e spiegare una prova delimitata di permission e secret, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-013-M04",
+      "title": "Pinning",
+      "outcome": "Produrre e spiegare una prova delimitata di pinning, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-013-M05",
+      "title": "Dependency audit",
+      "outcome": "Produrre e spiegare una prova delimitata di dependency audit, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-013-M06",
+      "title": "Secret scan",
+      "outcome": "Produrre e spiegare una prova delimitata di secret scan, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-013-M07",
+      "title": "Concurrency",
+      "outcome": "Produrre e spiegare una prova delimitata di concurrency, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-013-M08",
+      "title": "Required check",
+      "outcome": "Produrre e spiegare una prova delimitata di required check, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-013-M09",
+      "title": "Deploy gate e release",
+      "outcome": "Produrre e spiegare una prova delimitata di deploy gate e release, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

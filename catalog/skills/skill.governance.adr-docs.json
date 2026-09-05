@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.governance.adr-docs",
+  "title": "ADR e docs-as-code",
+  "aliases": [],
+  "domain": "governance",
+  "description": "Mancano ownership documentale, ADR verificabili, source canonica e freshness automatica.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.pss-testing"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.adr"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-020",
+  "roadmap_taxonomy": [
+    "Technical Writer",
+    "Software Architect"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano ownership documentale, ADR verificabili, source canonica e freshness automatica."
+  }
+}

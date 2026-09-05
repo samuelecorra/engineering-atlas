@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.prisma.migrations",
+  "title": "Prisma e migrazioni",
+  "aliases": [],
+  "domain": "prisma",
+  "description": "Mancano schema/client, migrazioni versionate, backfill e verifica su dati esistenti.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-prisma.migrations",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.migrations"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-009",
+  "roadmap_taxonomy": [
+    "Backend",
+    "PostgreSQL"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano schema/client, migrazioni versionate, backfill e verifica su dati esistenti."
+  }
+}

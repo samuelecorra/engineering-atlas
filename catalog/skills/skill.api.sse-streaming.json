@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.api.sse-streaming",
+  "title": "SSE e streaming API",
+  "aliases": [],
+  "domain": "api",
+  "description": "Mancano framing, interruzioni, backpressure e propagazione cancellation attraverso il proxy.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-api.sse-streaming",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.sse"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-008",
+  "roadmap_taxonomy": [
+    "API Design"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano framing, interruzioni, backpressure e propagazione cancellation attraverso il proxy."
+  }
+}

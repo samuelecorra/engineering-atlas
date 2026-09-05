@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "AI Agents",
+      "url": "https://roadmap.sh/ai-agents",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "AI Engineer",
+      "url": "https://roadmap.sh/ai-engineer",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "AI Product Builders",
+      "url": "https://roadmap.sh/ai-product-builder",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "AI Red Teaming",
+      "url": "https://roadmap.sh/ai-red-teaming",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "API Design",
+      "url": "https://roadmap.sh/api-design",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "API Security",
+      "url": "https://roadmap.sh/api-security",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Backend",
+      "url": "https://roadmap.sh/backend",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Claude Code",
+      "url": "https://roadmap.sh/claude-code",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Cloudflare",
+      "url": "https://roadmap.sh/cloudflare",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Code Review",
+      "url": "https://roadmap.sh/code-review",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "CSS",
+      "url": "https://roadmap.sh/css",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Cyber Security",
+      "url": "https://roadmap.sh/cyber-security",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Data Engineer",
+      "url": "https://roadmap.sh/data-engineer",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Design and Architecture",
+      "url": "https://roadmap.sh/software-design-architecture",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Design System",
+      "url": "https://roadmap.sh/design-system",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "DevOps",
+      "url": "https://roadmap.sh/devops",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "DevSecOps",
+      "url": "https://roadmap.sh/devsecops",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Docker",
+      "url": "https://roadmap.sh/docker",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Frontend",
+      "url": "https://roadmap.sh/frontend",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Frontend Performance",
+      "url": "https://roadmap.sh/frontend-performance",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Full Stack",
+      "url": "https://roadmap.sh/full-stack",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Git and GitHub",
+      "url": "https://roadmap.sh/git-github",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "HTML",
+      "url": "https://roadmap.sh/html",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "JavaScript",
+      "url": "https://roadmap.sh/javascript",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Linux",
+      "url": "https://roadmap.sh/linux",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "MLOps",
+      "url": "https://roadmap.sh/mlops",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Node.js",
+      "url": "https://roadmap.sh/nodejs",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "PostgreSQL",
+      "url": "https://roadmap.sh/postgresql",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Prompt Engineering",
+      "url": "https://roadmap.sh/prompt-engineering",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Python",
+      "url": "https://roadmap.sh/python",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "QA",
+      "url": "https://roadmap.sh/qa",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "React",
+      "url": "https://roadmap.sh/react",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Shell / Bash",
+      "url": "https://roadmap.sh/bash",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Software Architect",
+      "url": "https://roadmap.sh/software-architect",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "SQL",
+      "url": "https://roadmap.sh/sql",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "System Design",
+      "url": "https://roadmap.sh/system-design",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "Technical Writer",
+      "url": "https://roadmap.sh/technical-writer",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    },
+    {
+      "taxonomy": "roadmap.sh",
+      "label": "TypeScript",
+      "url": "https://roadmap.sh/typescript",
+      "reviewed_at": "2026-09-05",
+      "usage": "taxonomy-label-only",
+      "verification_status": "pending"
+    }
+  ]
+}

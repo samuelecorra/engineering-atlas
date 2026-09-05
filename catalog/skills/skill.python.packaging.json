@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.python.packaging",
+  "title": "Packaging Python",
+  "aliases": [],
+  "domain": "python",
+  "description": "Mancano venv, python -m pip, requirements, pyproject, editable install e layout src.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-python.packaging",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.python-package"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-016",
+  "roadmap_taxonomy": [
+    "Python"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano venv, python -m pip, requirements, pyproject, editable install e layout src."
+  }
+}

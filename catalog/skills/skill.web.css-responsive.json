@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.web.css-responsive",
+  "title": "CSS responsive operativo",
+  "aliases": [],
+  "domain": "web",
+  "description": "Trasferire esercizi CSS a componenti, token e layout del prodotto.",
+  "ssri_coverage": {
+    "level": "C2",
+    "evidence_ids": [
+      "ev.ssri.web"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.web"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-007",
+  "roadmap_taxonomy": [
+    "CSS",
+    "Design System"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Trasferire esercizi CSS a componenti, token e layout del prodotto."
+  }
+}

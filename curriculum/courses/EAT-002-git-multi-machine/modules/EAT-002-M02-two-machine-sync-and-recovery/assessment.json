@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ASM-EAT-002-M02",
+  "module_id": "EAT-002-M02",
+  "target_mastery": "M2",
+  "evidence_required": [
+    "Log prima/dopo e decisione motivata per ciascuno dei tre scenari.",
+    "Prova di abort e successiva risoluzione; hash preservati e checklist di sessione."
+  ],
+  "rubric": [
+    {
+      "id": "R1",
+      "criterion": "Decisione ff/rebase/merge sul graph",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    },
+    {
+      "id": "R2",
+      "criterion": "Recovery con preservazione dei commit",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    },
+    {
+      "id": "R3",
+      "criterion": "Checklist, stash e upstream spiegati",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    }
+  ],
+  "pass_rule": {
+    "minimum_score": 5,
+    "blocking_errors": [
+      "Modifica file fuori dalla directory fixture assegnata.",
+      "Usa credenziali reali o sostituisce il tentativo personale con una soluzione LLM.",
+      "Usa force push sul branch condiviso o perde commit senza un riferimento di recupero."
+    ]
+  },
+  "retry_policy": "Ripeti su una nuova fixture, annota la causa del fallimento e conserva entrambe le prove. Attendi una nuova valutazione prima di attribuire il livello."
+}

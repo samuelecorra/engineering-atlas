@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-002",
+  "slug": "git-multi-machine",
+  "title": "Git and GitHub for multi-machine collaboration",
+  "phase": "foundations",
+  "order": 2,
+  "priority": "P0",
+  "target_mastery": "M4",
+  "required_prerequisite_course_ids": [
+    "EAT-001"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.git.internals",
+    "skill.github.collaboration",
+    "skill.git.multi-device"
+  ],
+  "reinforced_skill_ids": [],
+  "roadmap_taxonomy": [
+    "Git and GitHub",
+    "Code Review"
+  ],
+  "outcomes": [
+    "Diagnosticare stato Git, sincronizzazione e recupero tra due macchine senza perdita."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-002-M01",
+      "title": "Git: working tree, index, HEAD e snapshot",
+      "outcome": "Predire status e diff a partire da working tree, index e commit. Creare un commit delimitato e verificare che contenga solo la versione staged.",
+      "status": "draft"
+    },
+    {
+      "id": "EAT-002-M02",
+      "title": "Git tra due macchine: sincronizzazione e recovery",
+      "outcome": "Riconoscere fast-forward e divergenza da upstream e commit graph. Recuperare un conflitto tramite abort e continuazione senza perdere commit. Motivare rebase privato, merge condiviso, stash e recupero non distruttivo.",
+      "status": "draft"
+    },
+    {
+      "id": "EAT-002-M03",
+      "title": "Feature branch, merge e rebase",
+      "outcome": "Produrre e spiegare una prova delimitata di feature branch, merge e rebase, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-002-M04",
+      "title": "Conflitti, reflog, reset/revert e recovery",
+      "outcome": "Produrre e spiegare una prova delimitata di conflitti, reflog, reset/revert e recovery, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-002-M05",
+      "title": "Pull request, review, branch protection, tag e release",
+      "outcome": "Produrre e spiegare una prova delimitata di pull request, review, branch protection, tag e release, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-002-M06",
+      "title": "Bisect, worktree e manutenzione repository",
+      "outcome": "Produrre e spiegare una prova delimitata di bisect, worktree e manutenzione repository, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "in_progress"
+}

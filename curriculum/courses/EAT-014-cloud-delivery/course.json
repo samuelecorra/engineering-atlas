@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-014",
+  "slug": "cloud-delivery",
+  "title": "Cloud delivery with Cloudflare and Railway",
+  "phase": "operations",
+  "order": 14,
+  "priority": "P1",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-008",
+    "EAT-010",
+    "EAT-012",
+    "EAT-013"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.cloud.cloudflare",
+    "skill.cloud.railway",
+    "skill.cloud.environments-network-policy"
+  ],
+  "reinforced_skill_ids": [
+    "skill.cicd.github-actions"
+  ],
+  "roadmap_taxonomy": [
+    "Cloudflare",
+    "DevOps",
+    "System Design",
+    "DevSecOps"
+  ],
+  "outcomes": [
+    "Descrivere una consegna cloud con ambienti, smoke e rollback verificabili."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-014-M01",
+      "title": "Confini cloud",
+      "outcome": "Produrre e spiegare una prova delimitata di confini cloud, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-014-M02",
+      "title": "Pages/Worker/Access",
+      "outcome": "Produrre e spiegare una prova delimitata di Pages/Worker/Access, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-014-M03",
+      "title": "Railway service",
+      "outcome": "Produrre e spiegare una prova delimitata di Railway service, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-014-M04",
+      "title": "DNS/TLS",
+      "outcome": "Produrre e spiegare una prova delimitata di DNS/TLS, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-014-M05",
+      "title": "Env/staging/prod",
+      "outcome": "Produrre e spiegare una prova delimitata di env/staging/prod, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-014-M06",
+      "title": "CORS/CSP",
+      "outcome": "Produrre e spiegare una prova delimitata di CORS/CSP, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-014-M07",
+      "title": "Migration pre-deploy",
+      "outcome": "Produrre e spiegare una prova delimitata di migration pre-deploy, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-014-M08",
+      "title": "Smoke",
+      "outcome": "Produrre e spiegare una prova delimitata di smoke, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-014-M09",
+      "title": "Rollback",
+      "outcome": "Produrre e spiegare una prova delimitata di rollback, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.curriculum.knowledge-graph",
+  "title": "Curriculum e knowledge graph",
+  "aliases": [],
+  "domain": "curriculum",
+  "description": "Modelli e grafi teorici non dimostrano ID stabili, schema curricolare e DAG validato.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.pss-testing"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.curriculum"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-020",
+  "roadmap_taxonomy": [
+    "System Design",
+    "Software Architect"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Modelli e grafi teorici non dimostrano ID stabili, schema curricolare e DAG validato."
+  }
+}

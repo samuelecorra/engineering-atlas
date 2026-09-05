@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-005",
+  "slug": "typescript-contracts",
+  "title": "TypeScript for contracts and refactoring",
+  "phase": "foundations",
+  "order": 5,
+  "priority": "P0",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-003"
+  ],
+  "recommended_prerequisite_course_ids": [
+    "EAT-004"
+  ],
+  "primary_skill_ids": [
+    "skill.typescript.language"
+  ],
+  "reinforced_skill_ids": [
+    "skill.js.fundamentals"
+  ],
+  "roadmap_taxonomy": [
+    "TypeScript"
+  ],
+  "outcomes": [
+    "Rifattorizzare contratti TypeScript e verificare i boundary runtime."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-005-M01",
+      "title": "Tipi e inference",
+      "outcome": "Produrre e spiegare una prova delimitata di tipi e inference, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-005-M02",
+      "title": "Union/narrowing",
+      "outcome": "Produrre e spiegare una prova delimitata di union/narrowing, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-005-M03",
+      "title": "Object/function types",
+      "outcome": "Produrre e spiegare una prova delimitata di object/function types, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-005-M04",
+      "title": "Generics",
+      "outcome": "Produrre e spiegare una prova delimitata di generics, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-005-M05",
+      "title": "Moduli/d.ts",
+      "outcome": "Produrre e spiegare una prova delimitata di moduli/d.ts, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-005-M06",
+      "title": "`tsconfig`",
+      "outcome": "Produrre e spiegare una prova delimitata di `tsconfig`, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-005-M07",
+      "title": "Boundary runtime con Zod",
+      "outcome": "Produrre e spiegare una prova delimitata di boundary runtime con Zod, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-005-M08",
+      "title": "Refactoring sicuro",
+      "outcome": "Produrre e spiegare una prova delimitata di refactoring sicuro, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

@@ -1,0 +1,1 @@
+# Runtime: nessuna dipendenza esterna nella fixture.

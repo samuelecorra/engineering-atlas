@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-020",
+  "slug": "architecture-curriculum-governance",
+  "title": "Software architecture, docs-as-code, curriculum and learning analytics governance",
+  "phase": "governance",
+  "order": 20,
+  "priority": "P1",
+  "target_mastery": "M4",
+  "required_prerequisite_course_ids": [
+    "EAT-009",
+    "EAT-010",
+    "EAT-011",
+    "EAT-018",
+    "EAT-019"
+  ],
+  "recommended_prerequisite_course_ids": [
+    "EAT-002",
+    "EAT-007",
+    "EAT-013"
+  ],
+  "primary_skill_ids": [
+    "skill.architecture.monorepo-boundaries",
+    "skill.governance.adr-docs",
+    "skill.curriculum.knowledge-graph",
+    "skill.analytics.learning-provenance",
+    "skill.native.tauri-capacitor"
+  ],
+  "reinforced_skill_ids": [
+    "skill.llm.safety-evals"
+  ],
+  "roadmap_taxonomy": [
+    "Software Architect",
+    "Design and Architecture",
+    "Technical Writer",
+    "System Design",
+    "Data Engineer",
+    "Full Stack"
+  ],
+  "outcomes": [
+    "Revieware confini architetturali e provenance curricolare con schema, grafo e ADR."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-020-M01",
+      "title": "Monorepo boundary",
+      "outcome": "Produrre e spiegare una prova delimitata di monorepo boundary, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-020-M02",
+      "title": "Architecture map/ADR",
+      "outcome": "Produrre e spiegare una prova delimitata di architecture map/ADR, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-020-M03",
+      "title": "Import graph/dead code",
+      "outcome": "Produrre e spiegare una prova delimitata di import graph/dead code, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-020-M04",
+      "title": "Docs-as-code",
+      "outcome": "Produrre e spiegare una prova delimitata di docs-as-code, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-020-M05",
+      "title": "Canonical source",
+      "outcome": "Produrre e spiegare una prova delimitata di canonical source, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-020-M06",
+      "title": "Curriculum schema",
+      "outcome": "Produrre e spiegare una prova delimitata di curriculum schema, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-020-M07",
+      "title": "Knowledge graph",
+      "outcome": "Produrre e spiegare una prova delimitata di knowledge graph, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-020-M08",
+      "title": "Provenance/calibration",
+      "outcome": "Produrre e spiegare una prova delimitata di provenance/calibration, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-020-M09",
+      "title": "Lifecycle/deprecation",
+      "outcome": "Produrre e spiegare una prova delimitata di lifecycle/deprecation, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-020-M10",
+      "title": "GDPR/AI governance",
+      "outcome": "Produrre e spiegare una prova delimitata di GDPR/AI governance, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

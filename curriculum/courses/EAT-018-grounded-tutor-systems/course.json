@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-018",
+  "slug": "grounded-tutor-systems",
+  "title": "Grounded tutor systems: prompting, retrieval, safety and evaluations",
+  "phase": "intelligence",
+  "order": 18,
+  "priority": "P1",
+  "target_mastery": "M4",
+  "required_prerequisite_course_ids": [
+    "EAT-010",
+    "EAT-011",
+    "EAT-017"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.llm.prompt-routing-retrieval",
+    "skill.llm.conversation-pedagogy",
+    "skill.llm.safety-evals"
+  ],
+  "reinforced_skill_ids": [
+    "skill.testing.cross-layer"
+  ],
+  "roadmap_taxonomy": [
+    "Prompt Engineering",
+    "AI Engineer",
+    "AI Product Builders",
+    "AI Red Teaming",
+    "MLOps"
+  ],
+  "outcomes": [
+    "Valutare un tutor grounded con contratti prompt, safety ed eval ripetibili."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-018-M01",
+      "title": "Prompt contract",
+      "outcome": "Produrre e spiegare una prova delimitata di prompt contract, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-018-M02",
+      "title": "Context/retrieval/grounding",
+      "outcome": "Produrre e spiegare una prova delimitata di context/retrieval/grounding, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-018-M03",
+      "title": "Routing",
+      "outcome": "Produrre e spiegare una prova delimitata di routing, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-018-M04",
+      "title": "Conversation state",
+      "outcome": "Produrre e spiegare una prova delimitata di conversation state, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-018-M05",
+      "title": "Tutoring socratico",
+      "outcome": "Produrre e spiegare una prova delimitata di tutoring socratico, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-018-M06",
+      "title": "Pre-routing safety",
+      "outcome": "Produrre e spiegare una prova delimitata di pre-routing safety, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-018-M07",
+      "title": "Post-processing",
+      "outcome": "Produrre e spiegare una prova delimitata di post-processing, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-018-M08",
+      "title": "Golden eval",
+      "outcome": "Produrre e spiegare una prova delimitata di golden eval, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-018-M09",
+      "title": "Red-team",
+      "outcome": "Produrre e spiegare una prova delimitata di red-team, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-018-M10",
+      "title": "Observability",
+      "outcome": "Produrre e spiegare una prova delimitata di observability, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

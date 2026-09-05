@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.analytics.learning-provenance",
+  "title": "Analytics, provenance e calibrazione",
+  "aliases": [],
+  "domain": "analytics",
+  "description": "Statistica e analisi dati vanno collegate a eventi, provenance e limiti delle inferenze sull'apprendimento.",
+  "ssri_coverage": {
+    "level": "C2",
+    "evidence_ids": [
+      "ev.ssri.stats"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.analytics"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-020",
+  "roadmap_taxonomy": [
+    "Data Engineer"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Statistica e analisi dati vanno collegate a eventi, provenance e limiti delle inferenze sull'apprendimento."
+  }
+}

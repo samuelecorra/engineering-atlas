@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-015",
+  "slug": "observability-data-operations",
+  "title": "Observability, reliability and data operations",
+  "phase": "operations",
+  "order": 15,
+  "priority": "P1",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-009",
+    "EAT-013",
+    "EAT-014"
+  ],
+  "recommended_prerequisite_course_ids": [
+    "EAT-011",
+    "EAT-012"
+  ],
+  "primary_skill_ids": [
+    "skill.sre.observability",
+    "skill.sre.backup-incident-retention"
+  ],
+  "reinforced_skill_ids": [
+    "skill.postgres.operations"
+  ],
+  "roadmap_taxonomy": [
+    "DevOps",
+    "Data Engineer"
+  ],
+  "outcomes": [
+    "Diagnosticare un incidente sintetico e dimostrare un restore con metriche sanitizzate."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-015-M01",
+      "title": "Structured log",
+      "outcome": "Produrre e spiegare una prova delimitata di structured log, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-015-M02",
+      "title": "Metric/health",
+      "outcome": "Produrre e spiegare una prova delimitata di metric/health, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-015-M03",
+      "title": "SLI/SLO",
+      "outcome": "Produrre e spiegare una prova delimitata di SLI/SLO, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-015-M04",
+      "title": "Alert sanitizzato",
+      "outcome": "Produrre e spiegare una prova delimitata di alert sanitizzato, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-015-M05",
+      "title": "Data freshness/quality",
+      "outcome": "Produrre e spiegare una prova delimitata di data freshness/quality, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-015-M06",
+      "title": "Incident/runbook",
+      "outcome": "Produrre e spiegare una prova delimitata di incident/runbook, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-015-M07",
+      "title": "Retention purge",
+      "outcome": "Produrre e spiegare una prova delimitata di retention purge, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-015-M08",
+      "title": "Backup/restore drill",
+      "outcome": "Produrre e spiegare una prova delimitata di backup/restore drill, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-015-M09",
+      "title": "Capacity e pool",
+      "outcome": "Produrre e spiegare una prova delimitata di capacity e pool, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

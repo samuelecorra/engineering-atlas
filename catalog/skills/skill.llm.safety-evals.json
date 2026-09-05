@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.llm.safety-evals",
+  "title": "Safety LLM ed eval",
+  "aliases": [],
+  "domain": "llm",
+  "description": "Mancano golden eval, red-team, safety prima del routing e controllo delle regressioni comportamentali.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-llm.safety-evals",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.llm-test"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-018",
+  "roadmap_taxonomy": [
+    "AI Red Teaming",
+    "MLOps"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano golden eval, red-team, safety prima del routing e controllo delle regressioni comportamentali."
+  }
+}

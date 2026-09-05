@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-004-M01",
+  "course_id": "EAT-004",
+  "title": "Node runtime/process/fs/path, npm, package e lockfile",
+  "order": 1,
+  "status": "draft",
+  "estimated_hours": 3,
+  "prerequisite_skill_ids": [
+    "skill.cli.environment"
+  ],
+  "teaches_skill_ids": [
+    "skill.node.runtime",
+    "skill.node.npm-packages"
+  ],
+  "reinforces_skill_ids": [],
+  "outcomes": [
+    "Eseguire un package ESM senza dipendenze e spiegare manifest e lockfile.",
+    "Distinguere npm install da npm ci e motivare la riproducibilità senza upgrade ciechi."
+  ],
+  "artifacts": [
+    "fixtures/run.mjs"
+  ],
+  "assessment_id": "ASM-EAT-004-M01",
+  "ironmath_anchors": [
+    "package.json",
+    "apps/web/package.json",
+    "apps/api/package.json"
+  ]
+}

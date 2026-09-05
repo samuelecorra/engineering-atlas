@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-008",
+  "slug": "http-api-fastify",
+  "title": "HTTP, API design and Fastify backend engineering",
+  "phase": "application",
+  "order": 8,
+  "priority": "P0",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-004",
+    "EAT-005"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.web.http",
+    "skill.api.contracts-validation",
+    "skill.fastify.backend",
+    "skill.api.sse-streaming"
+  ],
+  "reinforced_skill_ids": [
+    "skill.typescript.language"
+  ],
+  "roadmap_taxonomy": [
+    "API Design",
+    "API Security",
+    "Backend",
+    "Node.js"
+  ],
+  "outcomes": [
+    "Progettare un contratto API Fastify con validation, errori e streaming cancellabile."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-008-M01",
+      "title": "Semantica HTTP",
+      "outcome": "Produrre e spiegare una prova delimitata di semantica HTTP, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-008-M02",
+      "title": "Resource/API design",
+      "outcome": "Produrre e spiegare una prova delimitata di resource/API design, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-008-M03",
+      "title": "Fastify lifecycle/plugin",
+      "outcome": "Produrre e spiegare una prova delimitata di Fastify lifecycle/plugin, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-008-M04",
+      "title": "Validation/error contract",
+      "outcome": "Produrre e spiegare una prova delimitata di validation/error contract, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-008-M05",
+      "title": "Idempotency/rate limit",
+      "outcome": "Produrre e spiegare una prova delimitata di idempotency/rate limit, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-008-M06",
+      "title": "REST auth boundary",
+      "outcome": "Produrre e spiegare una prova delimitata di REST auth boundary, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-008-M07",
+      "title": "SSE",
+      "outcome": "Produrre e spiegare una prova delimitata di SSE, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-008-M08",
+      "title": "Proxy e cancellation",
+      "outcome": "Produrre e spiegare una prova delimitata di proxy e cancellation, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

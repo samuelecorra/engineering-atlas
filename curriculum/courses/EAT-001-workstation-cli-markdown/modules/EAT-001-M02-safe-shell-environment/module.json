@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-001-M02",
+  "course_id": "EAT-001",
+  "title": "Shell sicura, environment e quoting",
+  "order": 2,
+  "status": "draft",
+  "estimated_hours": 2,
+  "prerequisite_skill_ids": [],
+  "teaches_skill_ids": [
+    "skill.cli.environment"
+  ],
+  "reinforces_skill_ids": [],
+  "outcomes": [
+    "Correggere tre script innocui spiegando parsing, quoting ed environment.",
+    "Tradurre i comandi essenziali fra Bash e PowerShell senza stampare secret."
+  ],
+  "artifacts": [
+    "fixtures/run.mjs"
+  ],
+  "assessment_id": "ASM-EAT-001-M02",
+  "ironmath_anchors": [
+    "tooling/launchers/",
+    "package.json"
+  ]
+}

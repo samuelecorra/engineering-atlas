@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "audit_date": "2026-09-05",
+  "repositories": [
+    {
+      "id": "ssri",
+      "repository": "samuelecorra/cybersec_unimi_ssri2.0",
+      "branch": "main",
+      "audited_commit": "7467a51576a7c1514edacb26d9408bf0c1444a7d",
+      "audited_tracked_files": 6310,
+      "observed_local_commit": "c691750bf85e6130b9ef59eeb357366508d05311",
+      "observed_local_branch": "main",
+      "observed_tracked_files": 6271,
+      "observed_at": "2026-09-05",
+      "drift_status": "different-audit-unavailable",
+      "audit_snapshot_available": false,
+      "local_worktree_clean": true,
+      "verification_note": "Oggetto commit audit non disponibile localmente. README e inventario correnti letti; lezioni ora sotto lessons/cybersecurity/. Conteggi e coverage restano quelli forniti, non riverificati sullo snapshot. Il viewer React/Vite e il workflow correnti non sono coverage curricolare."
+    },
+    {
+      "id": "ironmath",
+      "repository": "samuelecorra/ironmath",
+      "branch": "mvp-final",
+      "audited_commit": "22da98929d9c70e20a5a3a9d6fabfe2bd0279431",
+      "audited_tracked_files": 4069,
+      "observed_local_commit": "ec809fb3f4dd8e5b8493fddcb53ef759d5d9d047",
+      "observed_local_branch": "docs/debito-reset-yerika",
+      "observed_tracked_files": 4069,
+      "observed_at": "2026-09-05",
+      "drift_status": "ahead",
+      "audit_snapshot_available": true,
+      "local_worktree_clean": true,
+      "verification_note": "Snapshot audit accessibile e antenato di HEAD; controllati manifest e architettura, senza nuovo audit integrale."
+    }
+  ]
+}

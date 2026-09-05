@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-019",
+  "slug": "agentic-coding",
+  "title": "Agentic coding and repository-scale collaboration",
+  "phase": "intelligence",
+  "order": 19,
+  "priority": "P1",
+  "target_mastery": "M4",
+  "required_prerequisite_course_ids": [
+    "EAT-002",
+    "EAT-011",
+    "EAT-018"
+  ],
+  "recommended_prerequisite_course_ids": [
+    "EAT-013"
+  ],
+  "primary_skill_ids": [
+    "skill.agents.repo-workflows"
+  ],
+  "reinforced_skill_ids": [
+    "skill.git.internals"
+  ],
+  "roadmap_taxonomy": [
+    "AI Agents",
+    "Claude Code",
+    "Code Review"
+  ],
+  "outcomes": [
+    "Condurre un task con agente controllando contesto, permessi, diff e apprendimento autonomo."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-019-M01",
+      "title": "Instruction files/context",
+      "outcome": "Produrre e spiegare una prova delimitata di instruction files/context, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-019-M02",
+      "title": "Permission/tool boundary",
+      "outcome": "Produrre e spiegare una prova delimitata di permission/tool boundary, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-019-M03",
+      "title": "Task decomposition",
+      "outcome": "Produrre e spiegare una prova delimitata di task decomposition, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-019-M04",
+      "title": "Diff/test loop",
+      "outcome": "Produrre e spiegare una prova delimitata di diff/test loop, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-019-M05",
+      "title": "Handoff",
+      "outcome": "Produrre e spiegare una prova delimitata di handoff, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-019-M06",
+      "title": "Worktree",
+      "outcome": "Produrre e spiegare una prova delimitata di worktree, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-019-M07",
+      "title": "Multi-agent boundary",
+      "outcome": "Produrre e spiegare una prova delimitata di multi-agent boundary, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-019-M08",
+      "title": "Secret discipline",
+      "outcome": "Produrre e spiegare una prova delimitata di secret discipline, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-019-M09",
+      "title": "Apprendimento senza dipendenza dall’agente",
+      "outcome": "Produrre e spiegare una prova delimitata di apprendimento senza dipendenza dall’agente, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-012",
+  "slug": "docker-compose",
+  "title": "Docker, Compose and reproducible local stacks",
+  "phase": "operations",
+  "order": 12,
+  "priority": "P1",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [],
+  "recommended_prerequisite_course_ids": [
+    "EAT-004",
+    "EAT-008",
+    "EAT-009"
+  ],
+  "primary_skill_ids": [
+    "skill.containers.docker",
+    "skill.containers.compose"
+  ],
+  "reinforced_skill_ids": [
+    "skill.cli.environment"
+  ],
+  "roadmap_taxonomy": [
+    "Docker",
+    "DevOps"
+  ],
+  "outcomes": [
+    "Riprodurre e diagnosticare uno stack locale containerizzato con cleanup selettivo."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-012-M01",
+      "title": "Image/container/layer",
+      "outcome": "Produrre e spiegare una prova delimitata di image/container/layer, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-012-M02",
+      "title": "Dockerfile multi-stage",
+      "outcome": "Produrre e spiegare una prova delimitata di Dockerfile multi-stage, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-012-M03",
+      "title": "Rete/volume",
+      "outcome": "Produrre e spiegare una prova delimitata di rete/volume, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-012-M04",
+      "title": "Compose",
+      "outcome": "Produrre e spiegare una prova delimitata di Compose, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-012-M05",
+      "title": "Health/dependency",
+      "outcome": "Produrre e spiegare una prova delimitata di health/dependency, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-012-M06",
+      "title": "Debug/log",
+      "outcome": "Produrre e spiegare una prova delimitata di debug/log, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-012-M07",
+      "title": "Cleanup sicuro",
+      "outcome": "Produrre e spiegare una prova delimitata di cleanup sicuro, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-012-M08",
+      "title": "Parità locale/CI",
+      "outcome": "Produrre e spiegare una prova delimitata di parità locale/CI, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

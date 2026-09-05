@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/course.schema.json",
+  "title": "course",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^EAT-\\d{3}$"
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "phase": {
+      "type": "string",
+      "enum": [
+        "foundations",
+        "application",
+        "operations",
+        "intelligence",
+        "governance"
+      ]
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2"
+      ]
+    },
+    "target_mastery": {
+      "type": "string",
+      "enum": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ]
+    },
+    "required_prerequisite_course_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^EAT-\\d{3}$"
+      },
+      "uniqueItems": true
+    },
+    "recommended_prerequisite_course_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^EAT-\\d{3}$"
+      },
+      "uniqueItems": true
+    },
+    "primary_skill_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^skill\\.[a-z0-9]+(?:[.-][a-z0-9]+)+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "reinforced_skill_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^skill\\.[a-z0-9]+(?:[.-][a-z0-9]+)+$"
+      },
+      "uniqueItems": true
+    },
+    "roadmap_taxonomy": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "planned_modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^EAT-\\d{3}-M\\d{2}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "outcome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "planned",
+              "draft",
+              "reviewed",
+              "validated",
+              "deferred",
+              "deprecated"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "outcome",
+          "status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "in_progress"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "slug",
+    "title",
+    "phase",
+    "order",
+    "priority",
+    "target_mastery",
+    "required_prerequisite_course_ids",
+    "recommended_prerequisite_course_ids",
+    "primary_skill_ids",
+    "reinforced_skill_ids",
+    "roadmap_taxonomy",
+    "outcomes",
+    "planned_modules",
+    "status"
+  ],
+  "additionalProperties": false
+}

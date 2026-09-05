@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.git.internals",
+  "title": "Git internals e recovery",
+  "aliases": [],
+  "domain": "git",
+  "description": "Dai comandi guidati al modello index/HEAD, reflog, bisect e recupero senza perdita.",
+  "ssri_coverage": {
+    "level": "C2",
+    "evidence_ids": [
+      "ev.ssri.pss-devops"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.root"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-002",
+  "roadmap_taxonomy": [
+    "Git and GitHub"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Dai comandi guidati al modello index/HEAD, reflog, bisect e recupero senza perdita."
+  }
+}

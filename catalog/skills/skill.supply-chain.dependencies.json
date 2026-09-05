@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.supply-chain.dependencies",
+  "title": "Dipendenze e supply chain",
+  "aliases": [],
+  "domain": "supply-chain",
+  "description": "Mancano pinning, audit contestualizzato, provenance e aggiornamenti verificati.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-supply-chain.dependencies",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.workflow"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-013",
+  "roadmap_taxonomy": [
+    "DevSecOps"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano pinning, audit contestualizzato, provenance e aggiornamenti verificati."
+  }
+}

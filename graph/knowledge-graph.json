@@ -1,0 +1,4390 @@
+{
+  "schema_version": "1.0.0",
+  "nodes": [
+    {
+      "id": "ASM-EAT-001-M01",
+      "type": "assessment",
+      "title": "ASM-EAT-001-M01",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M01-filesystem-processes-paths/assessment.json"
+    },
+    {
+      "id": "ASM-EAT-001-M02",
+      "type": "assessment",
+      "title": "ASM-EAT-001-M02",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M02-safe-shell-environment/assessment.json"
+    },
+    {
+      "id": "ASM-EAT-001-M03",
+      "type": "assessment",
+      "title": "ASM-EAT-001-M03",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M03-markdown-latex-docs/assessment.json"
+    },
+    {
+      "id": "ASM-EAT-002-M01",
+      "type": "assessment",
+      "title": "ASM-EAT-002-M01",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M01-git-state-model/assessment.json"
+    },
+    {
+      "id": "ASM-EAT-002-M02",
+      "type": "assessment",
+      "title": "ASM-EAT-002-M02",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/assessment.json"
+    },
+    {
+      "id": "ASM-EAT-004-M01",
+      "type": "assessment",
+      "title": "ASM-EAT-004-M01",
+      "path": "curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/assessment.json"
+    },
+    {
+      "id": "ASM-EAT-016-M01",
+      "type": "assessment",
+      "title": "ASM-EAT-016-M01",
+      "path": "curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/assessment.json"
+    },
+    {
+      "id": "EAT-001",
+      "type": "course",
+      "title": "Engineering workstation, CLI, Markdown and reproducibility",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/course.json"
+    },
+    {
+      "id": "EAT-001-M01",
+      "type": "module",
+      "title": "Filesystem, processi, path e modello del terminale",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M01-filesystem-processes-paths/module.json"
+    },
+    {
+      "id": "EAT-001-M02",
+      "type": "module",
+      "title": "Shell sicura, environment e quoting",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M02-safe-shell-environment/module.json"
+    },
+    {
+      "id": "EAT-001-M03",
+      "type": "module",
+      "title": "Markdown, LaTeX e documentazione verificabile",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M03-markdown-latex-docs/module.json"
+    },
+    {
+      "id": "EAT-002",
+      "type": "course",
+      "title": "Git and GitHub for multi-machine collaboration",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/course.json"
+    },
+    {
+      "id": "EAT-002-M01",
+      "type": "module",
+      "title": "Git: working tree, index, HEAD e snapshot",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M01-git-state-model/module.json"
+    },
+    {
+      "id": "EAT-002-M02",
+      "type": "module",
+      "title": "Git tra due macchine: sincronizzazione e recovery",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/module.json"
+    },
+    {
+      "id": "EAT-003",
+      "type": "course",
+      "title": "Modern JavaScript and the browser runtime",
+      "path": "curriculum/courses/EAT-003-modern-javascript-browser/course.json"
+    },
+    {
+      "id": "EAT-004",
+      "type": "course",
+      "title": "Node.js, npm, ESM and JavaScript toolchains",
+      "path": "curriculum/courses/EAT-004-node-npm-esm/course.json"
+    },
+    {
+      "id": "EAT-004-M01",
+      "type": "module",
+      "title": "Node runtime/process/fs/path, npm, package e lockfile",
+      "path": "curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/module.json"
+    },
+    {
+      "id": "EAT-005",
+      "type": "course",
+      "title": "TypeScript for contracts and refactoring",
+      "path": "curriculum/courses/EAT-005-typescript-contracts/course.json"
+    },
+    {
+      "id": "EAT-006",
+      "type": "course",
+      "title": "React and Vite application engineering",
+      "path": "curriculum/courses/EAT-006-react-vite/course.json"
+    },
+    {
+      "id": "EAT-007",
+      "type": "course",
+      "title": "Frontend systems: accessibility, design, performance and math UI",
+      "path": "curriculum/courses/EAT-007-frontend-systems/course.json"
+    },
+    {
+      "id": "EAT-008",
+      "type": "course",
+      "title": "HTTP, API design and Fastify backend engineering",
+      "path": "curriculum/courses/EAT-008-http-api-fastify/course.json"
+    },
+    {
+      "id": "EAT-009",
+      "type": "course",
+      "title": "PostgreSQL and Prisma in production",
+      "path": "curriculum/courses/EAT-009-postgres-prisma/course.json"
+    },
+    {
+      "id": "EAT-010",
+      "type": "course",
+      "title": "Authentication, tenancy, application security and privacy",
+      "path": "curriculum/courses/EAT-010-security-privacy/course.json"
+    },
+    {
+      "id": "EAT-011",
+      "type": "course",
+      "title": "Quality engineering and automated testing",
+      "path": "curriculum/courses/EAT-011-quality-testing/course.json"
+    },
+    {
+      "id": "EAT-012",
+      "type": "course",
+      "title": "Docker, Compose and reproducible local stacks",
+      "path": "curriculum/courses/EAT-012-docker-compose/course.json"
+    },
+    {
+      "id": "EAT-013",
+      "type": "course",
+      "title": "GitHub Actions, CI/CD and software supply chain",
+      "path": "curriculum/courses/EAT-013-github-actions-supply-chain/course.json"
+    },
+    {
+      "id": "EAT-014",
+      "type": "course",
+      "title": "Cloud delivery with Cloudflare and Railway",
+      "path": "curriculum/courses/EAT-014-cloud-delivery/course.json"
+    },
+    {
+      "id": "EAT-015",
+      "type": "course",
+      "title": "Observability, reliability and data operations",
+      "path": "curriculum/courses/EAT-015-observability-data-operations/course.json"
+    },
+    {
+      "id": "EAT-016",
+      "type": "course",
+      "title": "Production Python and FastAPI services",
+      "path": "curriculum/courses/EAT-016-python-fastapi/course.json"
+    },
+    {
+      "id": "EAT-016-M01",
+      "type": "module",
+      "title": "Python: ambiente, package src e test standard-library; richiamo al core",
+      "path": "curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/module.json"
+    },
+    {
+      "id": "EAT-017",
+      "type": "course",
+      "title": "LLM API and application engineering",
+      "path": "curriculum/courses/EAT-017-llm-api/course.json"
+    },
+    {
+      "id": "EAT-018",
+      "type": "course",
+      "title": "Grounded tutor systems: prompting, retrieval, safety and evaluations",
+      "path": "curriculum/courses/EAT-018-grounded-tutor-systems/course.json"
+    },
+    {
+      "id": "EAT-019",
+      "type": "course",
+      "title": "Agentic coding and repository-scale collaboration",
+      "path": "curriculum/courses/EAT-019-agentic-coding/course.json"
+    },
+    {
+      "id": "EAT-020",
+      "type": "course",
+      "title": "Software architecture, docs-as-code, curriculum and learning analytics governance",
+      "path": "curriculum/courses/EAT-020-architecture-curriculum-governance/course.json"
+    },
+    {
+      "id": "M0",
+      "type": "mastery",
+      "title": "M0",
+      "path": "governance/MASTERY_MODEL.md"
+    },
+    {
+      "id": "M1",
+      "type": "mastery",
+      "title": "M1",
+      "path": "governance/MASTERY_MODEL.md"
+    },
+    {
+      "id": "M2",
+      "type": "mastery",
+      "title": "M2",
+      "path": "governance/MASTERY_MODEL.md"
+    },
+    {
+      "id": "M3",
+      "type": "mastery",
+      "title": "M3",
+      "path": "governance/MASTERY_MODEL.md"
+    },
+    {
+      "id": "M4",
+      "type": "mastery",
+      "title": "M4",
+      "path": "governance/MASTERY_MODEL.md"
+    },
+    {
+      "id": "ev.ironmath.admin",
+      "type": "evidence",
+      "title": "React/Vite per onboarding amministrativo; adapter Capacitor/Tauri sperimentali, senza priorità sul percorso principale.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.adr",
+      "type": "evidence",
+      "title": "Decisioni architetturali versionate: boundary, contratti e governance cross-cutting.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.agents",
+      "type": "evidence",
+      "title": "Instruction file, permessi, hook, graph check e secret discipline per agent workflow.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.analytics",
+      "type": "evidence",
+      "title": "Provenance, proiezioni, qualità dati e limiti della calibrazione; non inferire apprendimento dagli eventi grezzi.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.api",
+      "type": "evidence",
+      "title": "Fastify 5, TypeScript, Zod, Prisma 5: implementazione API e toolchain separata.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.api-test",
+      "type": "evidence",
+      "title": "Test API, contract/integration, tenancy e analytics; test inventory e confini tra strati.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.architecture",
+      "type": "evidence",
+      "title": "Monorepo con confini web/admin/API/LLM/curriculum; documentazione canonica, ADR e source governance.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.bible",
+      "type": "evidence",
+      "title": "Documentazione tecnica di auth, tenancy, privacy, cifratura e policy operative del prodotto.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.compose",
+      "type": "evidence",
+      "title": "Stack locale multi-servizio con Compose, network, volume, health e configurazione separata.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.curriculum",
+      "type": "evidence",
+      "title": "228 topic delle medie e nove sezioni per topic nel baseline; JSON/Markdown e semantica curricolare.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.docker",
+      "type": "evidence",
+      "title": "Build container del servizio: runtime, dipendenze, immagine e riproducibilità.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.graph",
+      "type": "evidence",
+      "title": "Grafo di import generato con freshness check, distinto da knowledge graph e semantica curricolare.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.llm-test",
+      "type": "evidence",
+      "title": "pytest, golden eval e safety red-team; recovery provider e comportamento del tutor.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.migrations",
+      "type": "evidence",
+      "title": "58 migrazioni nel baseline: evoluzione schema e dati, backfill, ordine e recovery.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.prisma",
+      "type": "evidence",
+      "title": "PostgreSQL: 88 modelli e 61 enum nel baseline; transazioni, constraint e tenancy applicativa.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.prompt",
+      "type": "evidence",
+      "title": "Contratto prompt, routing, retrieval, conversation state e tutoring; safety prima del routing nel baseline.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.python-dev",
+      "type": "evidence",
+      "title": "Dipendenze di sviluppo/test del servizio Python da distinguere dalle dipendenze runtime.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.python-map",
+      "type": "evidence",
+      "title": "Mappa package API/tutor/retrieval/safety/persistence/voice prototipale e osservabilità.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.python-package",
+      "type": "evidence",
+      "title": "Package ironmath-llm con layout src, requires-python >=3.10 e setuptools build backend.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.python-runtime",
+      "type": "evidence",
+      "title": "Runtime Python con FastAPI, Uvicorn e OpenAI API; dipendenze runtime separate da quelle di sviluppo.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.readme",
+      "type": "evidence",
+      "title": "Ingresso documentale e istruzioni operative del prodotto nello snapshot.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.root",
+      "type": "evidence",
+      "title": "Node >=24 <25, launcher CLI, script per package indipendenti; root senza workspaces.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.sse",
+      "type": "evidence",
+      "title": "Proxy tutor con streaming SSE e cancellazione: boundary browser, Node e servizio Python.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.status",
+      "type": "evidence",
+      "title": "Stato operativo, ambienti e runbook; deployment Cloudflare/Railway, health e rollback nel baseline.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.web",
+      "type": "evidence",
+      "title": "React 19, Vite 7, Router 7, JavaScript/JSX, CSS, Markdown/KaTeX, MathLive, Recharts e Playwright.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.web-test",
+      "type": "evidence",
+      "title": "Playwright per flussi utente e regressioni/a11y del frontend; UI asincrona e state/error handling.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ironmath.workflow",
+      "type": "evidence",
+      "title": "Sette workflow per CI, deploy, monitor, integrity e safety red-team; permission, pinning e required check.",
+      "path": "sources/evidence/ironmath-requirements.json"
+    },
+    {
+      "id": "ev.ssri.absence-agents.repo-workflows",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Agenti e workflow repository. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano instruction boundary, permission, diff/test loop e handoff senza dipendenza dall'agente.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-api.sse-streaming",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di SSE e streaming API. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano framing, interruzioni, backpressure e propagazione cancellation attraverso il proxy.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-cloud.cloudflare",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Cloudflare operativo. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano confini Pages/Worker/Access, configurazione ambienti e rollback verificabile.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-cloud.railway",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Railway operativo. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano servizi, health, migration gate e recovery nel target Railway.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-fastify.backend",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Backend Fastify. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano lifecycle/plugin Fastify, routing e test di integrazione del servizio.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-frontend.state-errors",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Stato ed errori frontend. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano ownership dello stato, async UI, error boundary e recovery dell'esperienza utente.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-git.multi-device",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Git tra due macchine. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Manca evidenza di divergenza Mac/Windows, upstream, sync e recovery cross-machine.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-llm.conversation-pedagogy",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Conversazione e pedagogia. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano stato conversazionale, tutoring socratico e distinzione tra aiuto e soluzione.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-llm.foundations",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Fondamenti LLM. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano token/context, limiti dei modelli e scelta basata su costo, latenza e comportamento.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-llm.prompt-routing-retrieval",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Prompt, routing e retrieval. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano contratti prompt, grounding, selezione del contesto e diagnosi del retrieval.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-llm.responses-streaming",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di API LLM e streaming. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano Responses/streaming, structured output, tool use e recovery degli errori provider.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-llm.safety-evals",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Safety LLM ed eval. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano golden eval, red-team, safety prima del routing e controllo delle regressioni comportamentali.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-native.tauri-capacitor",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Adapter Tauri e Capacitor. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Integrazioni native sperimentali: solo lettura guidata, senza farne un prerequisito del percorso principale.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-node.esm-vite",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di ESM e Vite. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano resolution ESM, build-time env, alias e confine browser/runtime.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-node.npm-packages",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di npm e package. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano manifest, dipendenze, semver, lockfile e installazione ripetibile.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-operational-ecosystem",
+      "type": "evidence",
+      "title": "Absence check del baseline sui materiali didattici SSRI, esclusa la web app viewer: nessuna copertura operativa di TS/TSX, React/hooks/router, Fastify, Prisma, pytest, Playwright, FastAPI/Uvicorn, pip/venv/requirements/pyproject, npm/ESM/lockfile/semver, GitHub Actions, LLM/RAG/prompt engineering e agentic coding. Git avanzato e deployment Cloudflare/Railway non dimostrati. La scansione non viene ripetuta perché lo snapshot audit non è disponibile localmente.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-prisma.migrations",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Prisma e migrazioni. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano schema/client, migrazioni versionate, backfill e verifica su dati esistenti.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-python.fastapi-async",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di FastAPI e async Python. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano async I/O, lifecycle FastAPI/Uvicorn, config e gestione errori del servizio.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-python.packaging",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Packaging Python. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano venv, python -m pip, requirements, pyproject, editable install e layout src.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-react.application",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di React applicativo. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano componenti, hooks, router, effect e confini dell'applicazione Vite.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-supply-chain.dependencies",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Dipendenze e supply chain. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano pinning, audit contestualizzato, provenance e aggiornamenti verificati.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-testing.toolchains",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di Toolchain di test. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: Mancano node:test, pytest, Playwright e diagnostica delle rispettive fixture e runner.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.absence-typescript.language",
+      "type": "evidence",
+      "title": "Nel curriculum SSRI auditato non emerge insegnamento operativo di TypeScript e contratti. Scope: materiali didattici dei tre anni ed extra; esclude il viewer e i suoi workflow. Baseline fornito, non nuovo audit. Ponte richiesto: I tipi Java non equivalgono a narrowing, generics TS e validazione runtime con Zod.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.algorithms",
+      "type": "evidence",
+      "title": "Algoritmi, grafi, strutture dati, sorting, ricerca e paradigmi di progetto con complessità; non richiedono nuovi corsi duplicati.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.crypto",
+      "type": "evidence",
+      "title": "Crittografia e PKI; sicurezza, auth e access control con approfondimenti web/network, firewall, IDS/IPS e forensics negli insegnamenti successivi.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.db",
+      "type": "evidence",
+      "title": "Basi di dati: modello relazionale, SQL, E-R, indici, transazioni, recovery e serializzabilità; PostgreSQL operativo e migrazioni applicative non dimostrati.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.governance",
+      "type": "evidence",
+      "title": "Governance sicurezza, requisiti e modelli; privacy come base, senza operazioni tenant/minori/retention specifiche di IronMath.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.js",
+      "type": "evidence",
+      "title": "Introduzioni e 31 lezioni fondamentali non vuote; esempi storici DOM, Promise e fetch danno copertura parziale, non applicativa moderna.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.js-empty",
+      "type": "evidence",
+      "title": "Scope curricolare JS: i moduli avanzati M03–M11 sono vuoti nel baseline; il nome della directory non dimostra DOM/OOP/async/moderno/ecosistema.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.math-hardware",
+      "type": "evidence",
+      "title": "Analisi, algebra, insiemi, relazioni, funzioni, complessi, serie, limiti, derivate, integrali; architettura, logica digitale, ISA, CPU, cache, I/O e pipeline già baseline.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.network",
+      "type": "evidence",
+      "title": "Reti: TCP/IP, protocolli applicativi e programmazione distribuita; base HTTP sostanziale senza contratti Fastify/SSE.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.os",
+      "type": "evidence",
+      "title": "Sistemi operativi: processi, thread, scheduling, sincronizzazione, memoria, filesystem e distribuiti; CLI guidata ma non diagnostica cross-platform indipendente.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.programming",
+      "type": "evidence",
+      "title": "C e Java: OOP, file, puntatori e allocazione, strutture, generics e lambda; base concettuale da trasferire a runtime diversi.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.pss-devops",
+      "type": "evidence",
+      "title": "PSS lezione 12: clone/add/commit/push/fetch/pull, branch/merge, PR, CI, Docker/Dockerfile, IaC e SecDevOps a profondità concettuale o guidata.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.pss-testing",
+      "type": "evidence",
+      "title": "PSS lezione 8 e laboratorio JUnit: testing, coverage e analisi statica; requisiti, Design by Contract e OpenJML come basi di qualità.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.python",
+      "type": "evidence",
+      "title": "Soltanto due file introduttivi: primo programma, variabili e tipi; nessuna base sufficiente per mantenere un servizio Python.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.readme",
+      "type": "evidence",
+      "title": "Elenco dei corsi dei tre anni SSRI; presenza dei materiali non equivale a mastery personale.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.stats",
+      "type": "evidence",
+      "title": "Probabilità, statistica, analisi dati e data mining: base per analytics, non prova di provenance o calibrazione del prodotto.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "ev.ssri.web",
+      "type": "evidence",
+      "title": "HTML semantico, CSS, responsive e accessibilità con esercizi; 455 Markdown di cui 183 vuoti nello snapshot fornito.",
+      "path": "sources/evidence/ssri-coverage.json"
+    },
+    {
+      "id": "skill.agents.repo-workflows",
+      "type": "skill",
+      "title": "Agenti e workflow repository",
+      "path": "catalog/skills/skill.agents.repo-workflows.json"
+    },
+    {
+      "id": "skill.analytics.learning-provenance",
+      "type": "skill",
+      "title": "Analytics, provenance e calibrazione",
+      "path": "catalog/skills/skill.analytics.learning-provenance.json"
+    },
+    {
+      "id": "skill.api.contracts-validation",
+      "type": "skill",
+      "title": "Contratti e validazione API",
+      "path": "catalog/skills/skill.api.contracts-validation.json"
+    },
+    {
+      "id": "skill.api.sse-streaming",
+      "type": "skill",
+      "title": "SSE e streaming API",
+      "path": "catalog/skills/skill.api.sse-streaming.json"
+    },
+    {
+      "id": "skill.architecture.monorepo-boundaries",
+      "type": "skill",
+      "title": "Architettura e boundary monorepo",
+      "path": "catalog/skills/skill.architecture.monorepo-boundaries.json"
+    },
+    {
+      "id": "skill.cicd.github-actions",
+      "type": "skill",
+      "title": "GitHub Actions e CI/CD",
+      "path": "catalog/skills/skill.cicd.github-actions.json"
+    },
+    {
+      "id": "skill.cli.environment",
+      "type": "skill",
+      "title": "CLI e ambiente riproducibile",
+      "path": "catalog/skills/skill.cli.environment.json"
+    },
+    {
+      "id": "skill.cloud.cloudflare",
+      "type": "skill",
+      "title": "Cloudflare operativo",
+      "path": "catalog/skills/skill.cloud.cloudflare.json"
+    },
+    {
+      "id": "skill.cloud.environments-network-policy",
+      "type": "skill",
+      "title": "Ambienti e policy rete",
+      "path": "catalog/skills/skill.cloud.environments-network-policy.json"
+    },
+    {
+      "id": "skill.cloud.railway",
+      "type": "skill",
+      "title": "Railway operativo",
+      "path": "catalog/skills/skill.cloud.railway.json"
+    },
+    {
+      "id": "skill.containers.compose",
+      "type": "skill",
+      "title": "Compose e stack locali",
+      "path": "catalog/skills/skill.containers.compose.json"
+    },
+    {
+      "id": "skill.containers.docker",
+      "type": "skill",
+      "title": "Container Docker",
+      "path": "catalog/skills/skill.containers.docker.json"
+    },
+    {
+      "id": "skill.curriculum.knowledge-graph",
+      "type": "skill",
+      "title": "Curriculum e knowledge graph",
+      "path": "catalog/skills/skill.curriculum.knowledge-graph.json"
+    },
+    {
+      "id": "skill.db.sql-transactions",
+      "type": "skill",
+      "title": "SQL e transazioni",
+      "path": "catalog/skills/skill.db.sql-transactions.json"
+    },
+    {
+      "id": "skill.docs.markdown-latex",
+      "type": "skill",
+      "title": "Markdown, LaTeX e docs verificabili",
+      "path": "catalog/skills/skill.docs.markdown-latex.json"
+    },
+    {
+      "id": "skill.fastify.backend",
+      "type": "skill",
+      "title": "Backend Fastify",
+      "path": "catalog/skills/skill.fastify.backend.json"
+    },
+    {
+      "id": "skill.frontend.state-errors",
+      "type": "skill",
+      "title": "Stato ed errori frontend",
+      "path": "catalog/skills/skill.frontend.state-errors.json"
+    },
+    {
+      "id": "skill.git.internals",
+      "type": "skill",
+      "title": "Git internals e recovery",
+      "path": "catalog/skills/skill.git.internals.json"
+    },
+    {
+      "id": "skill.git.multi-device",
+      "type": "skill",
+      "title": "Git tra due macchine",
+      "path": "catalog/skills/skill.git.multi-device.json"
+    },
+    {
+      "id": "skill.github.collaboration",
+      "type": "skill",
+      "title": "Collaborazione e review GitHub",
+      "path": "catalog/skills/skill.github.collaboration.json"
+    },
+    {
+      "id": "skill.governance.adr-docs",
+      "type": "skill",
+      "title": "ADR e docs-as-code",
+      "path": "catalog/skills/skill.governance.adr-docs.json"
+    },
+    {
+      "id": "skill.js.browser-async",
+      "type": "skill",
+      "title": "Browser e asincronia",
+      "path": "catalog/skills/skill.js.browser-async.json"
+    },
+    {
+      "id": "skill.js.fundamentals",
+      "type": "skill",
+      "title": "JavaScript moderno",
+      "path": "catalog/skills/skill.js.fundamentals.json"
+    },
+    {
+      "id": "skill.llm.conversation-pedagogy",
+      "type": "skill",
+      "title": "Conversazione e pedagogia",
+      "path": "catalog/skills/skill.llm.conversation-pedagogy.json"
+    },
+    {
+      "id": "skill.llm.foundations",
+      "type": "skill",
+      "title": "Fondamenti LLM",
+      "path": "catalog/skills/skill.llm.foundations.json"
+    },
+    {
+      "id": "skill.llm.prompt-routing-retrieval",
+      "type": "skill",
+      "title": "Prompt, routing e retrieval",
+      "path": "catalog/skills/skill.llm.prompt-routing-retrieval.json"
+    },
+    {
+      "id": "skill.llm.responses-streaming",
+      "type": "skill",
+      "title": "API LLM e streaming",
+      "path": "catalog/skills/skill.llm.responses-streaming.json"
+    },
+    {
+      "id": "skill.llm.safety-evals",
+      "type": "skill",
+      "title": "Safety LLM ed eval",
+      "path": "catalog/skills/skill.llm.safety-evals.json"
+    },
+    {
+      "id": "skill.native.tauri-capacitor",
+      "type": "skill",
+      "title": "Adapter Tauri e Capacitor",
+      "path": "catalog/skills/skill.native.tauri-capacitor.json"
+    },
+    {
+      "id": "skill.node.esm-vite",
+      "type": "skill",
+      "title": "ESM e Vite",
+      "path": "catalog/skills/skill.node.esm-vite.json"
+    },
+    {
+      "id": "skill.node.npm-packages",
+      "type": "skill",
+      "title": "npm e package",
+      "path": "catalog/skills/skill.node.npm-packages.json"
+    },
+    {
+      "id": "skill.node.runtime",
+      "type": "skill",
+      "title": "Node runtime",
+      "path": "catalog/skills/skill.node.runtime.json"
+    },
+    {
+      "id": "skill.postgres.operations",
+      "type": "skill",
+      "title": "PostgreSQL operativo",
+      "path": "catalog/skills/skill.postgres.operations.json"
+    },
+    {
+      "id": "skill.prisma.migrations",
+      "type": "skill",
+      "title": "Prisma e migrazioni",
+      "path": "catalog/skills/skill.prisma.migrations.json"
+    },
+    {
+      "id": "skill.privacy.minors-retention-secrets",
+      "type": "skill",
+      "title": "Privacy, minori e retention",
+      "path": "catalog/skills/skill.privacy.minors-retention-secrets.json"
+    },
+    {
+      "id": "skill.python.fastapi-async",
+      "type": "skill",
+      "title": "FastAPI e async Python",
+      "path": "catalog/skills/skill.python.fastapi-async.json"
+    },
+    {
+      "id": "skill.python.language",
+      "type": "skill",
+      "title": "Python applicativo",
+      "path": "catalog/skills/skill.python.language.json"
+    },
+    {
+      "id": "skill.python.packaging",
+      "type": "skill",
+      "title": "Packaging Python",
+      "path": "catalog/skills/skill.python.packaging.json"
+    },
+    {
+      "id": "skill.react.application",
+      "type": "skill",
+      "title": "React applicativo",
+      "path": "catalog/skills/skill.react.application.json"
+    },
+    {
+      "id": "skill.security.auth-crypto",
+      "type": "skill",
+      "title": "Auth e crittografia applicata",
+      "path": "catalog/skills/skill.security.auth-crypto.json"
+    },
+    {
+      "id": "skill.security.tenancy-idor",
+      "type": "skill",
+      "title": "Tenancy e IDOR",
+      "path": "catalog/skills/skill.security.tenancy-idor.json"
+    },
+    {
+      "id": "skill.sre.backup-incident-retention",
+      "type": "skill",
+      "title": "Backup, incident e retention",
+      "path": "catalog/skills/skill.sre.backup-incident-retention.json"
+    },
+    {
+      "id": "skill.sre.observability",
+      "type": "skill",
+      "title": "Osservabilità",
+      "path": "catalog/skills/skill.sre.observability.json"
+    },
+    {
+      "id": "skill.supply-chain.dependencies",
+      "type": "skill",
+      "title": "Dipendenze e supply chain",
+      "path": "catalog/skills/skill.supply-chain.dependencies.json"
+    },
+    {
+      "id": "skill.testing.cross-layer",
+      "type": "skill",
+      "title": "Testing cross-layer",
+      "path": "catalog/skills/skill.testing.cross-layer.json"
+    },
+    {
+      "id": "skill.testing.theory-coverage",
+      "type": "skill",
+      "title": "Testing e coverage",
+      "path": "catalog/skills/skill.testing.theory-coverage.json"
+    },
+    {
+      "id": "skill.testing.toolchains",
+      "type": "skill",
+      "title": "Toolchain di test",
+      "path": "catalog/skills/skill.testing.toolchains.json"
+    },
+    {
+      "id": "skill.typescript.language",
+      "type": "skill",
+      "title": "TypeScript e contratti",
+      "path": "catalog/skills/skill.typescript.language.json"
+    },
+    {
+      "id": "skill.web.accessibility",
+      "type": "skill",
+      "title": "Accessibilità applicativa",
+      "path": "catalog/skills/skill.web.accessibility.json"
+    },
+    {
+      "id": "skill.web.css-responsive",
+      "type": "skill",
+      "title": "CSS responsive operativo",
+      "path": "catalog/skills/skill.web.css-responsive.json"
+    },
+    {
+      "id": "skill.web.html-semantic",
+      "type": "skill",
+      "title": "HTML semantico",
+      "path": "catalog/skills/skill.web.html-semantic.json"
+    },
+    {
+      "id": "skill.web.http",
+      "type": "skill",
+      "title": "HTTP applicato",
+      "path": "catalog/skills/skill.web.http.json"
+    },
+    {
+      "id": "taxonomy.ai-agents",
+      "type": "taxonomy",
+      "title": "AI Agents",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.ai-engineer",
+      "type": "taxonomy",
+      "title": "AI Engineer",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.ai-product-builders",
+      "type": "taxonomy",
+      "title": "AI Product Builders",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.ai-red-teaming",
+      "type": "taxonomy",
+      "title": "AI Red Teaming",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.api-design",
+      "type": "taxonomy",
+      "title": "API Design",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.api-security",
+      "type": "taxonomy",
+      "title": "API Security",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.backend",
+      "type": "taxonomy",
+      "title": "Backend",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.claude-code",
+      "type": "taxonomy",
+      "title": "Claude Code",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.cloudflare",
+      "type": "taxonomy",
+      "title": "Cloudflare",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.code-review",
+      "type": "taxonomy",
+      "title": "Code Review",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.css",
+      "type": "taxonomy",
+      "title": "CSS",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.cyber-security",
+      "type": "taxonomy",
+      "title": "Cyber Security",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.data-engineer",
+      "type": "taxonomy",
+      "title": "Data Engineer",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.design-and-architecture",
+      "type": "taxonomy",
+      "title": "Design and Architecture",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.design-system",
+      "type": "taxonomy",
+      "title": "Design System",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.devops",
+      "type": "taxonomy",
+      "title": "DevOps",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.devsecops",
+      "type": "taxonomy",
+      "title": "DevSecOps",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.docker",
+      "type": "taxonomy",
+      "title": "Docker",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.frontend",
+      "type": "taxonomy",
+      "title": "Frontend",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.frontend-performance",
+      "type": "taxonomy",
+      "title": "Frontend Performance",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.full-stack",
+      "type": "taxonomy",
+      "title": "Full Stack",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.git-and-github",
+      "type": "taxonomy",
+      "title": "Git and GitHub",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.html",
+      "type": "taxonomy",
+      "title": "HTML",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.javascript",
+      "type": "taxonomy",
+      "title": "JavaScript",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.linux",
+      "type": "taxonomy",
+      "title": "Linux",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.mlops",
+      "type": "taxonomy",
+      "title": "MLOps",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.node-js",
+      "type": "taxonomy",
+      "title": "Node.js",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.postgresql",
+      "type": "taxonomy",
+      "title": "PostgreSQL",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.prompt-engineering",
+      "type": "taxonomy",
+      "title": "Prompt Engineering",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.python",
+      "type": "taxonomy",
+      "title": "Python",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.qa",
+      "type": "taxonomy",
+      "title": "QA",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.react",
+      "type": "taxonomy",
+      "title": "React",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.shell-bash",
+      "type": "taxonomy",
+      "title": "Shell / Bash",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.software-architect",
+      "type": "taxonomy",
+      "title": "Software Architect",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.sql",
+      "type": "taxonomy",
+      "title": "SQL",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.system-design",
+      "type": "taxonomy",
+      "title": "System Design",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.technical-writer",
+      "type": "taxonomy",
+      "title": "Technical Writer",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "taxonomy.typescript",
+      "type": "taxonomy",
+      "title": "TypeScript",
+      "path": "sources/taxonomies/roadmap-sh.json"
+    }
+  ],
+  "edges": [
+    {
+      "to": "ev.ironmath.agents",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.agents.repo-workflows"
+    },
+    {
+      "to": "ev.ssri.absence-agents.repo-workflows",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.agents.repo-workflows"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.agents.repo-workflows"
+    },
+    {
+      "to": "ev.ironmath.analytics",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.analytics.learning-provenance"
+    },
+    {
+      "to": "ev.ssri.stats",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.analytics.learning-provenance"
+    },
+    {
+      "to": "ev.ironmath.api",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.api.contracts-validation"
+    },
+    {
+      "to": "ev.ssri.pss-testing",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.api.contracts-validation"
+    },
+    {
+      "to": "ev.ironmath.sse",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.api.sse-streaming"
+    },
+    {
+      "to": "ev.ssri.absence-api.sse-streaming",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.api.sse-streaming"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.api.sse-streaming"
+    },
+    {
+      "to": "ev.ironmath.architecture",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.architecture.monorepo-boundaries"
+    },
+    {
+      "to": "ev.ssri.pss-testing",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.architecture.monorepo-boundaries"
+    },
+    {
+      "to": "ev.ironmath.workflow",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cicd.github-actions"
+    },
+    {
+      "to": "ev.ssri.pss-devops",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cicd.github-actions"
+    },
+    {
+      "to": "ev.ironmath.root",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cli.environment"
+    },
+    {
+      "to": "ev.ssri.os",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cli.environment"
+    },
+    {
+      "to": "ev.ironmath.status",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cloud.cloudflare"
+    },
+    {
+      "to": "ev.ssri.absence-cloud.cloudflare",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cloud.cloudflare"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.cloud.cloudflare"
+    },
+    {
+      "to": "ev.ironmath.status",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cloud.environments-network-policy"
+    },
+    {
+      "to": "ev.ssri.network",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cloud.environments-network-policy"
+    },
+    {
+      "to": "ev.ironmath.status",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cloud.railway"
+    },
+    {
+      "to": "ev.ssri.absence-cloud.railway",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.cloud.railway"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.cloud.railway"
+    },
+    {
+      "to": "ev.ironmath.compose",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.containers.compose"
+    },
+    {
+      "to": "ev.ssri.pss-devops",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.containers.compose"
+    },
+    {
+      "to": "ev.ironmath.docker",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.containers.docker"
+    },
+    {
+      "to": "ev.ssri.pss-devops",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.containers.docker"
+    },
+    {
+      "to": "ev.ironmath.curriculum",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.curriculum.knowledge-graph"
+    },
+    {
+      "to": "ev.ssri.pss-testing",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.curriculum.knowledge-graph"
+    },
+    {
+      "to": "ev.ironmath.prisma",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.db.sql-transactions"
+    },
+    {
+      "to": "ev.ssri.db",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.db.sql-transactions"
+    },
+    {
+      "to": "ev.ironmath.bible",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.docs.markdown-latex"
+    },
+    {
+      "to": "ev.ssri.readme",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.docs.markdown-latex"
+    },
+    {
+      "to": "ev.ironmath.api",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.fastify.backend"
+    },
+    {
+      "to": "ev.ssri.absence-fastify.backend",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.fastify.backend"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.fastify.backend"
+    },
+    {
+      "to": "ev.ironmath.web-test",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.frontend.state-errors"
+    },
+    {
+      "to": "ev.ssri.absence-frontend.state-errors",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.frontend.state-errors"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.frontend.state-errors"
+    },
+    {
+      "to": "ev.ironmath.root",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.git.internals"
+    },
+    {
+      "to": "ev.ssri.pss-devops",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.git.internals"
+    },
+    {
+      "to": "ev.ironmath.root",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.git.multi-device"
+    },
+    {
+      "to": "ev.ssri.absence-git.multi-device",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.git.multi-device"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.git.multi-device"
+    },
+    {
+      "to": "ev.ironmath.workflow",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.github.collaboration"
+    },
+    {
+      "to": "ev.ssri.pss-devops",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.github.collaboration"
+    },
+    {
+      "to": "ev.ironmath.adr",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.governance.adr-docs"
+    },
+    {
+      "to": "ev.ssri.pss-testing",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.governance.adr-docs"
+    },
+    {
+      "to": "ev.ironmath.web-test",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.js.browser-async"
+    },
+    {
+      "to": "ev.ssri.js",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.js.browser-async"
+    },
+    {
+      "to": "ev.ssri.js-empty",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.js.browser-async"
+    },
+    {
+      "to": "ev.ironmath.web",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.js.fundamentals"
+    },
+    {
+      "to": "ev.ssri.js",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.js.fundamentals"
+    },
+    {
+      "to": "ev.ironmath.prompt",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.conversation-pedagogy"
+    },
+    {
+      "to": "ev.ssri.absence-llm.conversation-pedagogy",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.conversation-pedagogy"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.llm.conversation-pedagogy"
+    },
+    {
+      "to": "ev.ironmath.python-runtime",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.foundations"
+    },
+    {
+      "to": "ev.ssri.absence-llm.foundations",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.foundations"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.llm.foundations"
+    },
+    {
+      "to": "ev.ironmath.prompt",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.prompt-routing-retrieval"
+    },
+    {
+      "to": "ev.ssri.absence-llm.prompt-routing-retrieval",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.prompt-routing-retrieval"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.llm.prompt-routing-retrieval"
+    },
+    {
+      "to": "ev.ironmath.python-runtime",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.responses-streaming"
+    },
+    {
+      "to": "ev.ssri.absence-llm.responses-streaming",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.responses-streaming"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.llm.responses-streaming"
+    },
+    {
+      "to": "ev.ironmath.llm-test",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.safety-evals"
+    },
+    {
+      "to": "ev.ssri.absence-llm.safety-evals",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.llm.safety-evals"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.llm.safety-evals"
+    },
+    {
+      "to": "ev.ironmath.admin",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.native.tauri-capacitor"
+    },
+    {
+      "to": "ev.ssri.absence-native.tauri-capacitor",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.native.tauri-capacitor"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.native.tauri-capacitor"
+    },
+    {
+      "to": "ev.ironmath.web",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.node.esm-vite"
+    },
+    {
+      "to": "ev.ssri.absence-node.esm-vite",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.node.esm-vite"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.node.esm-vite"
+    },
+    {
+      "to": "ev.ironmath.root",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.node.npm-packages"
+    },
+    {
+      "to": "ev.ssri.absence-node.npm-packages",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.node.npm-packages"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.node.npm-packages"
+    },
+    {
+      "to": "ev.ironmath.root",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.node.runtime"
+    },
+    {
+      "to": "ev.ssri.pss-devops",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.node.runtime"
+    },
+    {
+      "to": "ev.ironmath.prisma",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.postgres.operations"
+    },
+    {
+      "to": "ev.ssri.db",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.postgres.operations"
+    },
+    {
+      "to": "ev.ironmath.migrations",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.prisma.migrations"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.prisma.migrations"
+    },
+    {
+      "to": "ev.ssri.absence-prisma.migrations",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.prisma.migrations"
+    },
+    {
+      "to": "ev.ironmath.bible",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.privacy.minors-retention-secrets"
+    },
+    {
+      "to": "ev.ssri.governance",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.privacy.minors-retention-secrets"
+    },
+    {
+      "to": "ev.ironmath.python-runtime",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.python.fastapi-async"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.python.fastapi-async"
+    },
+    {
+      "to": "ev.ssri.absence-python.fastapi-async",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.python.fastapi-async"
+    },
+    {
+      "to": "ev.ironmath.python-package",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.python.language"
+    },
+    {
+      "to": "ev.ssri.python",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.python.language"
+    },
+    {
+      "to": "ev.ironmath.python-package",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.python.packaging"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.python.packaging"
+    },
+    {
+      "to": "ev.ssri.absence-python.packaging",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.python.packaging"
+    },
+    {
+      "to": "ev.ironmath.web",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.react.application"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.react.application"
+    },
+    {
+      "to": "ev.ssri.absence-react.application",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.react.application"
+    },
+    {
+      "to": "ev.ironmath.bible",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.security.auth-crypto"
+    },
+    {
+      "to": "ev.ssri.crypto",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.security.auth-crypto"
+    },
+    {
+      "to": "ev.ironmath.api-test",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.security.tenancy-idor"
+    },
+    {
+      "to": "ev.ssri.governance",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.security.tenancy-idor"
+    },
+    {
+      "to": "ev.ironmath.status",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.sre.backup-incident-retention"
+    },
+    {
+      "to": "ev.ssri.governance",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.sre.backup-incident-retention"
+    },
+    {
+      "to": "ev.ironmath.python-map",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.sre.observability"
+    },
+    {
+      "to": "ev.ssri.pss-devops",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.sre.observability"
+    },
+    {
+      "to": "ev.ironmath.workflow",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.supply-chain.dependencies"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.supply-chain.dependencies"
+    },
+    {
+      "to": "ev.ssri.absence-supply-chain.dependencies",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.supply-chain.dependencies"
+    },
+    {
+      "to": "ev.ironmath.api-test",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.testing.cross-layer"
+    },
+    {
+      "to": "ev.ssri.pss-testing",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.testing.cross-layer"
+    },
+    {
+      "to": "ev.ironmath.api-test",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.testing.theory-coverage"
+    },
+    {
+      "to": "ev.ssri.pss-testing",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.testing.theory-coverage"
+    },
+    {
+      "to": "ev.ironmath.llm-test",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.testing.toolchains"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.testing.toolchains"
+    },
+    {
+      "to": "ev.ssri.absence-testing.toolchains",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.testing.toolchains"
+    },
+    {
+      "to": "ev.ironmath.api",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.typescript.language"
+    },
+    {
+      "to": "ev.ssri.absence-operational-ecosystem",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Absence check trasversale del curriculum auditato; escluso il viewer applicativo.",
+      "from": "skill.typescript.language"
+    },
+    {
+      "to": "ev.ssri.absence-typescript.language",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.typescript.language"
+    },
+    {
+      "to": "ev.ironmath.web-test",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.web.accessibility"
+    },
+    {
+      "to": "ev.ssri.web",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.web.accessibility"
+    },
+    {
+      "to": "ev.ironmath.web",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.web.css-responsive"
+    },
+    {
+      "to": "ev.ssri.web",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.web.css-responsive"
+    },
+    {
+      "to": "ev.ironmath.web",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.web.html-semantic"
+    },
+    {
+      "to": "ev.ssri.web",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.web.html-semantic"
+    },
+    {
+      "to": "ev.ironmath.sse",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.web.http"
+    },
+    {
+      "to": "ev.ssri.network",
+      "type": "EVIDENCED_BY",
+      "strength": "supporting",
+      "rationale": "Claim di coverage o requisito tracciato allo snapshot dichiarato.",
+      "from": "skill.web.http"
+    },
+    {
+      "to": "taxonomy.linux",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-001"
+    },
+    {
+      "to": "taxonomy.shell-bash",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-001"
+    },
+    {
+      "to": "taxonomy.technical-writer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-001"
+    },
+    {
+      "to": "taxonomy.code-review",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-002"
+    },
+    {
+      "to": "taxonomy.git-and-github",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-002"
+    },
+    {
+      "to": "taxonomy.frontend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-003"
+    },
+    {
+      "to": "taxonomy.html",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-003"
+    },
+    {
+      "to": "taxonomy.javascript",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-003"
+    },
+    {
+      "to": "taxonomy.frontend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-004"
+    },
+    {
+      "to": "taxonomy.node-js",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-004"
+    },
+    {
+      "to": "taxonomy.typescript",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-005"
+    },
+    {
+      "to": "taxonomy.frontend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-006"
+    },
+    {
+      "to": "taxonomy.react",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-006"
+    },
+    {
+      "to": "taxonomy.css",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-007"
+    },
+    {
+      "to": "taxonomy.design-system",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-007"
+    },
+    {
+      "to": "taxonomy.frontend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-007"
+    },
+    {
+      "to": "taxonomy.qa",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-007"
+    },
+    {
+      "to": "taxonomy.api-design",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "taxonomy.api-security",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "taxonomy.backend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "taxonomy.node-js",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "taxonomy.backend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-009"
+    },
+    {
+      "to": "taxonomy.postgresql",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-009"
+    },
+    {
+      "to": "taxonomy.sql",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-009"
+    },
+    {
+      "to": "taxonomy.api-security",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-010"
+    },
+    {
+      "to": "taxonomy.cyber-security",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-010"
+    },
+    {
+      "to": "taxonomy.devsecops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-010"
+    },
+    {
+      "to": "taxonomy.code-review",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-011"
+    },
+    {
+      "to": "taxonomy.qa",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-011"
+    },
+    {
+      "to": "taxonomy.devops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-012"
+    },
+    {
+      "to": "taxonomy.docker",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-012"
+    },
+    {
+      "to": "taxonomy.devops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-013"
+    },
+    {
+      "to": "taxonomy.devsecops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-013"
+    },
+    {
+      "to": "taxonomy.git-and-github",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-013"
+    },
+    {
+      "to": "taxonomy.cloudflare",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-014"
+    },
+    {
+      "to": "taxonomy.devops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-014"
+    },
+    {
+      "to": "taxonomy.devsecops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-014"
+    },
+    {
+      "to": "taxonomy.system-design",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-014"
+    },
+    {
+      "to": "taxonomy.data-engineer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-015"
+    },
+    {
+      "to": "taxonomy.devops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-015"
+    },
+    {
+      "to": "taxonomy.backend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-016"
+    },
+    {
+      "to": "taxonomy.python",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-016"
+    },
+    {
+      "to": "taxonomy.ai-engineer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-017"
+    },
+    {
+      "to": "taxonomy.ai-product-builders",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-017"
+    },
+    {
+      "to": "taxonomy.ai-engineer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-018"
+    },
+    {
+      "to": "taxonomy.ai-product-builders",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-018"
+    },
+    {
+      "to": "taxonomy.ai-red-teaming",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-018"
+    },
+    {
+      "to": "taxonomy.mlops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-018"
+    },
+    {
+      "to": "taxonomy.prompt-engineering",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-018"
+    },
+    {
+      "to": "taxonomy.ai-agents",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-019"
+    },
+    {
+      "to": "taxonomy.claude-code",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-019"
+    },
+    {
+      "to": "taxonomy.code-review",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-019"
+    },
+    {
+      "to": "taxonomy.data-engineer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-020"
+    },
+    {
+      "to": "taxonomy.design-and-architecture",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-020"
+    },
+    {
+      "to": "taxonomy.full-stack",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-020"
+    },
+    {
+      "to": "taxonomy.software-architect",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-020"
+    },
+    {
+      "to": "taxonomy.system-design",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-020"
+    },
+    {
+      "to": "taxonomy.technical-writer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione tramite sola label autorizzata.",
+      "from": "EAT-020"
+    },
+    {
+      "to": "taxonomy.ai-agents",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.agents.repo-workflows"
+    },
+    {
+      "to": "taxonomy.claude-code",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.agents.repo-workflows"
+    },
+    {
+      "to": "taxonomy.code-review",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.agents.repo-workflows"
+    },
+    {
+      "to": "taxonomy.data-engineer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.analytics.learning-provenance"
+    },
+    {
+      "to": "taxonomy.api-design",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.api.contracts-validation"
+    },
+    {
+      "to": "taxonomy.api-security",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.api.contracts-validation"
+    },
+    {
+      "to": "taxonomy.api-design",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.api.sse-streaming"
+    },
+    {
+      "to": "taxonomy.design-and-architecture",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.architecture.monorepo-boundaries"
+    },
+    {
+      "to": "taxonomy.software-architect",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.architecture.monorepo-boundaries"
+    },
+    {
+      "to": "taxonomy.devops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.cicd.github-actions"
+    },
+    {
+      "to": "taxonomy.git-and-github",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.cicd.github-actions"
+    },
+    {
+      "to": "taxonomy.linux",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.cli.environment"
+    },
+    {
+      "to": "taxonomy.shell-bash",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.cli.environment"
+    },
+    {
+      "to": "taxonomy.cloudflare",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.cloud.cloudflare"
+    },
+    {
+      "to": "taxonomy.devsecops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.cloud.environments-network-policy"
+    },
+    {
+      "to": "taxonomy.system-design",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.cloud.environments-network-policy"
+    },
+    {
+      "to": "taxonomy.devops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.cloud.railway"
+    },
+    {
+      "to": "taxonomy.devops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.containers.compose"
+    },
+    {
+      "to": "taxonomy.docker",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.containers.compose"
+    },
+    {
+      "to": "taxonomy.docker",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.containers.docker"
+    },
+    {
+      "to": "taxonomy.software-architect",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.curriculum.knowledge-graph"
+    },
+    {
+      "to": "taxonomy.system-design",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.curriculum.knowledge-graph"
+    },
+    {
+      "to": "taxonomy.sql",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.db.sql-transactions"
+    },
+    {
+      "to": "taxonomy.technical-writer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.docs.markdown-latex"
+    },
+    {
+      "to": "taxonomy.backend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.fastify.backend"
+    },
+    {
+      "to": "taxonomy.node-js",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.fastify.backend"
+    },
+    {
+      "to": "taxonomy.frontend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.frontend.state-errors"
+    },
+    {
+      "to": "taxonomy.react",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.frontend.state-errors"
+    },
+    {
+      "to": "taxonomy.git-and-github",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.git.internals"
+    },
+    {
+      "to": "taxonomy.git-and-github",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.git.multi-device"
+    },
+    {
+      "to": "taxonomy.code-review",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.github.collaboration"
+    },
+    {
+      "to": "taxonomy.git-and-github",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.github.collaboration"
+    },
+    {
+      "to": "taxonomy.software-architect",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.governance.adr-docs"
+    },
+    {
+      "to": "taxonomy.technical-writer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.governance.adr-docs"
+    },
+    {
+      "to": "taxonomy.frontend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.js.browser-async"
+    },
+    {
+      "to": "taxonomy.javascript",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.js.browser-async"
+    },
+    {
+      "to": "taxonomy.javascript",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.js.fundamentals"
+    },
+    {
+      "to": "taxonomy.ai-product-builders",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.llm.conversation-pedagogy"
+    },
+    {
+      "to": "taxonomy.ai-engineer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.llm.foundations"
+    },
+    {
+      "to": "taxonomy.ai-product-builders",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.llm.foundations"
+    },
+    {
+      "to": "taxonomy.ai-engineer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.llm.prompt-routing-retrieval"
+    },
+    {
+      "to": "taxonomy.prompt-engineering",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.llm.prompt-routing-retrieval"
+    },
+    {
+      "to": "taxonomy.ai-engineer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.llm.responses-streaming"
+    },
+    {
+      "to": "taxonomy.ai-red-teaming",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.llm.safety-evals"
+    },
+    {
+      "to": "taxonomy.mlops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.llm.safety-evals"
+    },
+    {
+      "to": "taxonomy.full-stack",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.native.tauri-capacitor"
+    },
+    {
+      "to": "taxonomy.frontend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.node.esm-vite"
+    },
+    {
+      "to": "taxonomy.node-js",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.node.esm-vite"
+    },
+    {
+      "to": "taxonomy.node-js",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.node.npm-packages"
+    },
+    {
+      "to": "taxonomy.node-js",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.node.runtime"
+    },
+    {
+      "to": "taxonomy.postgresql",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.postgres.operations"
+    },
+    {
+      "to": "taxonomy.backend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.prisma.migrations"
+    },
+    {
+      "to": "taxonomy.postgresql",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.prisma.migrations"
+    },
+    {
+      "to": "taxonomy.cyber-security",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.privacy.minors-retention-secrets"
+    },
+    {
+      "to": "taxonomy.devsecops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.privacy.minors-retention-secrets"
+    },
+    {
+      "to": "taxonomy.backend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.python.fastapi-async"
+    },
+    {
+      "to": "taxonomy.python",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.python.fastapi-async"
+    },
+    {
+      "to": "taxonomy.python",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.python.language"
+    },
+    {
+      "to": "taxonomy.python",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.python.packaging"
+    },
+    {
+      "to": "taxonomy.react",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.react.application"
+    },
+    {
+      "to": "taxonomy.api-security",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.security.auth-crypto"
+    },
+    {
+      "to": "taxonomy.cyber-security",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.security.auth-crypto"
+    },
+    {
+      "to": "taxonomy.api-security",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.security.tenancy-idor"
+    },
+    {
+      "to": "taxonomy.data-engineer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.sre.backup-incident-retention"
+    },
+    {
+      "to": "taxonomy.devops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.sre.backup-incident-retention"
+    },
+    {
+      "to": "taxonomy.devops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.sre.observability"
+    },
+    {
+      "to": "taxonomy.devsecops",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.supply-chain.dependencies"
+    },
+    {
+      "to": "taxonomy.code-review",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.testing.cross-layer"
+    },
+    {
+      "to": "taxonomy.qa",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.testing.cross-layer"
+    },
+    {
+      "to": "taxonomy.qa",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.testing.theory-coverage"
+    },
+    {
+      "to": "taxonomy.qa",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.testing.toolchains"
+    },
+    {
+      "to": "taxonomy.typescript",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.typescript.language"
+    },
+    {
+      "to": "taxonomy.frontend",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.web.accessibility"
+    },
+    {
+      "to": "taxonomy.qa",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.web.accessibility"
+    },
+    {
+      "to": "taxonomy.css",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.web.css-responsive"
+    },
+    {
+      "to": "taxonomy.design-system",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.web.css-responsive"
+    },
+    {
+      "to": "taxonomy.html",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.web.html-semantic"
+    },
+    {
+      "to": "taxonomy.api-design",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "taxonomy-label-only: classificazione senza contenuti esterni.",
+      "from": "skill.web.http"
+    },
+    {
+      "from": "ASM-EAT-001-M01",
+      "to": "EAT-001-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Assessment autentico del modulo; non prova di mastery personale già acquisita."
+    },
+    {
+      "from": "ASM-EAT-001-M02",
+      "to": "EAT-001-M02",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Assessment autentico del modulo; non prova di mastery personale già acquisita."
+    },
+    {
+      "from": "ASM-EAT-001-M03",
+      "to": "EAT-001-M03",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Assessment autentico del modulo; non prova di mastery personale già acquisita."
+    },
+    {
+      "from": "ASM-EAT-002-M01",
+      "to": "EAT-002-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Assessment autentico del modulo; non prova di mastery personale già acquisita."
+    },
+    {
+      "from": "ASM-EAT-002-M02",
+      "to": "EAT-002-M02",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Assessment autentico del modulo; non prova di mastery personale già acquisita."
+    },
+    {
+      "from": "ASM-EAT-004-M01",
+      "to": "EAT-004-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Assessment autentico del modulo; non prova di mastery personale già acquisita."
+    },
+    {
+      "from": "ASM-EAT-016-M01",
+      "to": "EAT-016-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Assessment autentico del modulo; non prova di mastery personale già acquisita."
+    },
+    {
+      "from": "EAT-001-M01",
+      "to": "EAT-001",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Modulo attivato nella slice autorizzata del corso."
+    },
+    {
+      "from": "EAT-001-M02",
+      "to": "EAT-001",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Modulo attivato nella slice autorizzata del corso."
+    },
+    {
+      "from": "EAT-001-M03",
+      "to": "EAT-001",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Modulo attivato nella slice autorizzata del corso."
+    },
+    {
+      "from": "EAT-002-M01",
+      "to": "EAT-002",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Modulo attivato nella slice autorizzata del corso."
+    },
+    {
+      "from": "EAT-002-M02",
+      "to": "EAT-002",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Modulo attivato nella slice autorizzata del corso."
+    },
+    {
+      "from": "EAT-004-M01",
+      "to": "EAT-004",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Modulo attivato nella slice autorizzata del corso."
+    },
+    {
+      "from": "EAT-016-M01",
+      "to": "EAT-016",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Modulo attivato nella slice autorizzata del corso."
+    },
+    {
+      "to": "EAT-019",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.agents.repo-workflows"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.analytics.learning-provenance"
+    },
+    {
+      "to": "EAT-008",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.api.contracts-validation"
+    },
+    {
+      "to": "EAT-008",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.api.sse-streaming"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.architecture.monorepo-boundaries"
+    },
+    {
+      "to": "EAT-013",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.cicd.github-actions"
+    },
+    {
+      "to": "EAT-001",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.cli.environment"
+    },
+    {
+      "to": "EAT-014",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.cloud.cloudflare"
+    },
+    {
+      "to": "EAT-014",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.cloud.environments-network-policy"
+    },
+    {
+      "to": "EAT-014",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.cloud.railway"
+    },
+    {
+      "to": "EAT-012",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.containers.compose"
+    },
+    {
+      "to": "EAT-012",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.containers.docker"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.curriculum.knowledge-graph"
+    },
+    {
+      "to": "EAT-009",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.db.sql-transactions"
+    },
+    {
+      "to": "EAT-001",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.docs.markdown-latex"
+    },
+    {
+      "to": "EAT-008",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.fastify.backend"
+    },
+    {
+      "to": "EAT-006",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.frontend.state-errors"
+    },
+    {
+      "to": "EAT-002",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.git.internals"
+    },
+    {
+      "to": "EAT-002",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.git.multi-device"
+    },
+    {
+      "to": "EAT-002",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.github.collaboration"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.governance.adr-docs"
+    },
+    {
+      "to": "EAT-003",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.js.browser-async"
+    },
+    {
+      "to": "EAT-003",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.js.fundamentals"
+    },
+    {
+      "to": "EAT-018",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.llm.conversation-pedagogy"
+    },
+    {
+      "to": "EAT-017",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.llm.foundations"
+    },
+    {
+      "to": "EAT-018",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.llm.prompt-routing-retrieval"
+    },
+    {
+      "to": "EAT-017",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.llm.responses-streaming"
+    },
+    {
+      "to": "EAT-018",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.llm.safety-evals"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.native.tauri-capacitor"
+    },
+    {
+      "to": "EAT-004",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.node.esm-vite"
+    },
+    {
+      "to": "EAT-004",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.node.npm-packages"
+    },
+    {
+      "to": "EAT-004",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.node.runtime"
+    },
+    {
+      "to": "EAT-009",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.postgres.operations"
+    },
+    {
+      "to": "EAT-009",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.prisma.migrations"
+    },
+    {
+      "to": "EAT-010",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.privacy.minors-retention-secrets"
+    },
+    {
+      "to": "EAT-016",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.python.fastapi-async"
+    },
+    {
+      "to": "EAT-016",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.python.language"
+    },
+    {
+      "to": "EAT-016",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.python.packaging"
+    },
+    {
+      "to": "EAT-006",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.react.application"
+    },
+    {
+      "to": "EAT-010",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.security.auth-crypto"
+    },
+    {
+      "to": "EAT-010",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.security.tenancy-idor"
+    },
+    {
+      "to": "EAT-015",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.sre.backup-incident-retention"
+    },
+    {
+      "to": "EAT-015",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.sre.observability"
+    },
+    {
+      "to": "EAT-013",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.supply-chain.dependencies"
+    },
+    {
+      "to": "EAT-011",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.testing.cross-layer"
+    },
+    {
+      "to": "EAT-011",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.testing.theory-coverage"
+    },
+    {
+      "to": "EAT-011",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.testing.toolchains"
+    },
+    {
+      "to": "EAT-005",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.typescript.language"
+    },
+    {
+      "to": "EAT-007",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.web.accessibility"
+    },
+    {
+      "to": "EAT-007",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.web.css-responsive"
+    },
+    {
+      "to": "EAT-003",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.web.html-semantic"
+    },
+    {
+      "to": "EAT-008",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Corso proprietario del cluster; evita duplicazione dei gap.",
+      "from": "skill.web.http"
+    },
+    {
+      "to": "EAT-002",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-001"
+    },
+    {
+      "to": "EAT-003",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-001"
+    },
+    {
+      "to": "EAT-016",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-001"
+    },
+    {
+      "to": "EAT-013",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-002"
+    },
+    {
+      "to": "EAT-019",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-002"
+    },
+    {
+      "to": "EAT-004",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-003"
+    },
+    {
+      "to": "EAT-005",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-003"
+    },
+    {
+      "to": "EAT-008",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-004"
+    },
+    {
+      "to": "EAT-011",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-004"
+    },
+    {
+      "to": "EAT-006",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-005"
+    },
+    {
+      "to": "EAT-008",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-005"
+    },
+    {
+      "to": "EAT-007",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-006"
+    },
+    {
+      "to": "EAT-011",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-006"
+    },
+    {
+      "to": "EAT-009",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "EAT-010",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "EAT-011",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "EAT-014",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "EAT-010",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-009"
+    },
+    {
+      "to": "EAT-015",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-009"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-009"
+    },
+    {
+      "to": "EAT-014",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-010"
+    },
+    {
+      "to": "EAT-018",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-010"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-010"
+    },
+    {
+      "to": "EAT-013",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-011"
+    },
+    {
+      "to": "EAT-018",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-011"
+    },
+    {
+      "to": "EAT-019",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-011"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-011"
+    },
+    {
+      "to": "EAT-013",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-012"
+    },
+    {
+      "to": "EAT-014",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-012"
+    },
+    {
+      "to": "EAT-014",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-013"
+    },
+    {
+      "to": "EAT-015",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-013"
+    },
+    {
+      "to": "EAT-015",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-014"
+    },
+    {
+      "to": "EAT-017",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-016"
+    },
+    {
+      "to": "EAT-018",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-017"
+    },
+    {
+      "to": "EAT-019",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-018"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-018"
+    },
+    {
+      "to": "EAT-020",
+      "type": "PREREQUISITE_OF",
+      "strength": "required",
+      "rationale": "Base operativa richiesta dal blueprint per gli outcome del corso dipendente.",
+      "from": "EAT-019"
+    },
+    {
+      "to": "EAT-020",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-002"
+    },
+    {
+      "to": "EAT-005",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-004"
+    },
+    {
+      "to": "EAT-012",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-004"
+    },
+    {
+      "to": "EAT-011",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-007"
+    },
+    {
+      "to": "EAT-020",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-007"
+    },
+    {
+      "to": "EAT-012",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "EAT-011",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-009"
+    },
+    {
+      "to": "EAT-012",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-009"
+    },
+    {
+      "to": "EAT-011",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-010"
+    },
+    {
+      "to": "EAT-013",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-010"
+    },
+    {
+      "to": "EAT-015",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-011"
+    },
+    {
+      "to": "EAT-015",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-012"
+    },
+    {
+      "to": "EAT-019",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-013"
+    },
+    {
+      "to": "EAT-020",
+      "type": "RECOMMENDED_BEFORE",
+      "strength": "recommended",
+      "rationale": "Rinforzo utile per ridurre il carico cognitivo, non blocca l’accesso.",
+      "from": "EAT-013"
+    },
+    {
+      "from": "EAT-001-M01",
+      "to": "skill.cli.environment",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "from": "EAT-001-M02",
+      "to": "skill.cli.environment",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "from": "EAT-001-M03",
+      "to": "skill.docs.markdown-latex",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "from": "EAT-002-M01",
+      "to": "skill.git.internals",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "from": "EAT-002-M02",
+      "to": "skill.git.internals",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "from": "EAT-002-M02",
+      "to": "skill.git.multi-device",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "to": "skill.js.fundamentals",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-004"
+    },
+    {
+      "from": "EAT-004-M01",
+      "to": "skill.node.npm-packages",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "from": "EAT-004-M01",
+      "to": "skill.node.runtime",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "to": "skill.js.fundamentals",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-005"
+    },
+    {
+      "to": "skill.node.esm-vite",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-006"
+    },
+    {
+      "to": "skill.react.application",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-007"
+    },
+    {
+      "to": "skill.typescript.language",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-008"
+    },
+    {
+      "to": "skill.api.contracts-validation",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-009"
+    },
+    {
+      "to": "skill.db.sql-transactions",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-010"
+    },
+    {
+      "to": "skill.security.tenancy-idor",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-011"
+    },
+    {
+      "to": "skill.cli.environment",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-012"
+    },
+    {
+      "to": "skill.testing.cross-layer",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-013"
+    },
+    {
+      "to": "skill.cicd.github-actions",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-014"
+    },
+    {
+      "to": "skill.postgres.operations",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-015"
+    },
+    {
+      "to": "skill.cli.environment",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-016"
+    },
+    {
+      "from": "EAT-016-M01",
+      "to": "skill.python.language",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "from": "EAT-016-M01",
+      "to": "skill.python.packaging",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Il modulo esercita il cluster; teaches e reinforces sono distinti nei metadata."
+    },
+    {
+      "to": "skill.python.packaging",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-017"
+    },
+    {
+      "to": "skill.testing.cross-layer",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-018"
+    },
+    {
+      "to": "skill.git.internals",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-019"
+    },
+    {
+      "to": "skill.llm.safety-evals",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "La skill è esercitata nel nuovo contesto senza trasferirne ownership.",
+      "from": "EAT-020"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.agents.repo-workflows"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.analytics.learning-provenance"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.api.contracts-validation"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.api.sse-streaming"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.architecture.monorepo-boundaries"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.cicd.github-actions"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.cli.environment"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.cloud.cloudflare"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.cloud.environments-network-policy"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.cloud.railway"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.containers.compose"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.containers.docker"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.curriculum.knowledge-graph"
+    },
+    {
+      "to": "M2",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.db.sql-transactions"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.docs.markdown-latex"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.fastify.backend"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.frontend.state-errors"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.git.internals"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.git.multi-device"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.github.collaboration"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.governance.adr-docs"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.js.browser-async"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.js.fundamentals"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.llm.conversation-pedagogy"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.llm.foundations"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.llm.prompt-routing-retrieval"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.llm.responses-streaming"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.llm.safety-evals"
+    },
+    {
+      "to": "M2",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.native.tauri-capacitor"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.node.esm-vite"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.node.npm-packages"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.node.runtime"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.postgres.operations"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.prisma.migrations"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.privacy.minors-retention-secrets"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.python.fastapi-async"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.python.language"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.python.packaging"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.react.application"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.security.auth-crypto"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.security.tenancy-idor"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.sre.backup-incident-retention"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.sre.observability"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.supply-chain.dependencies"
+    },
+    {
+      "to": "M4",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.testing.cross-layer"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.testing.theory-coverage"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.testing.toolchains"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.typescript.language"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.web.accessibility"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.web.css-responsive"
+    },
+    {
+      "to": "M2",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.web.html-semantic"
+    },
+    {
+      "to": "M3",
+      "type": "REQUIRES_MASTERY",
+      "strength": "required",
+      "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
+      "from": "skill.web.http"
+    }
+  ]
+}

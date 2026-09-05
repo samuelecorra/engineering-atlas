@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/taxonomy.schema.json",
+  "title": "taxonomy",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "taxonomy": {
+            "const": "roadmap.sh"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^https://roadmap\\.sh/[a-z0-9-]+$"
+          },
+          "reviewed_at": {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          "usage": {
+            "const": "taxonomy-label-only"
+          },
+          "verification_status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "verified"
+            ]
+          }
+        },
+        "required": [
+          "taxonomy",
+          "label",
+          "url",
+          "reviewed_at",
+          "usage",
+          "verification_status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 38,
+      "maxItems": 38
+    }
+  },
+  "required": [
+    "schema_version",
+    "records"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.security.tenancy-idor",
+  "title": "Tenancy e IDOR",
+  "aliases": [],
+  "domain": "security",
+  "description": "Access control concettuale non dimostra isolamento per tenant e test negativi sulle risorse.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.governance"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.api-test"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-010",
+  "roadmap_taxonomy": [
+    "API Security"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Access control concettuale non dimostra isolamento per tenant e test negativi sulle risorse."
+  }
+}

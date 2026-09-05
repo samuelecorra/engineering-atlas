@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.testing.theory-coverage",
+  "title": "Testing e coverage",
+  "aliases": [],
+  "domain": "testing",
+  "description": "Riutilizzare JUnit e teoria; leggere quali garanzie sono davvero coperte nelle suite del prodotto.",
+  "ssri_coverage": {
+    "level": "C3",
+    "evidence_ids": [
+      "ev.ssri.pss-testing"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.api-test"
+    ]
+  },
+  "priority": "P2",
+  "primary_course_id": "EAT-011",
+  "roadmap_taxonomy": [
+    "QA"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Riutilizzare JUnit e teoria; leggere quali garanzie sono davvero coperte nelle suite del prodotto."
+  }
+}

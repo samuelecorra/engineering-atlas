@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.testing.cross-layer",
+  "title": "Testing cross-layer",
+  "aliases": [],
+  "domain": "testing",
+  "description": "I test guidati non dimostrano contratti web/API/DB/LLM, inventory e controllo anti-no-op.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.pss-testing"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.api-test"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-011",
+  "roadmap_taxonomy": [
+    "QA",
+    "Code Review"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "I test guidati non dimostrano contratti web/API/DB/LLM, inventory e controllo anti-no-op."
+  }
+}

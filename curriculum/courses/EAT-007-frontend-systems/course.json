@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-007",
+  "slug": "frontend-systems",
+  "title": "Frontend systems: accessibility, design, performance and math UI",
+  "phase": "application",
+  "order": 7,
+  "priority": "P1",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-006"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.web.css-responsive",
+    "skill.web.accessibility"
+  ],
+  "reinforced_skill_ids": [
+    "skill.react.application"
+  ],
+  "roadmap_taxonomy": [
+    "CSS",
+    "Design System",
+    "Frontend",
+    "QA"
+  ],
+  "outcomes": [
+    "Verificare accessibilità, prestazioni e rendering matematico di una UI."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-007-M01",
+      "title": "CSS architecture/token",
+      "outcome": "Produrre e spiegare una prova delimitata di CSS architecture/token, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-007-M02",
+      "title": "Responsive component",
+      "outcome": "Produrre e spiegare una prova delimitata di responsive component, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-007-M03",
+      "title": "WCAG/ARIA/tastiera",
+      "outcome": "Produrre e spiegare una prova delimitata di WCAG/ARIA/tastiera, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-007-M04",
+      "title": "Performance e bundle",
+      "outcome": "Produrre e spiegare una prova delimitata di performance e bundle, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-007-M05",
+      "title": "Immagini",
+      "outcome": "Produrre e spiegare una prova delimitata di immagini, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-007-M06",
+      "title": "Chart",
+      "outcome": "Produrre e spiegare una prova delimitata di chart, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-007-M07",
+      "title": "Markdown/KaTeX",
+      "outcome": "Produrre e spiegare una prova delimitata di Markdown/KaTeX, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-007-M08",
+      "title": "Math input",
+      "outcome": "Produrre e spiegare una prova delimitata di math input, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-007-M09",
+      "title": "Canvas/numerical UI come elective",
+      "outcome": "Produrre e spiegare una prova delimitata di Canvas/numerical UI come elective, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

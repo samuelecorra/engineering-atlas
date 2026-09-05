@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.containers.docker",
+  "title": "Container Docker",
+  "aliases": [],
+  "domain": "containers",
+  "description": "Passare da Dockerfile guidato a build multi-stage, layer, user e diagnosi runtime.",
+  "ssri_coverage": {
+    "level": "C2",
+    "evidence_ids": [
+      "ev.ssri.pss-devops"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.docker"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-012",
+  "roadmap_taxonomy": [
+    "Docker"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Passare da Dockerfile guidato a build multi-stage, layer, user e diagnosi runtime."
+  }
+}

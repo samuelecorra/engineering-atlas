@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.agents.repo-workflows",
+  "title": "Agenti e workflow repository",
+  "aliases": [],
+  "domain": "agents",
+  "description": "Mancano instruction boundary, permission, diff/test loop e handoff senza dipendenza dall'agente.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-agents.repo-workflows",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.agents"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-019",
+  "roadmap_taxonomy": [
+    "AI Agents",
+    "Claude Code",
+    "Code Review"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano instruction boundary, permission, diff/test loop e handoff senza dipendenza dall'agente."
+  }
+}

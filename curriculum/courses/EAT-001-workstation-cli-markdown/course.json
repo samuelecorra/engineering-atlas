@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-001",
+  "slug": "workstation-cli-markdown",
+  "title": "Engineering workstation, CLI, Markdown and reproducibility",
+  "phase": "foundations",
+  "order": 1,
+  "priority": "P0",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.cli.environment",
+    "skill.docs.markdown-latex"
+  ],
+  "reinforced_skill_ids": [],
+  "roadmap_taxonomy": [
+    "Linux",
+    "Shell / Bash",
+    "Technical Writer"
+  ],
+  "outcomes": [
+    "Riprodurre una sessione CLI e un documento verificabile su due sistemi."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-001-M01",
+      "title": "Filesystem, processi, path e modello del terminale",
+      "outcome": "Distinguere terminale, shell, comando e processo. Diagnosticare cwd, path, exit code e stream su una fixture read-only. Localizzare PID e porta del solo processo locale avviato per il lab.",
+      "status": "draft"
+    },
+    {
+      "id": "EAT-001-M02",
+      "title": "Shell sicura, environment e quoting",
+      "outcome": "Correggere tre script innocui spiegando parsing, quoting ed environment. Tradurre i comandi essenziali fra Bash e PowerShell senza stampare secret.",
+      "status": "draft"
+    },
+    {
+      "id": "EAT-001-M03",
+      "title": "Markdown, LaTeX e documentazione verificabile",
+      "outcome": "Correggere heading, link e delimitatori matematici in un documento minimo. Distinguere sorgente canonica, generated, historical e rendering.",
+      "status": "draft"
+    },
+    {
+      "id": "EAT-001-M04",
+      "title": "Setup riproducibile, version manager e diagnostica ambiente",
+      "outcome": "Produrre e spiegare una prova delimitata di setup riproducibile, version manager e diagnostica ambiente, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "in_progress"
+}

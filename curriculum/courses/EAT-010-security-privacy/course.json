@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-010",
+  "slug": "security-privacy",
+  "title": "Authentication, tenancy, application security and privacy",
+  "phase": "application",
+  "order": 10,
+  "priority": "P1",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-008",
+    "EAT-009"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.security.auth-crypto",
+    "skill.security.tenancy-idor",
+    "skill.privacy.minors-retention-secrets"
+  ],
+  "reinforced_skill_ids": [
+    "skill.db.sql-transactions"
+  ],
+  "roadmap_taxonomy": [
+    "Cyber Security",
+    "API Security",
+    "DevSecOps"
+  ],
+  "outcomes": [
+    "Verificare auth, isolamento tenant e ciclo dei dati con test negativi."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-010-M01",
+      "title": "Threat model/secret",
+      "outcome": "Produrre e spiegare una prova delimitata di threat model/secret, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-010-M02",
+      "title": "Password/JWT/cookie",
+      "outcome": "Produrre e spiegare una prova delimitata di password/JWT/cookie, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-010-M03",
+      "title": "Refresh rotation",
+      "outcome": "Produrre e spiegare una prova delimitata di refresh rotation, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-010-M04",
+      "title": "CORS/CSRF/CSP",
+      "outcome": "Produrre e spiegare una prova delimitata di CORS/CSRF/CSP, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-010-M05",
+      "title": "Tenant e IDOR",
+      "outcome": "Produrre e spiegare una prova delimitata di tenant e IDOR, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-010-M06",
+      "title": "Field encryption",
+      "outcome": "Produrre e spiegare una prova delimitata di field encryption, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-010-M07",
+      "title": "Minimizzazione",
+      "outcome": "Produrre e spiegare una prova delimitata di minimizzazione, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-010-M08",
+      "title": "DSAR/delete",
+      "outcome": "Produrre e spiegare una prova delimitata di DSAR/delete, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-010-M09",
+      "title": "Dati dei minori",
+      "outcome": "Produrre e spiegare una prova delimitata di dati dei minori, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

@@ -1,0 +1,585 @@
+{
+  "schema_version": "1.0.0",
+  "skill_baseline": [
+    {
+      "id": "skill.cli.environment",
+      "primary_course_id": "EAT-001",
+      "coverage": "C2",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.docs.markdown-latex",
+      "primary_course_id": "EAT-001",
+      "coverage": "C1",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.git.internals",
+      "primary_course_id": "EAT-002",
+      "coverage": "C2",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.github.collaboration",
+      "primary_course_id": "EAT-002",
+      "coverage": "C1",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.git.multi-device",
+      "primary_course_id": "EAT-002",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.web.html-semantic",
+      "primary_course_id": "EAT-003",
+      "coverage": "C3",
+      "priority": "P2"
+    },
+    {
+      "id": "skill.web.css-responsive",
+      "primary_course_id": "EAT-007",
+      "coverage": "C2",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.web.accessibility",
+      "primary_course_id": "EAT-007",
+      "coverage": "C2",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.js.fundamentals",
+      "primary_course_id": "EAT-003",
+      "coverage": "C2",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.js.browser-async",
+      "primary_course_id": "EAT-003",
+      "coverage": "C1",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.node.runtime",
+      "primary_course_id": "EAT-004",
+      "coverage": "C1",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.node.npm-packages",
+      "primary_course_id": "EAT-004",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.node.esm-vite",
+      "primary_course_id": "EAT-004",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.typescript.language",
+      "primary_course_id": "EAT-005",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.react.application",
+      "primary_course_id": "EAT-006",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.frontend.state-errors",
+      "primary_course_id": "EAT-006",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.web.http",
+      "primary_course_id": "EAT-008",
+      "coverage": "C3",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.api.contracts-validation",
+      "primary_course_id": "EAT-008",
+      "coverage": "C1",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.fastify.backend",
+      "primary_course_id": "EAT-008",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.api.sse-streaming",
+      "primary_course_id": "EAT-008",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.db.sql-transactions",
+      "primary_course_id": "EAT-009",
+      "coverage": "C3",
+      "priority": "P2"
+    },
+    {
+      "id": "skill.postgres.operations",
+      "primary_course_id": "EAT-009",
+      "coverage": "C1",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.prisma.migrations",
+      "primary_course_id": "EAT-009",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.security.auth-crypto",
+      "primary_course_id": "EAT-010",
+      "coverage": "C3",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.security.tenancy-idor",
+      "primary_course_id": "EAT-010",
+      "coverage": "C1",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.privacy.minors-retention-secrets",
+      "primary_course_id": "EAT-010",
+      "coverage": "C2",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.testing.theory-coverage",
+      "primary_course_id": "EAT-011",
+      "coverage": "C3",
+      "priority": "P2"
+    },
+    {
+      "id": "skill.testing.toolchains",
+      "primary_course_id": "EAT-011",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.testing.cross-layer",
+      "primary_course_id": "EAT-011",
+      "coverage": "C1",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.containers.docker",
+      "primary_course_id": "EAT-012",
+      "coverage": "C2",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.containers.compose",
+      "primary_course_id": "EAT-012",
+      "coverage": "C1",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.cicd.github-actions",
+      "primary_course_id": "EAT-013",
+      "coverage": "C1",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.supply-chain.dependencies",
+      "primary_course_id": "EAT-013",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.cloud.cloudflare",
+      "primary_course_id": "EAT-014",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.cloud.railway",
+      "primary_course_id": "EAT-014",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.cloud.environments-network-policy",
+      "primary_course_id": "EAT-014",
+      "coverage": "C2",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.sre.observability",
+      "primary_course_id": "EAT-015",
+      "coverage": "C1",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.sre.backup-incident-retention",
+      "primary_course_id": "EAT-015",
+      "coverage": "C1",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.python.language",
+      "primary_course_id": "EAT-016",
+      "coverage": "C1",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.python.packaging",
+      "primary_course_id": "EAT-016",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.python.fastapi-async",
+      "primary_course_id": "EAT-016",
+      "coverage": "C0",
+      "priority": "P0"
+    },
+    {
+      "id": "skill.llm.foundations",
+      "primary_course_id": "EAT-017",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.llm.responses-streaming",
+      "primary_course_id": "EAT-017",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.llm.prompt-routing-retrieval",
+      "primary_course_id": "EAT-018",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.llm.conversation-pedagogy",
+      "primary_course_id": "EAT-018",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.llm.safety-evals",
+      "primary_course_id": "EAT-018",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.agents.repo-workflows",
+      "primary_course_id": "EAT-019",
+      "coverage": "C0",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.architecture.monorepo-boundaries",
+      "primary_course_id": "EAT-020",
+      "coverage": "C1",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.governance.adr-docs",
+      "primary_course_id": "EAT-020",
+      "coverage": "C1",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.curriculum.knowledge-graph",
+      "primary_course_id": "EAT-020",
+      "coverage": "C1",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.analytics.learning-provenance",
+      "primary_course_id": "EAT-020",
+      "coverage": "C2",
+      "priority": "P1"
+    },
+    {
+      "id": "skill.native.tauri-capacitor",
+      "primary_course_id": "EAT-020",
+      "coverage": "C0",
+      "priority": "P2"
+    }
+  ],
+  "course_ids": [
+    "EAT-001",
+    "EAT-002",
+    "EAT-003",
+    "EAT-004",
+    "EAT-005",
+    "EAT-006",
+    "EAT-007",
+    "EAT-008",
+    "EAT-009",
+    "EAT-010",
+    "EAT-011",
+    "EAT-012",
+    "EAT-013",
+    "EAT-014",
+    "EAT-015",
+    "EAT-016",
+    "EAT-017",
+    "EAT-018",
+    "EAT-019",
+    "EAT-020"
+  ],
+  "starter_modules": [
+    {
+      "id": "EAT-001-M01",
+      "directory": "EAT-001-M01-filesystem-processes-paths",
+      "course_id": "EAT-001"
+    },
+    {
+      "id": "EAT-001-M02",
+      "directory": "EAT-001-M02-safe-shell-environment",
+      "course_id": "EAT-001"
+    },
+    {
+      "id": "EAT-001-M03",
+      "directory": "EAT-001-M03-markdown-latex-docs",
+      "course_id": "EAT-001"
+    },
+    {
+      "id": "EAT-002-M01",
+      "directory": "EAT-002-M01-git-state-model",
+      "course_id": "EAT-002"
+    },
+    {
+      "id": "EAT-002-M02",
+      "directory": "EAT-002-M02-two-machine-sync-and-recovery",
+      "course_id": "EAT-002"
+    },
+    {
+      "id": "EAT-004-M01",
+      "directory": "EAT-004-M01-node-npm-package-lock",
+      "course_id": "EAT-004"
+    },
+    {
+      "id": "EAT-016-M01",
+      "directory": "EAT-016-M01-python-env-packaging",
+      "course_id": "EAT-016"
+    }
+  ],
+  "required_edges": [
+    [
+      "EAT-001",
+      "EAT-002"
+    ],
+    [
+      "EAT-001",
+      "EAT-003"
+    ],
+    [
+      "EAT-001",
+      "EAT-016"
+    ],
+    [
+      "EAT-002",
+      "EAT-013"
+    ],
+    [
+      "EAT-002",
+      "EAT-019"
+    ],
+    [
+      "EAT-003",
+      "EAT-004"
+    ],
+    [
+      "EAT-003",
+      "EAT-005"
+    ],
+    [
+      "EAT-004",
+      "EAT-008"
+    ],
+    [
+      "EAT-004",
+      "EAT-011"
+    ],
+    [
+      "EAT-005",
+      "EAT-006"
+    ],
+    [
+      "EAT-005",
+      "EAT-008"
+    ],
+    [
+      "EAT-006",
+      "EAT-007"
+    ],
+    [
+      "EAT-006",
+      "EAT-011"
+    ],
+    [
+      "EAT-008",
+      "EAT-009"
+    ],
+    [
+      "EAT-008",
+      "EAT-010"
+    ],
+    [
+      "EAT-008",
+      "EAT-011"
+    ],
+    [
+      "EAT-008",
+      "EAT-014"
+    ],
+    [
+      "EAT-009",
+      "EAT-010"
+    ],
+    [
+      "EAT-009",
+      "EAT-015"
+    ],
+    [
+      "EAT-009",
+      "EAT-020"
+    ],
+    [
+      "EAT-010",
+      "EAT-014"
+    ],
+    [
+      "EAT-010",
+      "EAT-018"
+    ],
+    [
+      "EAT-010",
+      "EAT-020"
+    ],
+    [
+      "EAT-011",
+      "EAT-013"
+    ],
+    [
+      "EAT-011",
+      "EAT-018"
+    ],
+    [
+      "EAT-011",
+      "EAT-019"
+    ],
+    [
+      "EAT-011",
+      "EAT-020"
+    ],
+    [
+      "EAT-012",
+      "EAT-013"
+    ],
+    [
+      "EAT-012",
+      "EAT-014"
+    ],
+    [
+      "EAT-013",
+      "EAT-014"
+    ],
+    [
+      "EAT-013",
+      "EAT-015"
+    ],
+    [
+      "EAT-014",
+      "EAT-015"
+    ],
+    [
+      "EAT-016",
+      "EAT-017"
+    ],
+    [
+      "EAT-017",
+      "EAT-018"
+    ],
+    [
+      "EAT-018",
+      "EAT-019"
+    ],
+    [
+      "EAT-018",
+      "EAT-020"
+    ],
+    [
+      "EAT-019",
+      "EAT-020"
+    ]
+  ],
+  "recommended_edges": [
+    [
+      "EAT-002",
+      "EAT-020"
+    ],
+    [
+      "EAT-004",
+      "EAT-005"
+    ],
+    [
+      "EAT-004",
+      "EAT-012"
+    ],
+    [
+      "EAT-007",
+      "EAT-011"
+    ],
+    [
+      "EAT-007",
+      "EAT-020"
+    ],
+    [
+      "EAT-008",
+      "EAT-012"
+    ],
+    [
+      "EAT-009",
+      "EAT-011"
+    ],
+    [
+      "EAT-009",
+      "EAT-012"
+    ],
+    [
+      "EAT-010",
+      "EAT-011"
+    ],
+    [
+      "EAT-010",
+      "EAT-013"
+    ],
+    [
+      "EAT-011",
+      "EAT-015"
+    ],
+    [
+      "EAT-012",
+      "EAT-015"
+    ],
+    [
+      "EAT-013",
+      "EAT-019"
+    ],
+    [
+      "EAT-013",
+      "EAT-020"
+    ]
+  ],
+  "lesson_word_limit": 2800
+}

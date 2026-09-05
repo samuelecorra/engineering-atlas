@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.architecture.monorepo-boundaries",
+  "title": "Architettura e boundary monorepo",
+  "aliases": [],
+  "domain": "architecture",
+  "description": "I modelli accademici vanno applicati ai confini runtime, import graph e refactoring cross-cutting.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.pss-testing"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.architecture"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-020",
+  "roadmap_taxonomy": [
+    "Software Architect",
+    "Design and Architecture"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "I modelli accademici vanno applicati ai confini runtime, import graph e refactoring cross-cutting."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-016-M01",
+  "course_id": "EAT-016",
+  "title": "Python: ambiente, package src e test standard-library; richiamo al core",
+  "order": 1,
+  "status": "draft",
+  "estimated_hours": 4,
+  "prerequisite_skill_ids": [
+    "skill.cli.environment"
+  ],
+  "teaches_skill_ids": [
+    "skill.python.language",
+    "skill.python.packaging"
+  ],
+  "reinforces_skill_ids": [],
+  "outcomes": [
+    "Creare un venv locale e identificare interprete e import path.",
+    "Eseguire un package src e un test standard-library senza installazioni di rete.",
+    "Spiegare requirements, pyproject ed editable install distinguendoli dal test diretto."
+  ],
+  "artifacts": [
+    "fixtures/run.mjs"
+  ],
+  "assessment_id": "ASM-EAT-016-M01",
+  "ironmath_anchors": [
+    "services/ironmath-llm/pyproject.toml",
+    "services/ironmath-llm/src/ironmath_llm/"
+  ]
+}

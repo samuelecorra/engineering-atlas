@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.web.http",
+  "title": "HTTP applicato",
+  "aliases": [],
+  "domain": "web",
+  "description": "Riutilizzare TCP/IP e HTTP per verificare semantica, status, cache e cancellazione nelle API.",
+  "ssri_coverage": {
+    "level": "C3",
+    "evidence_ids": [
+      "ev.ssri.network"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.sse"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-008",
+  "roadmap_taxonomy": [
+    "API Design"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Riutilizzare TCP/IP e HTTP per verificare semantica, status, cache e cancellazione nelle API."
+  }
+}

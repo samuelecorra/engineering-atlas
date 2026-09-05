@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-004",
+  "slug": "node-npm-esm",
+  "title": "Node.js, npm, ESM and JavaScript toolchains",
+  "phase": "foundations",
+  "order": 4,
+  "priority": "P0",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-003"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.node.runtime",
+    "skill.node.npm-packages",
+    "skill.node.esm-vite"
+  ],
+  "reinforced_skill_ids": [
+    "skill.js.fundamentals"
+  ],
+  "roadmap_taxonomy": [
+    "Node.js",
+    "Frontend"
+  ],
+  "outcomes": [
+    "Spiegare e riprodurre runtime, installazione e build di package indipendenti."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-004-M01",
+      "title": "Node runtime/process/fs/path, npm, package e lockfile",
+      "outcome": "Eseguire un package ESM senza dipendenze e spiegare manifest e lockfile. Distinguere npm install da npm ci e motivare la riproducibilità senza upgrade ciechi.",
+      "status": "draft"
+    },
+    {
+      "id": "EAT-004-M02",
+      "title": "Npm e manifest",
+      "outcome": "Produrre e spiegare una prova delimitata di npm e manifest, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-004-M03",
+      "title": "Lockfile/semver/install strategy",
+      "outcome": "Produrre e spiegare una prova delimitata di lockfile/semver/install strategy, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-004-M04",
+      "title": "ESM e module resolution",
+      "outcome": "Produrre e spiegare una prova delimitata di ESM e module resolution, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-004-M05",
+      "title": "Script/tool CLI",
+      "outcome": "Produrre e spiegare una prova delimitata di script/tool CLI, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-004-M06",
+      "title": "Vite/Rollup e build-time env",
+      "outcome": "Produrre e spiegare una prova delimitata di Vite/Rollup e build-time env, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "in_progress"
+}

@@ -1,0 +1,2 @@
+$ATLAS_DEMO_MODE = 'practice'
+node check-env.mjs

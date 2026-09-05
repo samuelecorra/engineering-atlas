@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-003",
+  "slug": "modern-javascript-browser",
+  "title": "Modern JavaScript and the browser runtime",
+  "phase": "foundations",
+  "order": 3,
+  "priority": "P0",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [
+    "EAT-001"
+  ],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [
+    "skill.web.html-semantic",
+    "skill.js.fundamentals",
+    "skill.js.browser-async"
+  ],
+  "reinforced_skill_ids": [],
+  "roadmap_taxonomy": [
+    "HTML",
+    "JavaScript",
+    "Frontend"
+  ],
+  "outcomes": [
+    "Diagnosticare semantica JavaScript e flussi asincroni del browser con prove isolate."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-003-M01",
+      "title": "Semantica JS",
+      "outcome": "Produrre e spiegare una prova delimitata di semantica JS, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-003-M02",
+      "title": "Funzioni/closure",
+      "outcome": "Produrre e spiegare una prova delimitata di funzioni/closure, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-003-M03",
+      "title": "Moduli",
+      "outcome": "Produrre e spiegare una prova delimitata di moduli, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-003-M04",
+      "title": "DOM/eventi",
+      "outcome": "Produrre e spiegare una prova delimitata di DOM/eventi, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-003-M05",
+      "title": "Event loop",
+      "outcome": "Produrre e spiegare una prova delimitata di event loop, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-003-M06",
+      "title": "Promise/async",
+      "outcome": "Produrre e spiegare una prova delimitata di Promise/async, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-003-M07",
+      "title": "Fetch/API",
+      "outcome": "Produrre e spiegare una prova delimitata di Fetch/API, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-003-M08",
+      "title": "Storage e browser security boundaries",
+      "outcome": "Produrre e spiegare una prova delimitata di storage e browser security boundaries, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ASM-EAT-001-M03",
+  "module_id": "EAT-001-M03",
+  "target_mastery": "M2",
+  "evidence_required": [
+    "Documento corretto e output del checker locale.",
+    "Nota che distingue sorgente matematica, Markdown e renderer."
+  ],
+  "rubric": [
+    {
+      "id": "R1",
+      "criterion": "Gerarchia e link portabili",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    },
+    {
+      "id": "R2",
+      "criterion": "Delimitazione matematica",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    },
+    {
+      "id": "R3",
+      "criterion": "Sorgente canonica e verifica spiegata",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Non produce evidenza o interpreta il comportamento in modo errato.",
+        "partial": "Completa il task con checklist, ma la diagnosi richiede un hint ulteriore.",
+        "full": "Completa con checklist, predice il risultato e spiega errore e verifica."
+      }
+    }
+  ],
+  "pass_rule": {
+    "minimum_score": 5,
+    "blocking_errors": [
+      "Modifica file fuori dalla directory fixture assegnata.",
+      "Usa credenziali reali o sostituisce il tentativo personale con una soluzione LLM."
+    ]
+  },
+  "retry_policy": "Ripeti su una nuova fixture, annota la causa del fallimento e conserva entrambe le prove. Attendi una nuova valutazione prima di attribuire il livello."
+}

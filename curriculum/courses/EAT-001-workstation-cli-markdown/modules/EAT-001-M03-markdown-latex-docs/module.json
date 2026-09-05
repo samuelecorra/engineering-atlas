@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-001-M03",
+  "course_id": "EAT-001",
+  "title": "Markdown, LaTeX e documentazione verificabile",
+  "order": 3,
+  "status": "draft",
+  "estimated_hours": 2,
+  "prerequisite_skill_ids": [
+    "skill.cli.environment"
+  ],
+  "teaches_skill_ids": [
+    "skill.docs.markdown-latex"
+  ],
+  "reinforces_skill_ids": [],
+  "outcomes": [
+    "Correggere heading, link e delimitatori matematici in un documento minimo.",
+    "Distinguere sorgente canonica, generated, historical e rendering."
+  ],
+  "artifacts": [
+    "fixtures/run.mjs"
+  ],
+  "assessment_id": "ASM-EAT-001-M03",
+  "ironmath_anchors": [
+    "docs/bible/",
+    "packages/curriculum/"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.llm.responses-streaming",
+  "title": "API LLM e streaming",
+  "aliases": [],
+  "domain": "llm",
+  "description": "Mancano Responses/streaming, structured output, tool use e recovery degli errori provider.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-llm.responses-streaming",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.python-runtime"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-017",
+  "roadmap_taxonomy": [
+    "AI Engineer"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano Responses/streaming, structured output, tool use e recovery degli errori provider."
+  }
+}

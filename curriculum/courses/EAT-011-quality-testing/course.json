@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-011",
+  "slug": "quality-testing",
+  "title": "Quality engineering and automated testing",
+  "phase": "application",
+  "order": 11,
+  "priority": "P0",
+  "target_mastery": "M4",
+  "required_prerequisite_course_ids": [
+    "EAT-004",
+    "EAT-006",
+    "EAT-008"
+  ],
+  "recommended_prerequisite_course_ids": [
+    "EAT-007",
+    "EAT-009",
+    "EAT-010"
+  ],
+  "primary_skill_ids": [
+    "skill.testing.theory-coverage",
+    "skill.testing.toolchains",
+    "skill.testing.cross-layer"
+  ],
+  "reinforced_skill_ids": [
+    "skill.security.tenancy-idor"
+  ],
+  "roadmap_taxonomy": [
+    "QA",
+    "Code Review"
+  ],
+  "outcomes": [
+    "Scegliere e implementare prove cross-layer che rilevino regressioni reali."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-011-M01",
+      "title": "Strategia e piramide",
+      "outcome": "Produrre e spiegare una prova delimitata di strategia e piramide, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-011-M02",
+      "title": "`node:test`",
+      "outcome": "Produrre e spiegare una prova delimitata di `node:test`, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-011-M03",
+      "title": "Pytest",
+      "outcome": "Produrre e spiegare una prova delimitata di pytest, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-011-M04",
+      "title": "Playwright",
+      "outcome": "Produrre e spiegare una prova delimitata di Playwright, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-011-M05",
+      "title": "Axe/a11y",
+      "outcome": "Produrre e spiegare una prova delimitata di axe/a11y, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-011-M06",
+      "title": "Unit/contract/integration/E2E",
+      "outcome": "Produrre e spiegare una prova delimitata di unit/contract/integration/E2E, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-011-M07",
+      "title": "DB effimero",
+      "outcome": "Produrre e spiegare una prova delimitata di DB effimero, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-011-M08",
+      "title": "Fixture/mock",
+      "outcome": "Produrre e spiegare una prova delimitata di fixture/mock, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-011-M09",
+      "title": "Regression",
+      "outcome": "Produrre e spiegare una prova delimitata di regression, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-011-M10",
+      "title": "Test inventory e anti-no-op",
+      "outcome": "Produrre e spiegare una prova delimitata di test inventory e anti-no-op, includendo un errore atteso e la sua diagnosi.",
+      "status": "planned"
+    }
+  ],
+  "status": "planned"
+}

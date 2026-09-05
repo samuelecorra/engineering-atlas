@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-002-M01",
+  "course_id": "EAT-002",
+  "title": "Git: working tree, index, HEAD e snapshot",
+  "order": 1,
+  "status": "draft",
+  "estimated_hours": 3,
+  "prerequisite_skill_ids": [
+    "skill.cli.environment"
+  ],
+  "teaches_skill_ids": [
+    "skill.git.internals"
+  ],
+  "reinforces_skill_ids": [],
+  "outcomes": [
+    "Predire status e diff a partire da working tree, index e commit.",
+    "Creare un commit delimitato e verificare che contenga solo la versione staged."
+  ],
+  "artifacts": [
+    "fixtures/run.mjs"
+  ],
+  "assessment_id": "ASM-EAT-002-M01",
+  "ironmath_anchors": [
+    "AGENTS.md",
+    "package.json"
+  ]
+}

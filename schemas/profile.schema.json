@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/profile.schema.json",
+  "title": "profile",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "example": {
+      "const": true
+    },
+    "learner_mastery": {
+      "type": "null"
+    },
+    "assessments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 0
+    },
+    "self_assessment": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "schema_version",
+    "example",
+    "learner_mastery",
+    "assessments",
+    "self_assessment"
+  ],
+  "additionalProperties": false
+}

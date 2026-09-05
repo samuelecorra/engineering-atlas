@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.llm.foundations",
+  "title": "Fondamenti LLM",
+  "aliases": [],
+  "domain": "llm",
+  "description": "Mancano token/context, limiti dei modelli e scelta basata su costo, latenza e comportamento.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-llm.foundations",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.python-runtime"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-017",
+  "roadmap_taxonomy": [
+    "AI Engineer",
+    "AI Product Builders"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano token/context, limiti dei modelli e scelta basata su costo, latenza e comportamento."
+  }
+}

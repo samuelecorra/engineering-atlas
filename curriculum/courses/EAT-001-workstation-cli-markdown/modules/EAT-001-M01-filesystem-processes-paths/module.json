@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-001-M01",
+  "course_id": "EAT-001",
+  "title": "Filesystem, processi, path e modello del terminale",
+  "order": 1,
+  "status": "draft",
+  "estimated_hours": 2,
+  "prerequisite_skill_ids": [],
+  "teaches_skill_ids": [
+    "skill.cli.environment"
+  ],
+  "reinforces_skill_ids": [],
+  "outcomes": [
+    "Distinguere terminale, shell, comando e processo.",
+    "Diagnosticare cwd, path, exit code e stream su una fixture read-only.",
+    "Localizzare PID e porta del solo processo locale avviato per il lab."
+  ],
+  "artifacts": [
+    "fixtures/run.mjs"
+  ],
+  "assessment_id": "ASM-EAT-001-M01",
+  "ironmath_anchors": [
+    "package.json",
+    "tooling/launchers/"
+  ]
+}

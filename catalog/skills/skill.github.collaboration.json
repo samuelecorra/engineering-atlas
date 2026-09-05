@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.github.collaboration",
+  "title": "Collaborazione e review GitHub",
+  "aliases": [],
+  "domain": "github",
+  "description": "PR concettuali non dimostrano review, branch protection e gestione dei required check.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.pss-devops"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M4",
+    "evidence_ids": [
+      "ev.ironmath.workflow"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-002",
+  "roadmap_taxonomy": [
+    "Git and GitHub",
+    "Code Review"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "PR concettuali non dimostrano review, branch protection e gestione dei required check."
+  }
+}

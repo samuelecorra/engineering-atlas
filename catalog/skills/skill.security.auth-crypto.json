@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.security.auth-crypto",
+  "title": "Auth e crittografia applicata",
+  "aliases": [],
+  "domain": "security",
+  "description": "Trasferire auth/PKI a cookie, refresh rotation e cifratura dei campi con failure mode verificabili.",
+  "ssri_coverage": {
+    "level": "C3",
+    "evidence_ids": [
+      "ev.ssri.crypto"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.bible"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-010",
+  "roadmap_taxonomy": [
+    "Cyber Security",
+    "API Security"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Trasferire auth/PKI a cookie, refresh rotation e cifratura dei campi con failure mode verificabili."
+  }
+}

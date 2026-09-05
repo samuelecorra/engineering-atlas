@@ -1,0 +1,21 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { checkGraph, validateGraph } from '../scripts/validate-graph.mjs';
+import { loadModel } from '../scripts/lib/repository.mjs';
+const edge = (from, to, type = 'PREREQUISITE_OF') => ({ from, to, type, strength: type === 'PREREQUISITE_OF' ? 'required' : 'recommended', rationale: 'Un outcome richiede una base osservabile.' });
+const graph = () => ({ nodes: ['A', 'B', 'C'].map(id => ({ id })), edges: [edge('A', 'B'), edge('B', 'C')] });
+test('graph: DAG valido', () => assert.deepEqual(checkGraph(graph()), []));
+test('graph: ciclo di due nodi rilevato', () => { const g = graph(); g.edges.push(edge('B', 'A')); assert.match(checkGraph(g).join(), /ciclo required/); });
+test('graph: self-loop', () => { const g = graph(); g.edges.push(edge('A', 'A')); assert.match(checkGraph(g).join(), /self-loop/); });
+test('graph: endpoint assente', () => { const g = graph(); g.edges.push(edge('A', 'D')); assert.match(checkGraph(g).join(), /endpoint assente/); });
+test('graph: arco duplicato', () => { const g = graph(); g.edges.push(edge('A', 'B')); assert.match(checkGraph(g).join(), /arco duplicato/); });
+test('graph: ordine prerequisite violato', () => assert.match(checkGraph(graph(), new Map([['A', 2], ['B', 1], ['C', 3]])).join(), /viola ordine/));
+test('graph: ciclo recommended permesso', () => { const g = graph(); g.edges.push(edge('C', 'A', 'RECOMMENDED_BEFORE')); assert.deepEqual(checkGraph(g), []); });
+test('graph: strength, rationale e node ID verificati', () => { const g = graph(); g.edges[0].strength = 'supporting'; g.edges[0].rationale = ' '; g.nodes.push({ id: 'A' }); assert.match(checkGraph(g).join(), /rationale vuota/); assert.match(checkGraph(g).join(), /strength invalidi/); assert.match(checkGraph(g).join(), /node ID duplicati/); });
+test('graph: modello reale coerente', () => assert.deepEqual(validateGraph(loadModel()), []));
+test('graph: skill orfana e relazione mancante rilevate', () => {
+  const m = loadModel(); const s = m.skills[0];
+  m.graph.edges = m.graph.edges.filter(e => !(e.type === 'PART_OF' && e.from === s.id));
+  assert.match(validateGraph(m).join(), /skill non raggiungibile/);
+  assert.match(validateGraph(m).join(), /relazione canonica mancante/);
+});

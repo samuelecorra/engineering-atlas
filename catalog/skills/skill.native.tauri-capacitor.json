@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.native.tauri-capacitor",
+  "title": "Adapter Tauri e Capacitor",
+  "aliases": [],
+  "domain": "native",
+  "description": "Integrazioni native sperimentali: solo lettura guidata, senza farne un prerequisito del percorso principale.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-native.tauri-capacitor",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M2",
+    "evidence_ids": [
+      "ev.ironmath.admin"
+    ]
+  },
+  "priority": "P2",
+  "primary_course_id": "EAT-020",
+  "roadmap_taxonomy": [
+    "Full Stack"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Integrazioni native sperimentali: solo lettura guidata, senza farne un prerequisito del percorso principale."
+  }
+}

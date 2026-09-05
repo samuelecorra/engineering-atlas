@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.node.runtime",
+  "title": "Node runtime",
+  "aliases": [],
+  "domain": "node",
+  "description": "La citazione di runtime/ecosistema non dimostra process, fs, path ed exit code operativi.",
+  "ssri_coverage": {
+    "level": "C1",
+    "evidence_ids": [
+      "ev.ssri.pss-devops"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.root"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-004",
+  "roadmap_taxonomy": [
+    "Node.js"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "La citazione di runtime/ecosistema non dimostra process, fs, path ed exit code operativi."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/assessment.schema.json",
+  "title": "assessment",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^ASM-EAT-\\d{3}-M\\d{2}$"
+    },
+    "module_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^EAT-\\d{3}-M\\d{2}$"
+    },
+    "target_mastery": {
+      "type": "string",
+      "enum": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ]
+    },
+    "evidence_required": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "rubric": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^R[0-9]+$"
+          },
+          "criterion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "max_score": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "anchors": {
+            "type": "object",
+            "properties": {
+              "zero": {
+                "type": "string",
+                "minLength": 1
+              },
+              "partial": {
+                "type": "string",
+                "minLength": 1
+              },
+              "full": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "zero",
+              "partial",
+              "full"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "criterion",
+          "max_score",
+          "anchors"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 3
+    },
+    "pass_rule": {
+      "type": "object",
+      "properties": {
+        "minimum_score": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "blocking_errors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "minimum_score",
+        "blocking_errors"
+      ],
+      "additionalProperties": false
+    },
+    "retry_policy": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "module_id",
+    "target_mastery",
+    "evidence_required",
+    "rubric",
+    "pass_rule",
+    "retry_policy"
+  ],
+  "additionalProperties": false
+}

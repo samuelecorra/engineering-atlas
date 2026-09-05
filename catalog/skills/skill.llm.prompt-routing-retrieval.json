@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.llm.prompt-routing-retrieval",
+  "title": "Prompt, routing e retrieval",
+  "aliases": [],
+  "domain": "llm",
+  "description": "Mancano contratti prompt, grounding, selezione del contesto e diagnosi del retrieval.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-llm.prompt-routing-retrieval",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.prompt"
+    ]
+  },
+  "priority": "P1",
+  "primary_course_id": "EAT-018",
+  "roadmap_taxonomy": [
+    "Prompt Engineering",
+    "AI Engineer"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano contratti prompt, grounding, selezione del contesto e diagnosi del retrieval."
+  }
+}

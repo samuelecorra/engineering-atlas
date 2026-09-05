@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/scope.schema.json",
+  "title": "scope",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "skill_baseline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^skill\\.[a-z0-9]+(?:[.-][a-z0-9]+)+$"
+          },
+          "primary_course_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^EAT-\\d{3}$"
+          },
+          "coverage": {
+            "type": "string",
+            "enum": [
+              "C0",
+              "C1",
+              "C2",
+              "C3",
+              "C4"
+            ]
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "P0",
+              "P1",
+              "P2"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "primary_course_id",
+          "coverage",
+          "priority"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 52,
+      "maxItems": 52
+    },
+    "course_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^EAT-\\d{3}$"
+      },
+      "minItems": 20,
+      "maxItems": 20,
+      "uniqueItems": true
+    },
+    "starter_modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^EAT-\\d{3}-M\\d{2}$"
+          },
+          "directory": {
+            "type": "string",
+            "minLength": 1
+          },
+          "course_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^EAT-\\d{3}$"
+          }
+        },
+        "required": [
+          "id",
+          "directory",
+          "course_id"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 7,
+      "maxItems": 7
+    },
+    "required_edges": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^EAT-\\d{3}$"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "uniqueItems": true
+    },
+    "recommended_edges": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^EAT-\\d{3}$"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "uniqueItems": true
+    },
+    "lesson_word_limit": {
+      "const": 2800
+    }
+  },
+  "required": [
+    "schema_version",
+    "skill_baseline",
+    "course_ids",
+    "starter_modules",
+    "required_edges",
+    "recommended_edges",
+    "lesson_word_limit"
+  ],
+  "additionalProperties": false
+}

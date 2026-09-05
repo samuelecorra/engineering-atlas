@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "skill.react.application",
+  "title": "React applicativo",
+  "aliases": [],
+  "domain": "react",
+  "description": "Mancano componenti, hooks, router, effect e confini dell'applicazione Vite.",
+  "ssri_coverage": {
+    "level": "C0",
+    "evidence_ids": [
+      "ev.ssri.absence-react.application",
+      "ev.ssri.absence-operational-ecosystem"
+    ]
+  },
+  "ironmath_requirement": {
+    "level": "M3",
+    "evidence_ids": [
+      "ev.ironmath.web"
+    ]
+  },
+  "priority": "P0",
+  "primary_course_id": "EAT-006",
+  "roadmap_taxonomy": [
+    "React"
+  ],
+  "status": "planned",
+  "gap": {
+    "confidence": "medium",
+    "note": "Mancano componenti, hooks, router, effect e confini dell'applicazione Vite."
+  }
+}

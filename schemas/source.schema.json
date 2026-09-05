@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/source.schema.json",
+  "title": "source",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^ev\\.(ssri|ironmath)\\.[a-z0-9.-]+$"
+    },
+    "repository_id": {
+      "type": "string",
+      "enum": [
+        "ssri",
+        "ironmath"
+      ]
+    },
+    "commit": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?![A-Za-z]:)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    },
+    "evidence_type": {
+      "type": "string",
+      "enum": [
+        "lesson",
+        "lab",
+        "source",
+        "manifest",
+        "workflow",
+        "architecture",
+        "test",
+        "schema",
+        "absence-check"
+      ]
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "observed_at": {
+      "type": "string",
+      "minLength": 1,
+      "format": "date"
+    },
+    "provenance": {
+      "type": "string",
+      "enum": [
+        "supplied-audit",
+        "local-audit-snapshot"
+      ]
+    },
+    "verification_note": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "repository_id",
+    "commit",
+    "path",
+    "evidence_type",
+    "claim",
+    "confidence",
+    "observed_at",
+    "provenance",
+    "verification_note"
+  ],
+  "additionalProperties": false
+}

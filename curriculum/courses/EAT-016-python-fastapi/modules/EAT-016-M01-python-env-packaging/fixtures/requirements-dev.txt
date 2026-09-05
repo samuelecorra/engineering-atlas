@@ -1,0 +1,1 @@
+# Sviluppo: unittest è nella standard library; nessuna dipendenza esterna.
