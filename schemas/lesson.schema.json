@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-atlas.invalid/schemas/lesson.schema.json",
+  "title": "lesson",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^EAT-\\d{3}-M\\d{2}-U\\d{2}-L\\d{2}$"
+    },
+    "unit_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^EAT-\\d{3}-M\\d{2}-U\\d{2}$"
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "draft",
+        "reviewed",
+        "validated",
+        "deferred",
+        "deprecated"
+      ]
+    },
+    "content_path": {
+      "const": "lesson.md"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "unit_id",
+    "slug",
+    "title",
+    "order",
+    "status",
+    "content_path"
+  ],
+  "additionalProperties": false
+}

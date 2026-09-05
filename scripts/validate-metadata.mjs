@@ -1,4 +1,4 @@
-import { loadModel, runCLI, coursePath, modulePath } from './lib/repository.mjs';
+import { loadModel, runCLI, coursePath, modulePath, unitPath, lessonPath } from './lib/repository.mjs';
 import { checkSchema, validateSchema } from './lib/schema.mjs';
 import { AUDIT_JSON } from './validate-provenance.mjs';
 
@@ -19,12 +19,13 @@ export function validateMetadata(m) {
     if (!m.schemas[name]) errors.push(`schema mancante: ${name}`);
     else validateSchema(value, m.schemas[name], at, errors);
   };
-  for (const [group, name] of Object.entries({ skills: 'skill', courses: 'course', modules: 'module', assessments: 'assessment', evidence: 'source', sourceCollections: 'evidence-collection' })) m[group].forEach((v, i) => check(v, name, `${group}[${i}]`));
+  for (const [group, name] of Object.entries({ skills: 'skill', courses: 'course', modules: 'module', units: 'unit', lessons: 'lesson', assessments: 'assessment', evidence: 'source', sourceCollections: 'evidence-collection' })) m[group].forEach((v, i) => check(v, name, `${group}[${i}]`));
   for (const key of ['repositories', 'scope', 'taxonomy', 'allowlist', 'profile', 'graph']) check(m[key], key, key);
   if (errors.length) return errors; // Semantic checks run only on well-typed records.
   const byID = group => new Map(m[group].map(v => [v.id, v]));
   const courses = byID('courses'), skills = byID('skills'), modules = byID('modules'), assessments = byID('assessments'), evidence = byID('evidence');
-  const ids = [...m.skills, ...m.courses, ...m.modules, ...m.assessments, ...m.evidence].map(v => v.id);
+  const units = byID('units');
+  const ids = [...m.skills, ...m.courses, ...m.modules, ...m.units, ...m.lessons, ...m.assessments, ...m.evidence].map(v => v.id);
   for (const id of new Set(ids)) if (ids.filter(v => v === id).length > 1) errors.push(`duplicate ID: ${id}`);
   if (m.skills.length !== 52) errors.push('richieste esattamente 52 skill');
   if (m.courses.length !== 20) errors.push('richiesti esattamente 20 corsi');
@@ -89,8 +90,29 @@ export function validateMetadata(m) {
     for (const id of mod.teaches_skill_ids) if (!c?.primary_skill_ids.includes(id)) errors.push(`${mod.id}: teaches deve appartenere al corso`);
     if (assessments.get(mod.assessment_id)?.module_id !== mod.id) errors.push(`${mod.id}: assessment mismatch`);
     const dir = m.paths.modules[i].replace(/module.json$/, '');
-    for (const file of ['lesson.md', 'lab.md', 'assessment.md', 'assessment.json', ...mod.artifacts]) if (!m.files.includes(dir + file)) errors.push(`${mod.id}: file/artifact mancante ${file}`);
+    for (const file of ['lab.md', 'assessment.md', 'assessment.json', ...mod.artifacts]) if (!m.files.includes(dir + file)) errors.push(`${mod.id}: file/artifact mancante ${file}`);
+    if (!same(mod.unit_ids, m.units.filter(u => u.module_id === mod.id).map(u => u.id))) errors.push(`${mod.id}: ownership unit divergente`);
+    if (!same(mod.unit_ids, [mod.id + '-U01'])) errors.push(`${mod.id}: tranche limitata a U01`);
   }
+  if (m.units.length !== 7 || m.lessons.length !== 7) errors.push('richieste 7 unit e 7 lesson nella tranche');
+  for (const [i, u] of m.units.entries()) {
+    if (!modules.get(u.module_id)?.unit_ids.includes(u.id) || !u.id.startsWith(u.module_id + '-U')) errors.push(`${u.id}: unit orfana/ownership module incoerente`);
+    if (m.paths.units[i] !== unitPath(u, m)) errors.push(`${u.id}: path unit incoerente`);
+    if (u.order !== Number(u.id.slice(-2)) || u.status !== 'draft') errors.push(`${u.id}: unit order/status fuori tranche`);
+    if (!same(u.lesson_ids, m.lessons.filter(l => l.unit_id === u.id).map(l => l.id))) errors.push(`${u.id}: ownership lesson divergente`);
+    if (!same(u.lesson_ids, [u.id + '-L01'])) errors.push(`${u.id}: tranche limitata a L01`);
+  }
+  const markdownPaths = [];
+  for (const [i, l] of m.lessons.entries()) {
+    if (!units.get(l.unit_id)?.lesson_ids.includes(l.id) || !l.id.startsWith(l.unit_id + '-L')) errors.push(`${l.id}: lesson orfana/ownership unit incoerente`);
+    const p = lessonPath(l, m);
+    if (m.paths.lessons[i] !== p) errors.push(`${l.id}: path lesson incoerente`);
+    if (l.order !== Number(l.id.slice(-2)) || l.status !== 'draft') errors.push(`${l.id}: lesson order/status fuori tranche`);
+    const md = p?.replace(/lesson.json$/, l.content_path);
+    if (!md || !m.files.includes(md)) errors.push(`${l.id}: lesson Markdown mancante`);
+    markdownPaths.push(md);
+  }
+  if (new Set(markdownPaths).size !== markdownPaths.length) errors.push('lesson duplicata in più record/path');
   for (const [i, a] of m.assessments.entries()) {
     const mod = modules.get(a.module_id);
     if (mod?.assessment_id !== a.id || a.id !== 'ASM-' + a.module_id) errors.push(`${a.id}: assessment/module mismatch`);

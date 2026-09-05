@@ -6,7 +6,7 @@ Installare e testare un package ESM senza dipendenze esterne, osservando manifes
 
 ## Setup e sicurezza
 
-Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](lesson.md):
+Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](units/EAT-004-M01-U01-fondamenti/lessons/EAT-004-M01-U01-L01-node-npm-package-lock/lesson.md):
 
 ```text
 node curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/fixtures/run.mjs

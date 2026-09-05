@@ -54,7 +54,7 @@ Non rilanciare uno script sconosciuto con privilegi maggiori. Leggi prima pipe e
 
 ## Collegamenti a IronMath
 
-Anchor di sola lettura nello snapshot IronMath dichiarato in `sources/repositories.json`: `tooling/launchers/`, `package.json`. Non sono link locali né dipendenze del lab. Consulta la [mappa di lettura](../../../../../projects/ironmath-reading-map.md) per la domanda del macro-corso. Non aprire configurazioni riservate e non avviare servizi del prodotto.
+Anchor di sola lettura nello snapshot IronMath dichiarato in `sources/repositories.json`: `tooling/launchers/`, `package.json`. Non sono link locali né dipendenze del lab. Consulta la [mappa di lettura](../../../../../../../../../projects/ironmath-reading-map.md) per la domanda del macro-corso. Non aprire configurazioni riservate e non avviare servizi del prodotto.
 
 ## Esercizio senza LLM
 

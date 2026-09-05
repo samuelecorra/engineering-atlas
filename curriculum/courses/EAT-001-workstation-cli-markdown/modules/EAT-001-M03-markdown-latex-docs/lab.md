@@ -6,7 +6,7 @@ Correggere un mini documento con gerarchia, link e delimitatori matematici errat
 
 ## Setup e sicurezza
 
-Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](lesson.md):
+Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](units/EAT-001-M03-U01-fondamenti/lessons/EAT-001-M03-U01-L01-markdown-latex-docs/lesson.md):
 
 ```text
 node curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M03-markdown-latex-docs/fixtures/run.mjs

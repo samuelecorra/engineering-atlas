@@ -26,5 +26,8 @@
     "package.json",
     "apps/web/package.json",
     "apps/api/package.json"
+  ],
+  "unit_ids": [
+    "EAT-004-M01-U01"
   ]
 }

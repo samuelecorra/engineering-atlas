@@ -26,5 +26,8 @@
   "ironmath_anchors": [
     "AGENTS.md",
     ".github/workflows/"
+  ],
+  "unit_ids": [
+    "EAT-002-M02-U01"
   ]
 }

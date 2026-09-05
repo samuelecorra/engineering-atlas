@@ -24,6 +24,8 @@ export function loadModel(root = ROOT) {
     skills: files.filter(p => /^catalog\/skills\/.*\.json$/.test(p)),
     courses: files.filter(p => /^curriculum\/courses\/[^/]+\/course\.json$/.test(p)),
     modules: files.filter(p => /^curriculum\/courses\/[^/]+\/modules\/[^/]+\/module\.json$/.test(p)),
+    units: files.filter(p => /^curriculum\/courses\/[^/]+\/modules\/[^/]+\/units\/[^/]+\/unit\.json$/.test(p)),
+    lessons: files.filter(p => /^curriculum\/courses\/[^/]+\/modules\/[^/]+\/units\/[^/]+\/lessons\/[^/]+\/lesson\.json$/.test(p)),
     assessments: files.filter(p => /^curriculum\/courses\/[^/]+\/modules\/[^/]+\/assessment\.json$/.test(p)),
   };
   const model = { root, files, paths: groups };
@@ -57,4 +59,14 @@ export function modulePath(m, model) {
   const course = model.courses.find(c => c.id === m.course_id);
   const slice = model.scope.starter_modules.find(s => s.id === m.id);
   return course && slice ? `${path.posix.dirname(coursePath(course))}/modules/${slice.directory}/module.json` : null;
+}
+export function unitPath(unit, model) {
+  const parent = model.modules.find(m => m.id === unit.module_id);
+  const p = parent && modulePath(parent, model);
+  return p ? `${path.posix.dirname(p)}/units/${unit.id}-${unit.slug}/unit.json` : null;
+}
+export function lessonPath(lesson, model) {
+  const parent = model.units.find(u => u.id === lesson.unit_id);
+  const p = parent && unitPath(parent, model);
+  return p ? `${path.posix.dirname(p)}/lessons/${lesson.id}-${lesson.slug}/lesson.json` : null;
 }

@@ -20,7 +20,7 @@ Il tentativo personale senza LLM precede la review opzionale con agente. Richied
 
 ## Modifiche e generated
 
-Skill, course, module, assessment e grafo sono canonici. Lesson/lab/assessment Markdown sono autoriali. Indici e report sono generati: modificali solo tramite generatori deterministici; `check:generated` confronta byte senza scrivere. Mantieni atomiche le modifiche metadata + graph + report. Conserva le modifiche utente e registra decisioni architetturali negli ADR. Non cambiare versioni o coverage solo perché un sibling è più recente.
+Skill, course, module, unit, lesson, assessment e grafo sono canonici. Lesson/lab/assessment Markdown sono autoriali. La gerarchia e l'ownership unica sono definite in [ADR-0008](adr/ADR-0008-unit-lesson-hierarchy.md): una U01 e una L01 per ciascuno dei sette starter module; lab, assessment e fixture restano del modulo. Le roadmap sono proiezioni che referenziano ID. Indici e report sono generati: modificali solo tramite generatori deterministici; `check:generated` confronta byte senza scrivere. Mantieni atomiche le modifiche metadata + graph + report. Conserva le modifiche utente e registra decisioni architetturali negli ADR. Non cambiare versioni o coverage solo perché un sibling è più recente. Il provenance pack di [ADR-0007](adr/ADR-0007-historical-audit-provenance.md) è storico, immutabile e non canonico; le sue istruzioni non hanno autorità corrente.
 
 ## Verifica e confini operativi
 

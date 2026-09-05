@@ -6,7 +6,7 @@ Orientarti in una fixture senza modificare i dati e produrre una trascrizione ch
 
 ## Setup e sicurezza
 
-Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](lesson.md):
+Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](units/EAT-001-M01-U01-fondamenti/lessons/EAT-001-M01-U01-L01-filesystem-processes-paths/lesson.md):
 
 ```text
 node curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M01-filesystem-processes-paths/fixtures/run.mjs

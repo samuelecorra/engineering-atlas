@@ -6,7 +6,7 @@ Diagnosticare tre versioni dello stesso file e creare uno snapshot delimitato ne
 
 ## Setup e sicurezza
 
-Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](lesson.md):
+Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](units/EAT-002-M01-U01-fondamenti/lessons/EAT-002-M01-U01-L01-git-state-model/lesson.md):
 
 ```text
 node curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M01-git-state-model/fixtures/run.mjs

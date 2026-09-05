@@ -6,7 +6,7 @@ Simulare Mac ↔ bare remote ↔ Windows e scegliere tre integrazioni a partire 
 
 ## Setup e sicurezza
 
-Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](lesson.md):
+Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](units/EAT-002-M02-U01-fondamenti/lessons/EAT-002-M02-U01-L01-two-machine-sync-and-recovery/lesson.md):
 
 ```text
 node curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/fixtures/run.mjs

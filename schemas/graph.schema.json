@@ -25,7 +25,9 @@
               "assessment",
               "evidence",
               "taxonomy",
-              "mastery"
+              "mastery",
+              "unit",
+              "lesson"
             ]
           },
           "title": {

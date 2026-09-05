@@ -85,7 +85,7 @@ Nel caso condiviso, due commit modificano la stessa riga di `choice.txt`. Window
 
 ## Collegamenti a IronMath
 
-Anchor di sola lettura nello snapshot IronMath dichiarato in `sources/repositories.json`: `AGENTS.md`, `.github/workflows/`. Non sono link locali né dipendenze del lab. Consulta la [mappa di lettura](../../../../../projects/ironmath-reading-map.md) per la domanda del macro-corso. Non aprire configurazioni riservate e non avviare servizi del prodotto.
+Anchor di sola lettura nello snapshot IronMath dichiarato in `sources/repositories.json`: `AGENTS.md`, `.github/workflows/`. Non sono link locali né dipendenze del lab. Consulta la [mappa di lettura](../../../../../../../../../projects/ironmath-reading-map.md) per la domanda del macro-corso. Non aprire configurazioni riservate e non avviare servizi del prodotto.
 
 ## Esercizio senza LLM
 

@@ -24,5 +24,8 @@
   "ironmath_anchors": [
     "AGENTS.md",
     "package.json"
+  ],
+  "unit_ids": [
+    "EAT-002-M01-U01"
   ]
 }

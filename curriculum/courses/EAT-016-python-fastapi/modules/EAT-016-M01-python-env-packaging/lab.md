@@ -6,7 +6,7 @@ Creare un venv, diagnosticare import path e testare una fixture Python con layou
 
 ## Setup e sicurezza
 
-Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](lesson.md):
+Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](units/EAT-016-M01-U01-fondamenti/lessons/EAT-016-M01-U01-L01-python-env-packaging/lesson.md):
 
 ```text
 node curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/fixtures/run.mjs

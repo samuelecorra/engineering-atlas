@@ -24,5 +24,8 @@
   "ironmath_anchors": [
     "docs/bible/",
     "packages/curriculum/"
+  ],
+  "unit_ids": [
+    "EAT-001-M03-U01"
   ]
 }

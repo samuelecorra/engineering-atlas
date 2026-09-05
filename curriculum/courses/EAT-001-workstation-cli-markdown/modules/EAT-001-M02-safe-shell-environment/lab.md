@@ -6,7 +6,7 @@ Diagnosticare tre script innocui e correggere path, quoting ed environment nella
 
 ## Setup e sicurezza
 
-Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](lesson.md):
+Dalla root di Atlas, con Node 24 e gli strumenti indicati nella [lesson](units/EAT-001-M02-U01-fondamenti/lessons/EAT-001-M02-U01-L01-safe-shell-environment/lesson.md):
 
 ```text
 node curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M02-safe-shell-environment/fixtures/run.mjs

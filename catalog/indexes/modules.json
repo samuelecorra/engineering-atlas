@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "source": "canonical course/module metadata",
+  "source": "canonical course/module/unit/lesson metadata",
   "regenerate": "npm run build:indexes",
   "entries": [
     {

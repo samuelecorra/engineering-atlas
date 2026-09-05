@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-004-M01-U01",
+  "module_id": "EAT-004-M01",
+  "slug": "fondamenti",
+  "title": "Node runtime/process/fs/path, npm, package e lockfile",
+  "order": 1,
+  "status": "draft",
+  "lesson_ids": [
+    "EAT-004-M01-U01-L01"
+  ]
+}

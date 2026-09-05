@@ -18,10 +18,13 @@ export function checkContentFiles(files, scope, { requireSlice = true } = {}) {
     if (!text.trim()) errors.push(`${file}: file vuoto`);
     const name = path.posix.basename(file);
     if (!SECTIONS[name]) continue;
-    const dir = path.posix.basename(path.posix.dirname(file));
+    const parts = file.split('/'), dir = parts[4];
     const owner = scope.starter_modules.find(s => s.directory === dir);
+    const location = name === 'lesson.md'
+      ? /^curriculum\/courses\/[^/]+\/modules\/[^/]+\/units\/[^/]+\/lessons\/[^/]+\/lesson\.md$/.test(file)
+      : /^curriculum\/courses\/[^/]+\/modules\/[^/]+\/(?:lab|assessment)\.md$/.test(file);
     if (!allowed.has(dir) || !/^curriculum\/courses\/[^/]+\/modules\/[^/]+\//.test(file)
-      || !file.split('/')[2]?.startsWith(owner?.course_id + '-')) errors.push(`${file}: contenuto fuori starter slice`);
+      || !location || !parts[2]?.startsWith(owner?.course_id + '-')) errors.push(`${file}: contenuto fuori starter slice`);
     const existing = found.get(dir) ?? new Set(); existing.add(name); found.set(dir, existing);
     const headings = new Set([...prose(text).matchAll(/^## (.+)$/gm)].map(m => m[1].trim()));
     for (const section of SECTIONS[name]) if (!headings.has(section)) errors.push(`${file}: sezione mancante ${section}`);
@@ -49,7 +52,10 @@ export function validateContent(root = ROOT, m = loadModel(root)) {
     textFiles[p] = text;
   }
   errors.push(...checkContentFiles(textFiles, m.scope));
-  const canonicalContentPaths = new Set(m.paths.modules.flatMap(p => Object.keys(SECTIONS).map(name => p.replace(/module.json$/, name))));
+  const canonicalContentPaths = new Set([
+    ...m.paths.modules.flatMap(p => ['lab.md', 'assessment.md'].map(name => p.replace(/module.json$/, name))),
+    ...m.paths.lessons.map(p => p.replace(/lesson.json$/, 'lesson.md')),
+  ]);
   for (const p of Object.keys(textFiles)) if (SECTIONS[path.posix.basename(p)] && !canonicalContentPaths.has(p)) errors.push(`${p}: contenuto senza module canonico nella posizione attesa`);
   if (m.modules.length !== 7 || m.assessments.length !== 7) errors.push('richiesti 7 module e 7 assessment metadata');
   for (const [i, a] of m.assessments.entries()) {

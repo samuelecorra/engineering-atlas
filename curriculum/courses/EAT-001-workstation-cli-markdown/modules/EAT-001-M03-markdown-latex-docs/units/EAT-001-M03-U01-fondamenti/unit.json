@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-001-M03-U01",
+  "module_id": "EAT-001-M03",
+  "slug": "fondamenti",
+  "title": "Markdown, LaTeX e documentazione verificabile",
+  "order": 1,
+  "status": "draft",
+  "lesson_ids": [
+    "EAT-001-M03-U01-L01"
+  ]
+}

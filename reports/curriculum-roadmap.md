@@ -1,5 +1,5 @@
 GENERATED — DO NOT EDIT DIRECTLY
-Source: curriculum/courses/*/course.json; curriculum/courses/*/modules/*/module.json; catalog/skills/*.json; graph/knowledge-graph.json; sources/repositories.json
+Source: curriculum/courses/*/course.json; curriculum/courses/**/{module,unit,lesson}.json; catalog/skills/*.json; graph/knowledge-graph.json; sources/repositories.json
 Regenerate: npm run build:reports
 
 # Roadmap curricolare
@@ -9,7 +9,7 @@ Coverage della fonte ≠ mastery personale. C descrive il materiale SSRI; M è i
 - samuelecorra/cybersec_unimi_ssri2.0: audit `7467a51576a7c1514edacb26d9408bf0c1444a7d` (6310 file); locale `c691750bf85e6130b9ef59eeb357366508d05311` (6271 file), drift `different-audit-unavailable`. Oggetto commit audit non disponibile localmente. README e inventario correnti letti; lezioni ora sotto lessons/cybersecurity/. Conteggi e coverage restano quelli forniti, non riverificati sullo snapshot. Il viewer React/Vite e il workflow correnti non sono coverage curricolare.
 - samuelecorra/ironmath: audit `22da98929d9c70e20a5a3a9d6fabfe2bd0279431` (4069 file); locale `ec809fb3f4dd8e5b8493fddcb53ef759d5d9d047` (4069 file), drift `ahead`. Snapshot audit accessibile e antenato di HEAD; controllati manifest e architettura, senza nuovo audit integrale.
 
-Conteggi generati: 20 corsi; 52 skill; 7 starter module; 195 nodi; 459 archi (37 required).
+Conteggi generati: 20 corsi; 52 skill; 7 starter module; 7 unità; 7 lezioni; 209 nodi; 473 archi (37 required).
 
 | Ordine | Corso | Titolo | Fase | Priorità | Target | Stato | Required | Recommended |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -33,6 +33,18 @@ Conteggi generati: 20 corsi; 52 skill; 7 starter module; 195 nodi; 459 archi (37
 | 18 | [EAT-018](../curriculum/courses/EAT-018-grounded-tutor-systems/course.json) | Grounded tutor systems: prompting, retrieval, safety and evaluations | intelligence | P1 | M4 | planned | EAT-010, EAT-011, EAT-017 | — |
 | 19 | [EAT-019](../curriculum/courses/EAT-019-agentic-coding/course.json) | Agentic coding and repository-scale collaboration | intelligence | P1 | M4 | planned | EAT-002, EAT-011, EAT-018 | EAT-013 |
 | 20 | [EAT-020](../curriculum/courses/EAT-020-architecture-curriculum-governance/course.json) | Software architecture, docs-as-code, curriculum and learning analytics governance | governance | P1 | M4 | planned | EAT-009, EAT-010, EAT-011, EAT-018, EAT-019 | EAT-002, EAT-007, EAT-013 |
+
+## Gerarchia starter
+
+| Modulo | Unità | Lezione | Stato |
+| --- | --- | --- | --- |
+| EAT-001-M01 | [EAT-001-M01-U01](../curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M01-filesystem-processes-paths/units/EAT-001-M01-U01-fondamenti/unit.json) | [EAT-001-M01-U01-L01](../curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M01-filesystem-processes-paths/units/EAT-001-M01-U01-fondamenti/lessons/EAT-001-M01-U01-L01-filesystem-processes-paths/lesson.json) | draft |
+| EAT-001-M02 | [EAT-001-M02-U01](../curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M02-safe-shell-environment/units/EAT-001-M02-U01-fondamenti/unit.json) | [EAT-001-M02-U01-L01](../curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M02-safe-shell-environment/units/EAT-001-M02-U01-fondamenti/lessons/EAT-001-M02-U01-L01-safe-shell-environment/lesson.json) | draft |
+| EAT-001-M03 | [EAT-001-M03-U01](../curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M03-markdown-latex-docs/units/EAT-001-M03-U01-fondamenti/unit.json) | [EAT-001-M03-U01-L01](../curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M03-markdown-latex-docs/units/EAT-001-M03-U01-fondamenti/lessons/EAT-001-M03-U01-L01-markdown-latex-docs/lesson.json) | draft |
+| EAT-002-M01 | [EAT-002-M01-U01](../curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M01-git-state-model/units/EAT-002-M01-U01-fondamenti/unit.json) | [EAT-002-M01-U01-L01](../curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M01-git-state-model/units/EAT-002-M01-U01-fondamenti/lessons/EAT-002-M01-U01-L01-git-state-model/lesson.json) | draft |
+| EAT-002-M02 | [EAT-002-M02-U01](../curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/units/EAT-002-M02-U01-fondamenti/unit.json) | [EAT-002-M02-U01-L01](../curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/units/EAT-002-M02-U01-fondamenti/lessons/EAT-002-M02-U01-L01-two-machine-sync-and-recovery/lesson.json) | draft |
+| EAT-004-M01 | [EAT-004-M01-U01](../curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/units/EAT-004-M01-U01-fondamenti/unit.json) | [EAT-004-M01-U01-L01](../curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/units/EAT-004-M01-U01-fondamenti/lessons/EAT-004-M01-U01-L01-node-npm-package-lock/lesson.json) | draft |
+| EAT-016-M01 | [EAT-016-M01-U01](../curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/units/EAT-016-M01-U01-fondamenti/unit.json) | [EAT-016-M01-U01-L01](../curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/units/EAT-016-M01-U01-fondamenti/lessons/EAT-016-M01-U01-L01-python-env-packaging/lesson.json) | draft |
 
 ## DAG required
 

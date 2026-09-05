@@ -1170,6 +1170,90 @@
       "type": "taxonomy",
       "title": "TypeScript",
       "path": "sources/taxonomies/roadmap-sh.json"
+    },
+    {
+      "id": "EAT-001-M01-U01",
+      "type": "unit",
+      "title": "Filesystem, processi, path e modello del terminale",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M01-filesystem-processes-paths/units/EAT-001-M01-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-001-M02-U01",
+      "type": "unit",
+      "title": "Shell sicura, environment e quoting",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M02-safe-shell-environment/units/EAT-001-M02-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-001-M03-U01",
+      "type": "unit",
+      "title": "Markdown, LaTeX e documentazione verificabile",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M03-markdown-latex-docs/units/EAT-001-M03-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-002-M01-U01",
+      "type": "unit",
+      "title": "Git: working tree, index, HEAD e snapshot",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M01-git-state-model/units/EAT-002-M01-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-002-M02-U01",
+      "type": "unit",
+      "title": "Git tra due macchine: sincronizzazione e recovery",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/units/EAT-002-M02-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-004-M01-U01",
+      "type": "unit",
+      "title": "Node runtime/process/fs/path, npm, package e lockfile",
+      "path": "curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/units/EAT-004-M01-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-016-M01-U01",
+      "type": "unit",
+      "title": "Python: ambiente, package src e test standard-library; richiamo al core",
+      "path": "curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/units/EAT-016-M01-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-001-M01-U01-L01",
+      "type": "lesson",
+      "title": "Filesystem, processi, path e modello del terminale",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M01-filesystem-processes-paths/units/EAT-001-M01-U01-fondamenti/lessons/EAT-001-M01-U01-L01-filesystem-processes-paths/lesson.json"
+    },
+    {
+      "id": "EAT-001-M02-U01-L01",
+      "type": "lesson",
+      "title": "Shell sicura, environment e quoting",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M02-safe-shell-environment/units/EAT-001-M02-U01-fondamenti/lessons/EAT-001-M02-U01-L01-safe-shell-environment/lesson.json"
+    },
+    {
+      "id": "EAT-001-M03-U01-L01",
+      "type": "lesson",
+      "title": "Markdown, LaTeX e documentazione verificabile",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M03-markdown-latex-docs/units/EAT-001-M03-U01-fondamenti/lessons/EAT-001-M03-U01-L01-markdown-latex-docs/lesson.json"
+    },
+    {
+      "id": "EAT-002-M01-U01-L01",
+      "type": "lesson",
+      "title": "Git: working tree, index, HEAD e snapshot",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M01-git-state-model/units/EAT-002-M01-U01-fondamenti/lessons/EAT-002-M01-U01-L01-git-state-model/lesson.json"
+    },
+    {
+      "id": "EAT-002-M02-U01-L01",
+      "type": "lesson",
+      "title": "Git tra due macchine: sincronizzazione e recovery",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/units/EAT-002-M02-U01-fondamenti/lessons/EAT-002-M02-U01-L01-two-machine-sync-and-recovery/lesson.json"
+    },
+    {
+      "id": "EAT-004-M01-U01-L01",
+      "type": "lesson",
+      "title": "Node runtime/process/fs/path, npm, package e lockfile",
+      "path": "curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/units/EAT-004-M01-U01-fondamenti/lessons/EAT-004-M01-U01-L01-node-npm-package-lock/lesson.json"
+    },
+    {
+      "id": "EAT-016-M01-U01-L01",
+      "type": "lesson",
+      "title": "Python: ambiente, package src e test standard-library; richiamo al core",
+      "path": "curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/units/EAT-016-M01-U01-fondamenti/lessons/EAT-016-M01-U01-L01-python-env-packaging/lesson.json"
     }
   ],
   "edges": [
@@ -4385,6 +4469,104 @@
       "strength": "required",
       "rationale": "Target richiesto per il prodotto, non valutazione della persona.",
       "from": "skill.web.http"
+    },
+    {
+      "from": "EAT-001-M01-U01",
+      "to": "EAT-001-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-001-M02-U01",
+      "to": "EAT-001-M02",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-001-M03-U01",
+      "to": "EAT-001-M03",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-002-M01-U01",
+      "to": "EAT-002-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-002-M02-U01",
+      "to": "EAT-002-M02",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-004-M01-U01",
+      "to": "EAT-004-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-016-M01-U01",
+      "to": "EAT-016-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-001-M01-U01-L01",
+      "to": "EAT-001-M01-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-001-M02-U01-L01",
+      "to": "EAT-001-M02-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-001-M03-U01-L01",
+      "to": "EAT-001-M03-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-002-M01-U01-L01",
+      "to": "EAT-002-M01-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-002-M02-U01-L01",
+      "to": "EAT-002-M02-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-004-M01-U01-L01",
+      "to": "EAT-004-M01-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-016-M01-U01-L01",
+      "to": "EAT-016-M01-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
     }
   ]
 }

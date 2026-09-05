@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-002-M02-U01-L01",
+  "unit_id": "EAT-002-M02-U01",
+  "slug": "two-machine-sync-and-recovery",
+  "title": "Git tra due macchine: sincronizzazione e recovery",
+  "order": 1,
+  "status": "draft",
+  "content_path": "lesson.md"
+}

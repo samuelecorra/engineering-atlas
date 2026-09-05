@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-016-M01-U01-L01",
+  "unit_id": "EAT-016-M01-U01",
+  "slug": "python-env-packaging",
+  "title": "Python: ambiente, package src e test standard-library; richiamo al core",
+  "order": 1,
+  "status": "draft",
+  "content_path": "lesson.md"
+}

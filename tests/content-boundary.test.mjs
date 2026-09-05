@@ -5,7 +5,7 @@ import { checkContentFiles, SECTIONS, secretLooking, sensitiveName } from '../sc
 const scope = loadModel().scope;
 function valid() {
   return Object.fromEntries(scope.starter_modules.flatMap(s => Object.entries(SECTIONS).map(([name, sections]) =>
-    [`curriculum/courses/${s.course_id}-fixture/modules/${s.directory}/${name}`, sections.map(title => `## ${title}\n\nEvidenza osservabile: sessione delimitata e diagnosi motivata.\n`).join('\n')])));
+    [`curriculum/courses/${s.course_id}-fixture/modules/${s.directory}/${name === 'lesson.md' ? `units/${s.id}-U01-fondamenti/lessons/${s.id}-U01-L01-fixture/` : ''}${name}`, sections.map(title => `## ${title}\n\nEvidenza osservabile: sessione delimitata e diagnosi motivata.\n`).join('\n')])));
 }
 test('content: i sette starter sono consentiti', () => assert.deepEqual(checkContentFiles(valid(), scope), []));
 test('content: ottavo modulo fallisce', () => { const f = valid(); f['curriculum/courses/EAT-003-js/modules/EAT-003-M01-extra/lesson.md'] = Object.values(f)[0]; assert.match(checkContentFiles(f, scope).join(), /fuori starter slice/); });

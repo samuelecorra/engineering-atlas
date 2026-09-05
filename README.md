@@ -6,7 +6,7 @@ Atlas, SSRI e IronMath restano repository separati: qui risiedono metadata, evid
 
 ## Stato e percorso di lettura
 
-Questa è la prima tranche. Il contenuto attivo resta **draft**: i controlli automatici non sostituiscono una review didattica o un assessment personale. I conteggi e il piano sono nel [report curricolare](reports/curriculum-roadmap.md).
+Il contenuto attivo resta **draft**: i controlli automatici non sostituiscono una review didattica o un assessment personale. I sette moduli sono ora organizzati in unità e lezioni con ID stabili; ogni modulo ha una U01 e una L01. I conteggi e il piano sono nel [report curricolare](reports/curriculum-roadmap.md). Gli originali dell'audit sono preservati nel [provenance pack](sources/audits/2026-09-05-initial/README.md).
 
 1. Leggi la [policy canonica](governance/AGENT_POLICY.md) e il [modello mastery](governance/MASTERY_MODEL.md).
 2. Consulta [baseline SSRI](reports/ssri-coverage.md), [requisiti IronMath](reports/ironmath-requirements.md) e [gap analysis](reports/gap-analysis.md).
@@ -24,7 +24,7 @@ Una lezione presente, un test verde o un corso SSRI non dimostrano mastery. Ness
 - `governance/`: policy, lifecycle, evidenze e ADR.
 - `sources/`: snapshot, drift, claim e tassonomia con provenienza.
 - `schemas/`: contratti JSON Schema draft 2020-12; il validator implementa e verifica il sottoinsieme effettivamente usato.
-- `catalog/skills/`, `curriculum/courses/`: metadata canonici; gli assessment hanno un proprio `assessment.json` accanto al Markdown.
+- `catalog/skills/`, `curriculum/courses/`: metadata canonici course → module → unit → lesson. Le lezioni risiedono in `units/<id>-<slug>/lessons/<id>-<slug>/lesson.md`; lab, fixture e assessment restano del modulo. Vedi [ADR-0008](governance/adr/ADR-0008-unit-lesson-hierarchy.md).
 - `graph/knowledge-graph.json`: grafo canonico; [semantica e limiti](graph/README.md).
 - `catalog/indexes/`, `reports/`: artifact generati deterministici, con check di freshness.
 - `scripts/`, `tests/`: CLI Node senza dipendenze npm; fixture didattiche offline nei moduli attivi.

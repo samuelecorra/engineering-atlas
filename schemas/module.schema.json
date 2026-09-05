@@ -102,6 +102,16 @@
       },
       "minItems": 1,
       "uniqueItems": true
+    },
+    "unit_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^EAT-\\d{3}-M\\d{2}-U\\d{2}$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
     }
   },
   "required": [
@@ -118,7 +128,8 @@
     "outcomes",
     "artifacts",
     "assessment_id",
-    "ironmath_anchors"
+    "ironmath_anchors",
+    "unit_ids"
   ],
   "additionalProperties": false
 }

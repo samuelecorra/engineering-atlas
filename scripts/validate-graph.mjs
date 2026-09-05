@@ -1,4 +1,4 @@
-import { loadModel, runCLI, coursePath, modulePath, slug } from './lib/repository.mjs';
+import { loadModel, runCLI, coursePath, modulePath, unitPath, lessonPath, slug } from './lib/repository.mjs';
 import { validateSchema } from './lib/schema.mjs';
 
 export const edgeKey = e => `${e.type}|${e.from}|${e.to}`;
@@ -57,6 +57,14 @@ export function expectedGraph(m) {
     edge(mod.id, mod.course_id, 'PART_OF');
     for (const s of [...mod.teaches_skill_ids, ...mod.reinforces_skill_ids]) edge(mod.id, s, 'REINFORCES');
   }
+  for (const u of m.units) {
+    node(u.id, 'unit', u.title, unitPath(u, m));
+    edge(u.id, u.module_id, 'PART_OF');
+  }
+  for (const l of m.lessons) {
+    node(l.id, 'lesson', l.title, lessonPath(l, m));
+    edge(l.id, l.unit_id, 'PART_OF');
+  }
   for (const a of m.assessments) {
     const mod = m.modules.find(v => v.id === a.module_id);
     node(a.id, 'assessment', a.id, mod ? modulePath(mod, m)?.replace(/module.json$/, 'assessment.json') : null);
@@ -86,7 +94,7 @@ export function validateGraph(m) {
     changed = false;
     for (const e of m.graph.edges) if (e.type === 'PART_OF' && reachable.has(e.to) && !reachable.has(e.from)) { reachable.add(e.from); changed = true; }
   }
-  for (const s of m.skills) if (['planned', 'draft', 'reviewed', 'validated'].includes(s.status) && !reachable.has(s.id)) errors.push(`${s.id}: skill non raggiungibile da corso`);
+  for (const s of [...m.skills, ...m.modules, ...m.units, ...m.lessons]) if (['planned', 'draft', 'reviewed', 'validated'].includes(s.status) && !reachable.has(s.id)) errors.push(`${s.id}: ${m.skills.includes(s) ? 'skill' : 'entità'} non raggiungibile da corso`);
   return errors;
 }
 runCLI(import.meta, () => validateGraph(loadModel()));

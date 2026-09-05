@@ -1,0 +1,49 @@
+{
+  "generated": true,
+  "source": "canonical course/module/unit/lesson metadata",
+  "regenerate": "npm run build:indexes",
+  "entries": [
+    {
+      "id": "EAT-001-M01-U01",
+      "title": "Filesystem, processi, path e modello del terminale",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M01-filesystem-processes-paths/units/EAT-001-M01-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-001-M02-U01",
+      "title": "Shell sicura, environment e quoting",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M02-safe-shell-environment/units/EAT-001-M02-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-001-M03-U01",
+      "title": "Markdown, LaTeX e documentazione verificabile",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-001-workstation-cli-markdown/modules/EAT-001-M03-markdown-latex-docs/units/EAT-001-M03-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-002-M01-U01",
+      "title": "Git: working tree, index, HEAD e snapshot",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M01-git-state-model/units/EAT-002-M01-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-002-M02-U01",
+      "title": "Git tra due macchine: sincronizzazione e recovery",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/units/EAT-002-M02-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-004-M01-U01",
+      "title": "Node runtime/process/fs/path, npm, package e lockfile",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/units/EAT-004-M01-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-016-M01-U01",
+      "title": "Python: ambiente, package src e test standard-library; richiamo al core",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/units/EAT-016-M01-U01-fondamenti/unit.json"
+    }
+  ]
+}
