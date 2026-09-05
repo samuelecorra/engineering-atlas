@@ -25,7 +25,17 @@ export function validatePolicy(root = ROOT) {
   const git = spawnSync('git', ['-C', root, 'rev-parse', '--show-toplevel'], { encoding: 'utf8' });
   if (git.status === 0 && path.resolve(git.stdout.trim()) === path.resolve(root)) {
     const remotes = spawnSync('git', ['-C', root, 'remote'], { encoding: 'utf8' });
-    if (remotes.status !== 0 || remotes.stdout.trim()) errors.push('Atlas deve restare senza remote');
+    if (remotes.status !== 0) errors.push('Impossibile verificare i remote Git');
+    const names = remotes.stdout.trim().split(/\r?\n/).filter(Boolean);
+    for (const name of names) {
+      if (name !== 'origin') { errors.push('Remote non previsto dalla policy GitHub'); continue; }
+      for (const flags of [[], ['--push']]) {
+        const urls = spawnSync('git', ['-C', root, 'remote', 'get-url', '--all', ...flags, name], { encoding: 'utf8' });
+        const targets = urls.stdout.trim().split(/\r?\n/).filter(Boolean);
+        const official = /^(?:https:\/\/github\.com\/samuelecorra\/engineering-atlas|git@github\.com:samuelecorra\/engineering-atlas|ssh:\/\/git@github\.com\/samuelecorra\/engineering-atlas)(?:\.git)?$/;
+        if (urls.status !== 0 || targets.length === 0 || targets.some(url => !official.test(url))) errors.push('Origin deve puntare alla repository GitHub ufficiale, per fetch e push');
+      }
+    }
     const ignored = spawnSync('git', ['-C', root, 'check-ignore', '--no-index', 'progress/learner-profile.json'], { encoding: 'utf8' });
     if (ignored.status !== 0) errors.push('Git non ignora progress reale');
   }

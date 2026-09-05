@@ -1,6 +1,8 @@
 # Engineering Atlas
 
-Repository locale per collegare il curriculum documentato in SSRI alla manutenzione end-to-end di IronMath. I due repository restano separati: qui risiedono metadata, evidenze, grafo e percorsi didattici; nessuna dipendenza runtime li collega.
+Curriculum personale di software engineering per collegare la baseline documentata in SSRI alla manutenzione end-to-end di IronMath, con evidenze, knowledge graph, lab offline e assessment. Repository pubblico: [samuelecorra/engineering-atlas](https://github.com/samuelecorra/engineering-atlas).
+
+Atlas, SSRI e IronMath restano repository separati: qui risiedono metadata, evidenze, grafo e percorsi didattici; nessuna dipendenza runtime li collega. I controlli e i lab si eseguono localmente.
 
 ## Stato e percorso di lettura
 
@@ -41,7 +43,14 @@ npm run check:generated
 git diff --check
 ```
 
-Su un clone pulito esegui prima `npm ci`, poi `validate`, `test` e `check:generated` **senza rigenerare**: così rilevi artifact obsoleti. I test lanciano anche le fixture Node, Git e Python; se un interprete manca falliscono con un errore esplicito, senza skip silenziosi. Per Windows puoi impostare `ATLAS_PYTHON` al percorso dell'interprete. PowerShell usa `$env:ATLAS_PYTHON = 'python'`; Bash usa `export ATLAS_PYTHON=python3`.
+Per ottenere una copia locale:
+
+```text
+git clone https://github.com/samuelecorra/engineering-atlas.git
+cd engineering-atlas
+```
+
+Su un clone pulito esegui prima `npm ci --ignore-scripts --offline --no-audit --no-fund`, poi `npm run validate`, `npm test` e `npm run check:generated` **senza rigenerare**: così rilevi artifact obsoleti. I test lanciano anche le fixture Node, Git e Python; se un interprete manca falliscono con un errore esplicito, senza skip silenziosi. Per Windows puoi impostare `ATLAS_PYTHON` al percorso dell'interprete. PowerShell usa `$env:ATLAS_PYTHON = 'python'`; Bash usa `export ATLAS_PYTHON=python3`.
 
 ## Starter slice
 
@@ -63,5 +72,7 @@ La tranche fissa skill, corsi e slice in `governance/scope.json`. Per una succes
 
 ## Confini
 
-Nessun sito, workflow, deploy, remote o push fa parte di Atlas. I corsi cloud sono soltanto metadata pianificati. SSRI è baseline accademica: non ne vengono riscritti i corsi già coperti.
+La pubblicazione iniziale su GitHub è autorizzata dall'utente e registrata in [ADR-0006](governance/adr/ADR-0006-public-github-repository.md). `origin` può puntare alla repository ufficiale; i push successivi richiedono una richiesta che li autorizzi. Non sono previsti sito, GitHub Pages, workflow o deploy. I corsi cloud sono soltanto metadata pianificati. SSRI è baseline accademica: non ne vengono riscritti i corsi già coperti.
+
+Il package resta `private: true` per impedirne la pubblicazione su npm. La licenza di riuso è ancora da scegliere; questa tranche non aggiunge un file LICENSE. Il profilo personale reale resta locale e ignorato da Git.
 roadmap.sh fornisce soltanto label tassonomiche e URL (`taxonomy-label-only`), senza roadmap o descrizioni copiate. Le URL non verificate restano `pending` e non sono prerequisiti dei test offline. La disponibilità locale dei commit è registrata in [sources](sources/repositories.json); il drift non aggiorna l'audit implicitamente.

@@ -1,6 +1,11 @@
 {
   "name": "engineering-atlas",
   "version": "0.1.0",
+  "description": "Curriculum personale di software engineering: baseline SSRI, manutenzione IronMath, evidenze, knowledge graph e lab offline.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samuelecorra/engineering-atlas.git"
+  },
   "private": true,
   "type": "module",
   "engines": {

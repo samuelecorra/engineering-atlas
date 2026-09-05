@@ -1,6 +1,8 @@
 # ADR-0005 — Solo locale, senza pubblicazione
 
-Stato: accepted · Data: 2026-09-05
+Stato: parzialmente superato da [ADR-0006](ADR-0006-public-github-repository.md) · Data: 2026-09-05
+
+Decisione storica della prima inizializzazione. La successiva richiesta dell'utente autorizza la repository pubblica GitHub, il remote ufficiale e il push iniziale. I divieti di sito, workflow e deploy restano attivi.
 
 ## Contesto
 
