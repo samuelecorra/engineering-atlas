@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-06T09:12:27Z",
+  "title": "Design System: Engineering Atlas",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Blu-nero di lavoro",
+        "tonalRamp": [
+          "oklch(15.00% 0.03881 238.66)",
+          "oklch(26.43% 0.03881 238.66)",
+          "oklch(37.86% 0.03881 238.66)",
+          "oklch(49.29% 0.03881 238.66)",
+          "oklch(60.71% 0.03881 238.66)",
+          "oklch(72.14% 0.03881 238.66)",
+          "oklch(83.57% 0.03881 238.66)",
+          "oklch(95.00% 0.03881 238.66)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Piano blu rialzato",
+        "tonalRamp": [
+          "oklch(15.00% 0.03872 235.16)",
+          "oklch(26.43% 0.03872 235.16)",
+          "oklch(37.86% 0.03872 235.16)",
+          "oklch(49.29% 0.03872 235.16)",
+          "oklch(60.71% 0.03872 235.16)",
+          "oklch(72.14% 0.03872 235.16)",
+          "oklch(83.57% 0.03872 235.16)",
+          "oklch(95.00% 0.03872 235.16)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Bianco tecnico",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Grigio ghiaccio",
+        "tonalRamp": [
+          "oklch(15.00% 0.02064 233.91)",
+          "oklch(26.43% 0.02064 233.91)",
+          "oklch(37.86% 0.02064 233.91)",
+          "oklch(49.29% 0.02064 233.91)",
+          "oklch(60.71% 0.02064 233.91)",
+          "oklch(72.14% 0.02064 233.91)",
+          "oklch(83.57% 0.02064 233.91)",
+          "oklch(95.00% 0.02064 233.91)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Regola ardesia",
+        "tonalRamp": [
+          "oklch(15.00% 0.03117 228.92)",
+          "oklch(26.43% 0.03117 228.92)",
+          "oklch(37.86% 0.03117 228.92)",
+          "oklch(49.29% 0.03117 228.92)",
+          "oklch(60.71% 0.03117 228.92)",
+          "oklch(72.14% 0.03117 228.92)",
+          "oklch(83.57% 0.03117 228.92)",
+          "oklch(95.00% 0.03117 228.92)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Lime operativo",
+        "tonalRamp": [
+          "oklch(15.00% 0.18884 128.72)",
+          "oklch(26.43% 0.18884 128.72)",
+          "oklch(37.86% 0.18884 128.72)",
+          "oklch(49.29% 0.18884 128.72)",
+          "oklch(60.71% 0.18884 128.72)",
+          "oklch(72.14% 0.18884 128.72)",
+          "oklch(83.57% 0.18884 128.72)",
+          "oklch(95.00% 0.18884 128.72)"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Inchiostro sul lime",
+        "tonalRamp": [
+          "oklch(15.00% 0.04745 135.16)",
+          "oklch(26.43% 0.04745 135.16)",
+          "oklch(37.86% 0.04745 135.16)",
+          "oklch(49.29% 0.04745 135.16)",
+          "oklch(60.71% 0.04745 135.16)",
+          "oklch(72.14% 0.04745 135.16)",
+          "oklch(83.57% 0.04745 135.16)",
+          "oklch(95.00% 0.04745 135.16)"
+        ]
+      },
+      "map-line": {
+        "role": "neutral",
+        "displayName": "Traccia cartografica",
+        "tonalRamp": [
+          "oklch(15.00% 0.02869 228.23)",
+          "oklch(26.43% 0.02869 228.23)",
+          "oklch(37.86% 0.02869 228.23)",
+          "oklch(49.29% 0.02869 228.23)",
+          "oklch(60.71% 0.02869 228.23)",
+          "oklch(72.14% 0.02869 228.23)",
+          "oklch(83.57% 0.02869 228.23)",
+          "oklch(95.00% 0.02869 228.23)"
+        ]
+      },
+      "grid": {
+        "role": "neutral",
+        "displayName": "Griglia profonda",
+        "tonalRamp": [
+          "oklch(15.00% 0.03199 229.39)",
+          "oklch(26.43% 0.03199 229.39)",
+          "oklch(37.86% 0.03199 229.39)",
+          "oklch(49.29% 0.03199 229.39)",
+          "oklch(60.71% 0.03199 229.39)",
+          "oklch(72.14% 0.03199 229.39)",
+          "oklch(83.57% 0.03199 229.39)",
+          "oklch(95.00% 0.03199 229.39)"
+        ]
+      },
+      "danger": {
+        "role": "neutral",
+        "displayName": "Avviso corallo",
+        "tonalRamp": [
+          "oklch(15.00% 0.08120 33.85)",
+          "oklch(26.43% 0.08120 33.85)",
+          "oklch(37.86% 0.08120 33.85)",
+          "oklch(49.29% 0.08120 33.85)",
+          "oklch(60.71% 0.08120 33.85)",
+          "oklch(72.14% 0.08120 33.85)",
+          "oklch(83.57% 0.08120 33.85)",
+          "oklch(95.00% 0.08120 33.85)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Lime di focus",
+        "tonalRamp": [
+          "oklch(15.00% 0.12962 122.91)",
+          "oklch(26.43% 0.12962 122.91)",
+          "oklch(37.86% 0.12962 122.91)",
+          "oklch(49.29% 0.12962 122.91)",
+          "oklch(60.71% 0.12962 122.91)",
+          "oklch(72.14% 0.12962 122.91)",
+          "oklch(83.57% 0.12962 122.91)",
+          "oklch(95.00% 0.12962 122.91)"
+        ]
+      },
+      "light-ground": {
+        "role": "neutral",
+        "displayName": "Carta fredda",
+        "tonalRamp": [
+          "oklch(15.00% 0.00447 214.33)",
+          "oklch(26.43% 0.00447 214.33)",
+          "oklch(37.86% 0.00447 214.33)",
+          "oklch(49.29% 0.00447 214.33)",
+          "oklch(60.71% 0.00447 214.33)",
+          "oklch(72.14% 0.00447 214.33)",
+          "oklch(83.57% 0.00447 214.33)",
+          "oklch(95.00% 0.00447 214.33)"
+        ]
+      },
+      "light-surface": {
+        "role": "neutral",
+        "displayName": "Piano azzurrato",
+        "tonalRamp": [
+          "oklch(15.00% 0.00897 214.34)",
+          "oklch(26.43% 0.00897 214.34)",
+          "oklch(37.86% 0.00897 214.34)",
+          "oklch(49.29% 0.00897 214.34)",
+          "oklch(60.71% 0.00897 214.34)",
+          "oklch(72.14% 0.00897 214.34)",
+          "oklch(83.57% 0.00897 214.34)",
+          "oklch(95.00% 0.00897 214.34)"
+        ]
+      },
+      "light-ink": {
+        "role": "neutral",
+        "displayName": "Inchiostro scuro",
+        "tonalRamp": [
+          "oklch(15.00% 0.03253 226.43)",
+          "oklch(26.43% 0.03253 226.43)",
+          "oklch(37.86% 0.03253 226.43)",
+          "oklch(49.29% 0.03253 226.43)",
+          "oklch(60.71% 0.03253 226.43)",
+          "oklch(72.14% 0.03253 226.43)",
+          "oklch(83.57% 0.03253 226.43)",
+          "oklch(95.00% 0.03253 226.43)"
+        ]
+      },
+      "light-muted": {
+        "role": "neutral",
+        "displayName": "Ardesia leggibile",
+        "tonalRamp": [
+          "oklch(15.00% 0.03672 228.15)",
+          "oklch(26.43% 0.03672 228.15)",
+          "oklch(37.86% 0.03672 228.15)",
+          "oklch(49.29% 0.03672 228.15)",
+          "oklch(60.71% 0.03672 228.15)",
+          "oklch(72.14% 0.03672 228.15)",
+          "oklch(83.57% 0.03672 228.15)",
+          "oklch(95.00% 0.03672 228.15)"
+        ]
+      },
+      "light-rule": {
+        "role": "neutral",
+        "displayName": "Regola chiara",
+        "tonalRamp": [
+          "oklch(15.00% 0.02295 226.23)",
+          "oklch(26.43% 0.02295 226.23)",
+          "oklch(37.86% 0.02295 226.23)",
+          "oklch(49.29% 0.02295 226.23)",
+          "oklch(60.71% 0.02295 226.23)",
+          "oklch(72.14% 0.02295 226.23)",
+          "oklch(83.57% 0.02295 226.23)",
+          "oklch(95.00% 0.02295 226.23)"
+        ]
+      },
+      "light-accent": {
+        "role": "primary",
+        "displayName": "Verde operativo",
+        "tonalRamp": [
+          "oklch(15.00% 0.11666 133.53)",
+          "oklch(26.43% 0.11666 133.53)",
+          "oklch(37.86% 0.11666 133.53)",
+          "oklch(49.29% 0.11666 133.53)",
+          "oklch(60.71% 0.11666 133.53)",
+          "oklch(72.14% 0.11666 133.53)",
+          "oklch(83.57% 0.11666 133.53)",
+          "oklch(95.00% 0.11666 133.53)"
+        ]
+      },
+      "light-accent-ink": {
+        "role": "primary",
+        "displayName": "Bianco sul verde",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "light-map-line": {
+        "role": "neutral",
+        "displayName": "Traccia ardesia",
+        "tonalRamp": [
+          "oklch(15.00% 0.03445 225.56)",
+          "oklch(26.43% 0.03445 225.56)",
+          "oklch(37.86% 0.03445 225.56)",
+          "oklch(49.29% 0.03445 225.56)",
+          "oklch(60.71% 0.03445 225.56)",
+          "oklch(72.14% 0.03445 225.56)",
+          "oklch(83.57% 0.03445 225.56)",
+          "oklch(95.00% 0.03445 225.56)"
+        ]
+      },
+      "light-grid": {
+        "role": "neutral",
+        "displayName": "Griglia chiara",
+        "tonalRamp": [
+          "oklch(15.00% 0.01664 221.10)",
+          "oklch(26.43% 0.01664 221.10)",
+          "oklch(37.86% 0.01664 221.10)",
+          "oklch(49.29% 0.01664 221.10)",
+          "oklch(60.71% 0.01664 221.10)",
+          "oklch(72.14% 0.01664 221.10)",
+          "oklch(83.57% 0.01664 221.10)",
+          "oklch(95.00% 0.01664 221.10)"
+        ]
+      },
+      "light-danger": {
+        "role": "neutral",
+        "displayName": "Avviso mattone",
+        "tonalRamp": [
+          "oklch(15.00% 0.13655 33.63)",
+          "oklch(26.43% 0.13655 33.63)",
+          "oklch(37.86% 0.13655 33.63)",
+          "oklch(49.29% 0.13655 33.63)",
+          "oklch(60.71% 0.13655 33.63)",
+          "oklch(72.14% 0.13655 33.63)",
+          "oklch(83.57% 0.13655 33.63)",
+          "oklch(95.00% 0.13655 33.63)"
+        ]
+      },
+      "light-focus": {
+        "role": "primary",
+        "displayName": "Verde di focus",
+        "tonalRamp": [
+          "oklch(15.00% 0.11666 133.53)",
+          "oklch(26.43% 0.11666 133.53)",
+          "oklch(37.86% 0.11666 133.53)",
+          "oklch(49.29% 0.11666 133.53)",
+          "oklch(60.71% 0.11666 133.53)",
+          "oklch(72.14% 0.11666 133.53)",
+          "oklch(83.57% 0.11666 133.53)",
+          "oklch(95.00% 0.11666 133.53)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Titolo di pagina",
+        "purpose": "Titoli delle pagine di curriculum, con misura massima di 28ch."
+      },
+      "headline": {
+        "displayName": "Titolo principale",
+        "purpose": "Titolo ordinario e dimensione del titolo inspector; il secondo usa interlinea 1,25."
+      },
+      "section": {
+        "displayName": "Titolo di sezione",
+        "purpose": "Gerarchia di secondo livello fuori dalle varianti del reader."
+      },
+      "title": {
+        "displayName": "Sottotitolo",
+        "purpose": "Titoli ordinari di terzo livello."
+      },
+      "body": {
+        "displayName": "Testo di interfaccia",
+        "purpose": "Navigazione, controlli e spiegazioni."
+      },
+      "reading": {
+        "displayName": "Testo di lettura",
+        "purpose": "Articoli in una colonna fino a 72ch; mobile 1rem e interlinea 1,8."
+      },
+      "label": {
+        "displayName": "Etichetta",
+        "purpose": "Metadata e stato del contenuto."
+      },
+      "mono": {
+        "displayName": "Identificatore e codice",
+        "purpose": "ID canonici e codice; dimensioni adattate al contesto, numeri tabulari negli ID."
+      }
+    },
+    "shadows": [
+      {
+        "name": "search-overlay",
+        "value": "0 12px 24px #0004",
+        "purpose": "Popup temporaneo della ricerca; non appartiene ai contenitori persistenti."
+      }
+    ],
+    "motion": [
+      {
+        "name": "selection-duration",
+        "value": "180ms",
+        "purpose": "Transizioni di stroke, fill e stroke-width di nodi e archi, solo con prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "selection-easing",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Transizione breve della selezione; feedback presente anche senza movimento."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop-max",
+        "value": "1280px"
+      },
+      {
+        "name": "horizontal-nav-and-list-max",
+        "value": "1023px"
+      },
+      {
+        "name": "narrow-max",
+        "value": "767px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Azione principale",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Azione di apertura o recupero, piena e accentata.",
+      "html": "<button class=\"ds-primary\">Apri il corso<svg aria-hidden=\"true\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 12h18m-7-7 7 7-7 7\"/></svg></button>",
+      "css": ".ds-primary{font-family:'Manrope Variable',sans-serif;display:inline-flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 20px;min-height:50px;border:0;border-radius:5px;background:var(--accent,#baf863);color:var(--accent-ink,#112008);font-size:16px;font-weight:700;cursor:pointer}.ds-primary:hover{background:color-mix(in srgb,var(--accent,#baf863),white 15%);color:var(--accent-ink,#112008)}.ds-primary:focus-visible{outline:2px solid var(--focus,#e0ff9b);outline-offset:5px;}.ds-primary:disabled{opacity:.45;cursor:not-allowed}"
+    },
+    {
+      "name": "Azione secondaria",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Comando bordato; lo stato premuto rimane testuale e semantico.",
+      "html": "<button class=\"ds-secondary\" aria-pressed=\"false\">Segna come letta</button>",
+      "css": ".ds-secondary{font-family:'Manrope Variable',sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 18px;border:1px solid var(--rule,#344953);border-radius:4px;background:transparent;color:var(--ink,#f6f6f6);font-size:16px;cursor:pointer}.ds-secondary:hover{border-color:var(--accent,#baf863);color:var(--accent,#baf863)}.ds-secondary[aria-pressed=\"true\"]{color:var(--accent,#baf863)}.ds-secondary:focus-visible{outline:2px solid var(--focus,#e0ff9b);outline-offset:5px;}.ds-secondary:disabled{opacity:.45;cursor:not-allowed}"
+    },
+    {
+      "name": "Azione discreta",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Comando della vista o chiusura ricerca senza riempimento.",
+      "html": "<button class=\"ds-quiet\" aria-pressed=\"false\"><svg aria-hidden=\"true\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 5h13M8 12h13M8 19h13M3 5h1M3 12h1M3 19h1\"/></svg>Vista elenco</button>",
+      "css": ".ds-quiet{font-family:'Manrope Variable',sans-serif;display:inline-flex;align-items:center;gap:8px;padding:8px 0;border:0;background:transparent;color:var(--muted,#becdd6);font-size:.85rem;cursor:pointer}.ds-quiet:hover{color:var(--accent,#baf863)}.ds-quiet:focus-visible{outline:2px solid var(--focus,#e0ff9b);outline-offset:5px;}@media(max-width:767px){.ds-quiet{min-height:44px}}"
+    },
+    {
+      "name": "Ricerca del percorso",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Campo del masthead con icona autoriale e label accessibile.",
+      "html": "<form class=\"ds-search\" role=\"search\"><svg aria-hidden=\"true\" width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 16l5 5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z\"/></svg><input type=\"search\" aria-label=\"Cerca nel percorso\" placeholder=\"Cerca nel percorso\" autocomplete=\"off\"/></form>",
+      "css": ".ds-search{font-family:'Manrope Variable',sans-serif;display:flex;align-items:center;gap:12px;height:44px;padding:0 13px;border:1px solid var(--rule,#344953);border-radius:5px;color:var(--muted,#becdd6)}.ds-search input{font-family:'Manrope Variable',sans-serif;width:100%;min-width:0;border:0;background:transparent;color:var(--ink,#f6f6f6);font-size:16px;caret-color:var(--accent,#baf863)}.ds-search input::placeholder{color:var(--muted,#becdd6);opacity:1}.ds-search input:focus-visible{outline:2px solid var(--focus,#e0ff9b);outline-offset:8px}"
+    },
+    {
+      "name": "Navigazione corrente",
+      "kind": "nav",
+      "description": "Voce corrente con superficie, icona e indicatore laterale; in orizzontale indicatore inferiore.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navigazione principale\"><a class=\"ds-nav-current\" href=\"#mappa\" aria-current=\"page\"><svg aria-hidden=\"true\" width=\"29\" height=\"29\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2v3m0 14v3M2 12h3m14 0h3M19 12a7 7 0 1 1-14 0 7 7 0 0 1 14 0ZM15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z\"/></svg>Mappa</a></nav>",
+      "css": ".ds-nav{font-family:'Manrope Variable',sans-serif;max-width:260px}.ds-nav a{display:flex;align-items:center;gap:24px;height:80px;padding:0 28px;border-radius:0 6px 6px 0;position:relative;text-decoration:none;font-size:1.075rem;background:var(--surface,#0b2330);color:var(--ink,#f6f6f6)}.ds-nav a::before{content:\"\";position:absolute;top:0;bottom:0;left:0;width:4px;background:var(--accent,#baf863)}.ds-nav svg{color:var(--accent,#baf863)}.ds-nav a:hover{color:var(--accent,#baf863)}.ds-nav a:focus-visible{outline:2px solid var(--focus,#e0ff9b);outline-offset:5px;}@media(max-width:1023px){.ds-nav a{height:64px;border-radius:0;padding:0 20px;gap:12px}.ds-nav a::before{height:2px;width:auto;top:auto;right:0}}"
+    },
+    {
+      "name": "Stato del contenuto",
+      "kind": "chip",
+      "refersTo": "content-status",
+      "description": "Etichette non interattive: draft accentato e pianificato attenuato.",
+      "html": "<div class=\"ds-statuses\"><span class=\"ds-status ds-draft\">draft</span><span class=\"ds-status\">pianificato</span></div>",
+      "css": ".ds-statuses{display:flex;flex-wrap:wrap;gap:12px}.ds-status{font-family:'Manrope Variable',sans-serif;display:inline-block;font-size:.8rem;line-height:1.5;color:var(--muted,#becdd6);border:1px solid var(--rule,#344953);border-radius:4px;padding:3px 9px;white-space:nowrap}.ds-status.ds-draft{color:var(--accent,#baf863)}"
+    },
+    {
+      "name": "Dettaglio del nodo",
+      "kind": "card",
+      "refersTo": "node-detail",
+      "description": "Contenitore tonale del grafo, senza ombra.",
+      "html": "<section class=\"ds-detail\"><h2>Engineering workstation, CLI, Markdown and reproducibility</h2><p class=\"ds-detail-id\">EAT-001</p><p>Mastery personale: non valutata</p></section>",
+      "css": ".ds-detail{font-family:'Manrope Variable',sans-serif;padding:24px;background:var(--surface,#0b2330);color:var(--ink,#f6f6f6);border-radius:4px;min-width:0}.ds-detail h2{font-family:\"Nanum Gothic\",sans-serif;font-size:1.5rem;font-weight:700;line-height:1.3;margin:0 0 20px;overflow-wrap:anywhere}.ds-detail p{margin:16px 0;font-size:.9rem;line-height:1.7}.ds-detail .ds-detail-id{font-family:\"JetBrains Mono Variable\",monospace;overflow-wrap:anywhere}"
+    },
+    {
+      "name": "Nodo orbitale selezionato",
+      "kind": "custom",
+      "description": "Anello, ID e nome canonico completo; anteprima dello stato selezionato, senza runtime del grafo.",
+      "html": "<svg class=\"ds-orbit\" viewBox=\"0 0 340 145\" role=\"group\" aria-label=\"Anteprima di un corso selezionato\"><g class=\"ds-course\" transform=\"translate(36,36)\" role=\"button\" tabindex=\"0\" aria-pressed=\"true\" aria-label=\"Seleziona EAT-001: Engineering workstation, CLI, Markdown and reproducibility\"><circle class=\"ds-hit\" r=\"28\"/><circle class=\"ds-ring\" r=\"19\"/><circle class=\"ds-dot\" r=\"10\"/><text x=\"32\" y=\"5\">EAT-001</text></g><text class=\"ds-name\" x=\"20\" y=\"85\"><tspan x=\"20\">Engineering workstation,</tspan><tspan x=\"20\" dy=\"17\">CLI, Markdown and reproducibility</tspan></text></svg>",
+      "css": ".ds-orbit{width:100%;max-width:340px;display:block;background:var(--ground,#00121f);color:var(--ink,#f6f6f6)}.ds-course{cursor:pointer}.ds-hit{fill:transparent}.ds-ring{fill:none;stroke:var(--accent,#baf863);stroke-width:.9}.ds-dot{fill:var(--ground,#00121f);stroke:var(--accent,#baf863);stroke-width:2.4}.ds-course text{font-family:\"JetBrains Mono Variable\",monospace;font-size:14px;fill:var(--accent,#baf863);paint-order:stroke;stroke:var(--ground,#00121f);stroke-width:5px;stroke-linejoin:round}.ds-course:hover .ds-dot{fill:var(--accent,#baf863)}.ds-course:focus{outline:none}.ds-course:focus-visible .ds-hit{stroke:var(--focus,#e0ff9b);stroke-width:2;stroke-dasharray:3 3}.ds-name{font-family:\"Manrope Variable\",sans-serif;font-size:12px;fill:var(--ink,#f6f6f6);paint-order:stroke;stroke:var(--ground,#00121f);stroke-width:4px;stroke-linejoin:round;pointer-events:none}@media(prefers-reduced-motion:no-preference){.ds-dot,.ds-ring{transition:stroke 180ms cubic-bezier(.16,1,.3,1),fill 180ms cubic-bezier(.16,1,.3,1),stroke-width 180ms cubic-bezier(.16,1,.3,1)}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Atlante orbitale di lavoro",
+    "overview": "Un piano blu-nero, regole cartografiche sottili e segnali lime rendono visibili relazioni e selezione. Il carattere è preciso, adulto e tecnico: la geometria organizza dati reali, mentre il testo conserva nomi canonici, gerarchia e significato degli stati. Questa formulazione descrive la direzione orbitale già approvata in [surface brief](apps/web/.impeccable/surfaces/apps-web-src-app-tsx.md).\n\nLa densità cambia con l'attività. Esplorazione e navigazione rendono confrontabili molte entità; il reader offre testo misurato, spaziatura distesa e un indice. I vincoli visivi duraturi di [PRODUCT.md](PRODUCT.md) sono leggibilità, accesso da tastiera, movimento funzionale e distinzione esplicita fra consultazione, stato del contenuto e mastery.",
+    "keyCharacteristics": [
+      "Fondo blu-nero e superfici tonali, con un solo accento operativo.",
+      "Titoli Nanum Gothic, testo Manrope e identificatori JetBrains Mono.",
+      "Regole sottili, controlli quasi squadrati e icone SVG autoriali.",
+      "Geometria cartografica per esplorare; misura di lettura contenuta per studiare.",
+      "Stati nominati e alternative accessibili alla mappa."
+    ],
+    "rules": [
+      {
+        "name": "The Selection Rule",
+        "body": "L'accento evidenzia elementi attivi, azioni e stati espliciti; non riempie indiscriminatamente le superfici. Una relazione evidenziata indica il contesto selezionato, non un avanzamento personale.",
+        "section": "colors"
+      },
+      {
+        "name": "The Named State Rule",
+        "body": "Colore e geometria accompagnano sempre un nome di stato o una semantica accessibile. Draft, pianificato e letto conservano significati distinti.",
+        "section": "colors"
+      },
+      {
+        "name": "The Identity Rule",
+        "body": "Il nome canonico deve restare completo nell'inspector e nell'annotazione selezionata; l'ID monospaziato lo accompagna e non lo sostituisce nei contesti di comprensione.",
+        "section": "typography"
+      },
+      {
+        "name": "The Reading Measure Rule",
+        "body": "Il reader limita la misura del testo e confina lo scorrimento orizzontale a codice, tabelle, formule e mappa opzionale. L'indice e i controlli rimangono raggiungibili da tastiera.",
+        "section": "layout"
+      },
+      {
+        "name": "The Tonal Plane Rule",
+        "body": "I contenuti persistenti si separano con tono, spazio e regole. L'ombra ambientale appartiene al livello temporaneo della ricerca.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do usare i ruoli della palette in entrambi i temi e mantenere contrasto tra testo, superficie e focus.",
+      "Do conservare nomi canonici completi, ID riconoscibili e significati espliciti degli stati.",
+      "Do rappresentare relazioni con dati canonici e offrire un percorso da tastiera e in elenco.",
+      "Do limitare la misura del reader e lasciare a codice, tabelle e formule il proprio scorrimento.",
+      "Do mantenere la selezione comprensibile quando il movimento è disattivato."
+    ],
+    "donts": [
+      "Don't rappresentare consultazione, coverage SSRI o target IronMath come mastery personale.",
+      "Don't trasformare la griglia cartografica in una decorazione obbligatoria del reader.",
+      "Don't aggiungere eyebrow decorativi, icone-glyph, ombre rigide o superfici glass senza un'esigenza del sistema.",
+      "Don't introdurre gradienti viola/blu generici, gamification infantile o card annidate senza ragione.",
+      "Don't sostituire il diagramma navigabile con un raster o inventare archi per somigliare al mock."
+    ]
+  }
+}
