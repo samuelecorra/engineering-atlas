@@ -6,7 +6,7 @@ Atlas, SSRI e IronMath restano repository separati: qui risiedono metadata, evid
 
 ## Stato e percorso di lettura
 
-Il contenuto attivo resta **draft**: i controlli automatici non sostituiscono una review didattica o un assessment personale. I sette moduli sono ora organizzati in unità e lezioni con ID stabili; ogni modulo ha una U01 e una L01. I conteggi e il piano sono nel [report curricolare](reports/curriculum-roadmap.md). Gli originali dell'audit sono preservati nel [provenance pack](sources/audits/2026-09-05-initial/README.md).
+Il contenuto attivo resta **draft**: i controlli automatici non sostituiscono una review didattica o un assessment personale. I sette starter conservano U01/L01; il nuovo corso VS Code EAT-021 inizia con un modulo, due unità e quattro lezioni. I conteggi e il piano sono nel [report curricolare](reports/curriculum-roadmap.md). Gli originali dell'audit sono preservati nel [provenance pack](sources/audits/2026-09-05-initial/README.md).
 
 1. Leggi la [policy canonica](governance/AGENT_POLICY.md) e il [modello mastery](governance/MASTERY_MODEL.md).
 2. Consulta [baseline SSRI](reports/ssri-coverage.md), [requisiti IronMath](reports/ironmath-requirements.md) e [gap analysis](reports/gap-analysis.md).
@@ -27,30 +27,39 @@ Una lezione presente, un test verde o un corso SSRI non dimostrano mastery. Ness
 - `catalog/skills/`, `curriculum/courses/`: metadata canonici course → module → unit → lesson. Le lezioni risiedono in `units/<id>-<slug>/lessons/<id>-<slug>/lesson.md`; lab, fixture e assessment restano del modulo. Vedi [ADR-0008](governance/adr/ADR-0008-unit-lesson-hierarchy.md).
 - `graph/knowledge-graph.json`: grafo canonico; [semantica e limiti](graph/README.md).
 - `catalog/indexes/`, `reports/`: artifact generati deterministici, con check di freshness.
-- `scripts/`, `tests/`: CLI Node senza dipendenze npm; fixture didattiche offline nei moduli attivi.
+- `scripts/`, `tests/`: CLI curricolari Node senza dipendenze runtime npm; fixture didattiche offline nei moduli attivi.
+- `apps/web`: unico workspace frontend React/TypeScript/Vite/Tailwind, locale secondo [ADR-0009](governance/adr/ADR-0009-local-web-application.md).
+- `apps/web/src/generated/atlas.json`: proiezione statica del curriculum e dei documenti, prodotta da `scripts/build-web-data.mjs`.
 
 ## Comandi locali
 
 Richiesti Node 24 e npm 11; Git per i lab Git, Python 3.10+ con `venv` per il lab Python. Non servono account, credenziali o repository fratelli per i controlli.
 
 ```text
-npm ci --ignore-scripts --offline --no-audit --no-fund
-npm run build:indexes
-npm run build:reports
-npm run validate
-npm test
-npm run check:generated
-git diff --check
+npm ci --ignore-scripts --no-audit --no-fund
+npm run install:web-browser
+npm run check
+npm run dev:web
 ```
 
-Per ottenere una copia locale:
+L’installazione delle dipendenze e di Chromium richiede rete la prima volta. Dopo averli installati, app, test e lab funzionano localmente; i link esterni nelle lezioni restano risorse facoltative da aprire. `npm run dev:web` serve l’app su `http://127.0.0.1:5173`. Interrompi il processo con Ctrl+C. La preview della build si avvia con `npm run preview --workspace apps/web` su `http://127.0.0.1:4173`.
+
+Su un clone pulito verifica la freshness **senza rigenerare**. `npm run check` esegue validator, test curricolari e lab, lint, test React, build, test Chromium, freshness e `git diff --check`. Se Chromium non è installato il gate fallisce con l’istruzione di installazione; non ci sono skip silenziosi. Il browser di prova usa profili isolati e conserva cache, tracce e screenshot ignorati dentro Atlas.
+
+Dopo una modifica autorizzata delle fonti canoniche, rigenera e verifica:
 
 ```text
-git clone https://github.com/samuelecorra/engineering-atlas.git
-cd engineering-atlas
+npm run build:indexes
+npm run build:reports
+npm run build:web-data
+npm run check
 ```
 
-Su un clone pulito esegui prima `npm ci --ignore-scripts --offline --no-audit --no-fund`, poi `npm run validate`, `npm test` e `npm run check:generated` **senza rigenerare**: così rilevi artifact obsoleti. I test lanciano anche le fixture Node, Git e Python; se un interprete manca falliscono con un errore esplicito, senza skip silenziosi. Per Windows puoi impostare `ATLAS_PYTHON` al percorso dell'interprete. PowerShell usa `$env:ATLAS_PYTHON = 'python'`; Bash usa `export ATLAS_PYTHON=python3`.
+Comandi mirati: `npm run lint:web`, `npm run test:web`, `npm run build:web`, `npm run test:web-browser`, `npm run check:web`. I controlli curricolari restano disponibili con `npm run validate`, `npm test`, `npm run check:generated`.
+
+La navigazione collega roadmap → corso → modulo → unità → lezione. Le undici lezioni, i lab e gli assessment mostrano testi autoriali; gli altri moduli mostrano solo il piano. Il reader supporta Markdown/GFM, KaTeX, callout didattici ed evidenziazione dei blocchi, con indice e link locali risolti. `npm run check:markdown` verifica la stessa sintassi prima della build; `npm run dev` è un alias di `npm run dev:web`. La ricerca usa il catalogo statico; il grafo espone nodi e relazioni anche tramite elenco. I segni di lettura sono salvati solo nel local storage del browser, su azione esplicita, e non modificano coverage, target o mastery. Importazione ed esportazione non sono ancora implementate.
+
+I test lanciano fixture Node, Git e Python. Per Windows puoi impostare `ATLAS_PYTHON` al percorso dell’interprete: PowerShell `$env:ATLAS_PYTHON = 'python'`, Bash `export ATLAS_PYTHON=python3`. La verifica Windows resta da eseguire; questa tranche è stata verificata su macOS.
 
 ## Starter slice
 
@@ -72,7 +81,9 @@ La tranche fissa skill, corsi e slice in `governance/scope.json`. Per una succes
 
 ## Confini
 
-La pubblicazione iniziale su GitHub è autorizzata dall'utente e registrata in [ADR-0006](governance/adr/ADR-0006-public-github-repository.md). `origin` può puntare alla repository ufficiale; i push successivi richiedono una richiesta che li autorizzi. Non sono previsti sito, GitHub Pages, workflow o deploy. I corsi cloud sono soltanto metadata pianificati. SSRI è baseline accademica: non ne vengono riscritti i corsi già coperti.
+La pubblicazione iniziale su GitHub è autorizzata dall'utente e registrata in [ADR-0006](governance/adr/ADR-0006-public-github-repository.md). `origin` può puntare alla repository ufficiale; i push successivi richiedono una richiesta che li autorizzi. È disponibile il frontend locale; hosting, GitHub Pages, workflow di pubblicazione e deploy restano vietati. I corsi cloud sono soltanto metadata pianificati. SSRI è baseline accademica: non ne vengono riscritti i corsi già coperti.
 
-Il package resta `private: true` per impedirne la pubblicazione su npm. La licenza di riuso è ancora da scegliere; questa tranche non aggiunge un file LICENSE. Il profilo personale reale resta locale e ignorato da Git.
+Il package resta `private: true` per impedirne la pubblicazione su npm. La licenza di riuso è ancora da scegliere; questa tranche non aggiunge un file LICENSE. Il profilo personale reale resta locale e ignorato da Git. Le [licenze e notice delle dipendenze frontend](apps/web/public/THIRD_PARTY_NOTICES.txt) sono preservate separatamente.
 roadmap.sh fornisce soltanto label tassonomiche e URL (`taxonomy-label-only`), senza roadmap o descrizioni copiate. Le URL non verificate restano `pending` e non sono prerequisiti dei test offline. La disponibilità locale dei commit è registrata in [sources](sources/repositories.json); il drift non aggiorna l'audit implicitamente.
+
+Per iniziare: [punto della situazione e percorso pratico](projects/practical-engineering.md), poi il [corso VS Code](curriculum/courses/EAT-021-visual-studio-code/course.json). Dal frontend locale: `/courses/EAT-021`.
