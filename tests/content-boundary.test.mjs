@@ -1,14 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { loadModel } from '../scripts/lib/repository.mjs';
+import { loadModel, scopedModules } from '../scripts/lib/repository.mjs';
 import { checkContentFiles, SECTIONS, secretLooking, sensitiveName } from '../scripts/validate-content.mjs';
 const scope = loadModel().scope;
 function valid() {
-  return Object.fromEntries(scope.starter_modules.flatMap(s => Object.entries(SECTIONS).map(([name, sections]) =>
+  return Object.fromEntries(scopedModules(scope).flatMap(s => Object.entries(SECTIONS).map(([name, sections]) =>
     [`curriculum/courses/${s.course_id}-fixture/modules/${s.directory}/${name === 'lesson.md' ? `units/${s.id}-U01-fondamenti/lessons/${s.id}-U01-L01-fixture/` : ''}${name}`, sections.map(title => `## ${title}\n\nEvidenza osservabile: sessione delimitata e diagnosi motivata.\n`).join('\n')])));
 }
-test('content: i sette starter sono consentiti', () => assert.deepEqual(checkContentFiles(valid(), scope), []));
-test('content: ottavo modulo fallisce', () => { const f = valid(); f['curriculum/courses/EAT-003-js/modules/EAT-003-M01-extra/lesson.md'] = Object.values(f)[0]; assert.match(checkContentFiles(f, scope).join(), /fuori starter slice/); });
+test('content: starter e modulo VS Code autorizzato sono consentiti', () => assert.deepEqual(checkContentFiles(valid(), scope), []));
+test('content: modulo non autorizzato fallisce', () => { const f = valid(); f['curriculum/courses/EAT-003-js/modules/EAT-003-M01-extra/lesson.md'] = Object.values(f)[0]; assert.match(checkContentFiles(f, scope).join(), /fuori starter slice/); });
 test('content: stesso nome starter sotto un altro corso fallisce', () => { const f = valid(); const p = Object.keys(f)[0]; f[p.replace('EAT-001-fixture', 'EAT-020-fixture')] = f[p]; assert.match(checkContentFiles(f, scope).join(), /fuori starter slice/); });
 test('content: planned con soli metadata non crea contenuto', () => {
   const f = valid(); f['curriculum/courses/EAT-003-js/modules/EAT-003-M01-metadata/module.json'] = JSON.stringify({ status: 'planned' });

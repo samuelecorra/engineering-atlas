@@ -122,6 +122,12 @@
       "title": "Software architecture, docs-as-code, curriculum and learning analytics governance",
       "status": "planned",
       "path": "curriculum/courses/EAT-020-architecture-curriculum-governance/course.json"
+    },
+    {
+      "id": "EAT-021",
+      "title": "Visual Studio Code: ambiente professionale e lavoro con agenti",
+      "status": "in_progress",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/course.json"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-021-M01-U02",
+  "module_id": "EAT-021-M01",
+  "slug": "lavorare-con-agenti",
+  "title": "Richieste verificabili agli agenti",
+  "order": 2,
+  "status": "draft",
+  "lesson_ids": [
+    "EAT-021-M01-U02-L01"
+  ]
+}

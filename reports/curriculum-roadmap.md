@@ -9,7 +9,7 @@ Coverage della fonte ≠ mastery personale. C descrive il materiale SSRI; M è i
 - samuelecorra/cybersec_unimi_ssri2.0: audit `7467a51576a7c1514edacb26d9408bf0c1444a7d` (6310 file); locale `c691750bf85e6130b9ef59eeb357366508d05311` (6271 file), drift `different-audit-unavailable`. Oggetto commit audit non disponibile localmente. README e inventario correnti letti; lezioni ora sotto lessons/cybersecurity/. Conteggi e coverage restano quelli forniti, non riverificati sullo snapshot. Il viewer React/Vite e il workflow correnti non sono coverage curricolare.
 - samuelecorra/ironmath: audit `22da98929d9c70e20a5a3a9d6fabfe2bd0279431` (4069 file); locale `ec809fb3f4dd8e5b8493fddcb53ef759d5d9d047` (4069 file), drift `ahead`. Snapshot audit accessibile e antenato di HEAD; controllati manifest e architettura, senza nuovo audit integrale.
 
-Conteggi generati: 20 corsi; 52 skill; 7 starter module; 7 unità; 7 lezioni; 209 nodi; 473 archi (37 required).
+Conteggi generati: 21 corsi; 52 skill; 8 moduli attivi; 9 unità; 11 lezioni; 218 nodi; 490 archi (37 required).
 
 | Ordine | Corso | Titolo | Fase | Priorità | Target | Stato | Required | Recommended |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -33,8 +33,9 @@ Conteggi generati: 20 corsi; 52 skill; 7 starter module; 7 unità; 7 lezioni; 20
 | 18 | [EAT-018](../curriculum/courses/EAT-018-grounded-tutor-systems/course.json) | Grounded tutor systems: prompting, retrieval, safety and evaluations | intelligence | P1 | M4 | planned | EAT-010, EAT-011, EAT-017 | — |
 | 19 | [EAT-019](../curriculum/courses/EAT-019-agentic-coding/course.json) | Agentic coding and repository-scale collaboration | intelligence | P1 | M4 | planned | EAT-002, EAT-011, EAT-018 | EAT-013 |
 | 20 | [EAT-020](../curriculum/courses/EAT-020-architecture-curriculum-governance/course.json) | Software architecture, docs-as-code, curriculum and learning analytics governance | governance | P1 | M4 | planned | EAT-009, EAT-010, EAT-011, EAT-018, EAT-019 | EAT-002, EAT-007, EAT-013 |
+| 21 | [EAT-021](../curriculum/courses/EAT-021-visual-studio-code/course.json) | Visual Studio Code: ambiente professionale e lavoro con agenti | foundations | P0 | M3 | in_progress | — | — |
 
-## Gerarchia starter
+## Gerarchia attiva
 
 | Modulo | Unità | Lezione | Stato |
 | --- | --- | --- | --- |
@@ -45,6 +46,10 @@ Conteggi generati: 20 corsi; 52 skill; 7 starter module; 7 unità; 7 lezioni; 20
 | EAT-002-M02 | [EAT-002-M02-U01](../curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/units/EAT-002-M02-U01-fondamenti/unit.json) | [EAT-002-M02-U01-L01](../curriculum/courses/EAT-002-git-multi-machine/modules/EAT-002-M02-two-machine-sync-and-recovery/units/EAT-002-M02-U01-fondamenti/lessons/EAT-002-M02-U01-L01-two-machine-sync-and-recovery/lesson.json) | draft |
 | EAT-004-M01 | [EAT-004-M01-U01](../curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/units/EAT-004-M01-U01-fondamenti/unit.json) | [EAT-004-M01-U01-L01](../curriculum/courses/EAT-004-node-npm-esm/modules/EAT-004-M01-node-npm-package-lock/units/EAT-004-M01-U01-fondamenti/lessons/EAT-004-M01-U01-L01-node-npm-package-lock/lesson.json) | draft |
 | EAT-016-M01 | [EAT-016-M01-U01](../curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/units/EAT-016-M01-U01-fondamenti/unit.json) | [EAT-016-M01-U01-L01](../curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/units/EAT-016-M01-U01-fondamenti/lessons/EAT-016-M01-U01-L01-python-env-packaging/lesson.json) | draft |
+| EAT-021-M01 | [EAT-021-M01-U01](../curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/unit.json) | [EAT-021-M01-U01-L01](../curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/lessons/EAT-021-M01-U01-L01-interfaccia-workbench/lesson.json) | draft |
+| EAT-021-M01 | [EAT-021-M01-U01](../curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/unit.json) | [EAT-021-M01-U01-L02](../curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/lessons/EAT-021-M01-U01-L02-workspace-e-file/lesson.json) | draft |
+| EAT-021-M01 | [EAT-021-M01-U01](../curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/unit.json) | [EAT-021-M01-U01-L03](../curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/lessons/EAT-021-M01-U01-L03-settings-e-profili/lesson.json) | draft |
+| EAT-021-M01 | [EAT-021-M01-U02](../curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U02-lavorare-con-agenti/unit.json) | [EAT-021-M01-U02-L01](../curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U02-lavorare-con-agenti/lessons/EAT-021-M01-U02-L01-prompt-contesto-verifica/lesson.json) | draft |
 
 ## DAG required
 
@@ -72,6 +77,7 @@ graph TD
   EAT_018["EAT-018"]
   EAT_019["EAT-019"]
   EAT_020["EAT-020"]
+  EAT_021["EAT-021"]
   EAT_001 --> EAT_002
   EAT_001 --> EAT_003
   EAT_001 --> EAT_016
@@ -419,3 +425,22 @@ Revieware confini architetturali e provenance curricolare con schema, grafo e AD
 | EAT-020-M08 | Provenance/calibration | Produrre e spiegare una prova delimitata di provenance/calibration, includendo un errore atteso e la sua diagnosi. | planned |
 | EAT-020-M09 | Lifecycle/deprecation | Produrre e spiegare una prova delimitata di lifecycle/deprecation, includendo un errore atteso e la sua diagnosi. | planned |
 | EAT-020-M10 | GDPR/AI governance | Produrre e spiegare una prova delimitata di GDPR/AI governance, includendo un errore atteso e la sua diagnosi. | planned |
+
+### EAT-021
+
+Controllare editor, workspace, impostazioni e strumenti senza confondere interfaccia, repository e ambiente di esecuzione. Usare Copilot, Codex e Claude Code con contesto delimitato, revisione dei cambiamenti e verifiche osservabili. Programma in 12 moduli: soltanto il primo è avviato; la guida personale alle estensioni attende l’export.
+
+| ID | Titolo | Outcome | Stato |
+| --- | --- | --- | --- |
+| EAT-021-M01 | Workbench e controllo del progetto | Riconoscere le aree della GUI, aprire il workspace corretto, diagnosticare le impostazioni e formulare una richiesta verificabile a un agente. | draft |
+| EAT-021-M02 | Editing, ricerca e navigazione del codice | Unità: editing e cursori; ricerca con include/exclude e regex; simboli, riferimenti e refactoring. Una lezione per comando o modello mentale, con esercizi su codice locale. | planned |
+| EAT-021-M03 | Impostazioni, profili e sincronizzazione | Unità: precedenza User/Remote/Workspace/linguaggio; settings di editor e file; terminale, Git, debug e AI; JSONC e policy; profili, export e Sync. Inventario delle impostazioni applicabili alla versione dichiarata, con effetto, trade-off e ripristino. | planned |
+| EAT-021-M04 | Estensioni del profilo personale | Unità: leggere publisher, ID e versione; funzione e attivazione; configurazione; conflitti, prestazioni e bisect. Scheda per ogni estensione soltanto dopo ricezione e verifica dell’export del profilo principale. | planned |
+| EAT-021-M05 | Terminale, task e toolchain riproducibile | Unità: shell, cwd e processi; script npm e task; runtime Node/Python; output, exit code e problem matcher. Riprodurre un comando e diagnosticare un errore senza cambiare ambiente alla cieca. | planned |
+| EAT-021-M06 | Debugging, test e diagnostica | Unità: breakpoint, stack e variabili; configurazioni launch/attach; Test Explorer; debug Node e Python; browser, performance e log. Isolare la causa di un difetto mediante una prova ripetibile. | planned |
+| EAT-021-M07 | Git e GitHub dalla GUI | Unità: diff e staging; branch, stash e worktree; conflitti; PR e review. Collegare ogni azione grafica al modello Git di EAT-002, evitando duplicazione del corso completo Git/GitHub. | planned |
+| EAT-021-M08 | Copilot: account, pannello e agenti | Unità: accesso e piani da verificare nelle fonti correnti; completamenti e chat; contesto, modello, harness, ruolo e permessi; review e ripristino; istruzioni e consumo. Distinguere funzioni documentate, disponibili nel proprio piano e realmente osservate. | planned |
+| EAT-021-M09 | Codex in VS Code | Unità: estensione, CLI e app; sessione e contesto; prompt e istruzioni; permessi e strumenti; diff e verifiche; interruzione e handoff. Ogni guida della GUI dichiara versione, piattaforma e data delle fonti OpenAI. | planned |
+| EAT-021-M10 | Claude Code in VS Code | Unità: pannello ed estensione; riferimenti ai file; modalità e piani; modello e comandi; review e checkpoint; rapporto con CLI, CLAUDE.md e strumenti. Verificare menu e prerequisiti sulla versione effettiva. | planned |
+| EAT-021-M11 | Sviluppo remoto e ambienti isolati | Unità: SSH e WSL; Dev Containers; estensioni locali/remote; porte e debugging; Codespaces e costi. Laboratori remoti separati e autorizzati, dopo Docker; nessuna modifica a infrastrutture reali durante la lettura. | planned |
+| EAT-021-M12 | Laboratorio finale: orientarsi in IronMath | Unità: confini del monorepo; leggere package e workflow; seguire un errore dalla GUI alla CI; proporre una modifica piccola, rivedere il diff e documentare la prova. Caso reale fissato a commit, senza eseguire deploy o usare dati reali. | planned |

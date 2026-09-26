@@ -44,6 +44,18 @@
       "title": "Python: ambiente, package src e test standard-library; richiamo al core",
       "status": "draft",
       "path": "curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/units/EAT-016-M01-U01-fondamenti/unit.json"
+    },
+    {
+      "id": "EAT-021-M01-U01",
+      "title": "Orientarsi e configurare",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/unit.json"
+    },
+    {
+      "id": "EAT-021-M01-U02",
+      "title": "Richieste verificabili agli agenti",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U02-lavorare-con-agenti/unit.json"
     }
   ]
 }

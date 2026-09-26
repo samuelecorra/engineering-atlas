@@ -44,6 +44,12 @@
       "title": "Python: ambiente, package src e test standard-library; richiamo al core",
       "status": "draft",
       "path": "curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/module.json"
+    },
+    {
+      "id": "EAT-021-M01",
+      "title": "Workbench e controllo del progetto",
+      "status": "draft",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/module.json"
     }
   ]
 }

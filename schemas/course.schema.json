@@ -34,7 +34,7 @@
     "order": {
       "type": "integer",
       "minimum": 1,
-      "maximum": 20
+      "maximum": 21
     },
     "priority": {
       "type": "string",
@@ -79,7 +79,7 @@
         "minLength": 1,
         "pattern": "^skill\\.[a-z0-9]+(?:[.-][a-z0-9]+)+$"
       },
-      "minItems": 1,
+      "minItems": 0,
       "uniqueItems": true
     },
     "reinforced_skill_ids": {

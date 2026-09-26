@@ -1,0 +1,7 @@
+{
+  // Esempio didattico: non è il profilo personale dell’utente.
+  "editor.wordWrap": "off",
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  }
+}

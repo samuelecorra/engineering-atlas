@@ -1,4 +1,4 @@
-import { loadModel, runCLI, coursePath, modulePath, unitPath, lessonPath } from './lib/repository.mjs';
+import { loadModel, runCLI, coursePath, modulePath, unitPath, lessonPath, scopedModules, scopedUnits } from './lib/repository.mjs';
 import { checkSchema, validateSchema } from './lib/schema.mjs';
 import { AUDIT_JSON } from './validate-provenance.mjs';
 
@@ -28,7 +28,7 @@ export function validateMetadata(m) {
   const ids = [...m.skills, ...m.courses, ...m.modules, ...m.units, ...m.lessons, ...m.assessments, ...m.evidence].map(v => v.id);
   for (const id of new Set(ids)) if (ids.filter(v => v === id).length > 1) errors.push(`duplicate ID: ${id}`);
   if (m.skills.length !== 52) errors.push('richieste esattamente 52 skill');
-  if (m.courses.length !== 20) errors.push('richiesti esattamente 20 corsi');
+  if (m.courses.length !== 21) errors.push('richiesti i 20 corsi baseline e il corso VS Code EAT-021');
   const same = (a, b) => JSON.stringify([...a].sort()) === JSON.stringify([...b].sort());
   if (!same(m.courses.map(c => c.id), m.scope.course_ids)) errors.push('course ID diversi dallo scope');
   if (!same(m.skills.map(s => s.id), m.scope.skill_baseline.map(s => s.id))) errors.push('skill ID diversi dallo scope');
@@ -61,7 +61,8 @@ export function validateMetadata(m) {
   for (const [i, c] of m.courses.entries()) {
     if (m.paths.courses[i] !== coursePath(c)) errors.push(`${c.id}: slug/path canonico incoerente`);
     if (c.order !== Number(c.id.slice(4))) errors.push(`${c.id}: ordine numerico incoerente`);
-    if (c.status === 'in_progress' && !['EAT-001', 'EAT-002', 'EAT-004', 'EAT-016'].includes(c.id)) errors.push(`${c.id}: corso fuori slice in_progress`);
+    if (c.status === 'in_progress' && !scopedModules(m.scope).some(s => s.course_id === c.id)) errors.push(`${c.id}: corso fuori slice in_progress`);
+    if (!c.primary_skill_ids.length && (c.id !== 'EAT-021' || !c.reinforced_skill_ids.length)) errors.push(`${c.id}: ownership primaria vuota non autorizzata`);
     const owned = m.skills.filter(s => s.primary_course_id === c.id).map(s => s.id);
     if (!same(owned, c.primary_skill_ids)) errors.push(`${c.id}: ownership skill divergente`);
     for (const s of c.reinforced_skill_ids) if (!skills.has(s) || owned.includes(s)) errors.push(`${c.id}: reinforced skill invalida ${s}`);
@@ -81,26 +82,29 @@ export function validateMetadata(m) {
   for (const [i, s] of m.skills.entries()) if (m.paths.skills[i] !== `catalog/skills/${s.id}.json`) errors.push(`${s.id}: filename skill incoerente`);
   for (const v of [...m.skills, ...m.courses]) for (const t of v.roadmap_taxonomy) if (!labels.includes(t)) errors.push(`${v.id}: taxonomy fuori allowlist ${t}`);
   for (const [i, mod] of m.modules.entries()) {
-    const c = courses.get(mod.course_id), starter = m.scope.starter_modules.find(s => s.id === mod.id);
+    const c = courses.get(mod.course_id), starter = scopedModules(m.scope).find(s => s.id === mod.id);
     if (!c?.planned_modules.some(p => p.id === mod.id) || !mod.id.startsWith(mod.course_id + '-')) errors.push(`${mod.id}: course/module mismatch`);
     if (mod.order !== Number(mod.id.slice(-2))) errors.push(`${mod.id}: ordine modulo incoerente`);
     if (starter && (starter.course_id !== mod.course_id || m.paths.modules[i] !== modulePath(mod, m))) errors.push(`${mod.id}: path/course starter incoerente`);
     if (!starter || mod.status !== 'draft') errors.push(`${mod.id}: modulo reale fuori starter draft`);
     for (const id of [...mod.prerequisite_skill_ids, ...mod.teaches_skill_ids, ...mod.reinforces_skill_ids]) if (!skills.has(id)) errors.push(`${mod.id}: skill assente ${id}`);
     for (const id of mod.teaches_skill_ids) if (!c?.primary_skill_ids.includes(id)) errors.push(`${mod.id}: teaches deve appartenere al corso`);
+    if (!mod.teaches_skill_ids.length && (mod.course_id !== 'EAT-021' || !mod.reinforces_skill_ids.length)) errors.push(`${mod.id}: modulo senza skill insegnata o rinforzo autorizzato`);
     if (assessments.get(mod.assessment_id)?.module_id !== mod.id) errors.push(`${mod.id}: assessment mismatch`);
     const dir = m.paths.modules[i].replace(/module.json$/, '');
     for (const file of ['lab.md', 'assessment.md', 'assessment.json', ...mod.artifacts]) if (!m.files.includes(dir + file)) errors.push(`${mod.id}: file/artifact mancante ${file}`);
     if (!same(mod.unit_ids, m.units.filter(u => u.module_id === mod.id).map(u => u.id))) errors.push(`${mod.id}: ownership unit divergente`);
-    if (!same(mod.unit_ids, [mod.id + '-U01'])) errors.push(`${mod.id}: tranche limitata a U01`);
+    const allowedUnits = starter?.units?.map(u => u.id) ?? [mod.id + '-U01'];
+    if (!same(mod.unit_ids, allowedUnits)) errors.push(`${mod.id}: unit fuori scope autorizzato`);
   }
-  if (m.units.length !== 7 || m.lessons.length !== 7) errors.push('richieste 7 unit e 7 lesson nella tranche');
+  const allowedUnits = scopedUnits(m.scope);
+  if (m.units.length !== allowedUnits.length || m.lessons.length !== allowedUnits.reduce((n, u) => n + u.lesson_ids.length, 0)) errors.push('unit/lesson divergenti dallo scope autorizzato');
   for (const [i, u] of m.units.entries()) {
     if (!modules.get(u.module_id)?.unit_ids.includes(u.id) || !u.id.startsWith(u.module_id + '-U')) errors.push(`${u.id}: unit orfana/ownership module incoerente`);
     if (m.paths.units[i] !== unitPath(u, m)) errors.push(`${u.id}: path unit incoerente`);
     if (u.order !== Number(u.id.slice(-2)) || u.status !== 'draft') errors.push(`${u.id}: unit order/status fuori tranche`);
     if (!same(u.lesson_ids, m.lessons.filter(l => l.unit_id === u.id).map(l => l.id))) errors.push(`${u.id}: ownership lesson divergente`);
-    if (!same(u.lesson_ids, [u.id + '-L01'])) errors.push(`${u.id}: tranche limitata a L01`);
+    if (!same(u.lesson_ids, allowedUnits.find(allowed => allowed.id === u.id)?.lesson_ids ?? [])) errors.push(`${u.id}: lesson fuori scope autorizzato`);
   }
   const markdownPaths = [];
   for (const [i, l] of m.lessons.entries()) {

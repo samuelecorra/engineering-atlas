@@ -13,6 +13,7 @@ export function walk(root, dir = '') {
       if (ignored.has(entry.name) || entry.name.endsWith('.egg-info')) return [];
       const p = posix(path.join(dir, entry.name));
       if (p === '.agents/skills/impeccable') return []; // Local third-party tool, never curriculum or generated data.
+      if (p === 'apps/web/dist' || p === '.impeccable/review' || p === '.impeccable/mocks' || p === '.impeccable/build' || p === '.impeccable/questions') return [];
       if (p === 'progress/learner-profile.json') return [];
       // Symlinks are reported, never followed into another repository or private data.
       return entry.isDirectory() ? walk(root, p) : [p];
@@ -55,9 +56,11 @@ export function writeArtifacts(root, artifacts) {
 }
 export const slug = value => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 export const coursePath = c => `curriculum/courses/${c.id}-${c.slug}/course.json`;
+export const scopedModules = scope => [...scope.starter_modules, ...(scope.extension_modules ?? [])];
+export const scopedUnits = scope => scopedModules(scope).flatMap(m => m.units ?? [{ id: m.id + '-U01', lesson_ids: [m.id + '-U01-L01'] }]);
 export function modulePath(m, model) {
   const course = model.courses.find(c => c.id === m.course_id);
-  const slice = model.scope.starter_modules.find(s => s.id === m.id);
+  const slice = scopedModules(model.scope).find(s => s.id === m.id);
   return course && slice ? `${path.posix.dirname(coursePath(course))}/modules/${slice.directory}/module.json` : null;
 }
 export function unitPath(unit, model) {

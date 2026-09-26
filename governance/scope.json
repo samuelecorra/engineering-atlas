@@ -334,7 +334,8 @@
     "EAT-017",
     "EAT-018",
     "EAT-019",
-    "EAT-020"
+    "EAT-020",
+    "EAT-021"
   ],
   "starter_modules": [
     {
@@ -581,5 +582,28 @@
       "EAT-020"
     ]
   ],
-  "lesson_word_limit": 2800
+  "lesson_word_limit": 2800,
+  "extension_modules": [
+    {
+      "id": "EAT-021-M01",
+      "directory": "EAT-021-M01-workbench-e-controllo",
+      "course_id": "EAT-021",
+      "units": [
+        {
+          "id": "EAT-021-M01-U01",
+          "lesson_ids": [
+            "EAT-021-M01-U01-L01",
+            "EAT-021-M01-U01-L02",
+            "EAT-021-M01-U01-L03"
+          ]
+        },
+        {
+          "id": "EAT-021-M01-U02",
+          "lesson_ids": [
+            "EAT-021-M01-U02-L01"
+          ]
+        }
+      ]
+    }
+  ]
 }

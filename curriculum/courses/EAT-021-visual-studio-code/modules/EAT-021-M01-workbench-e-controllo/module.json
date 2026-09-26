@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-021-M01",
+  "course_id": "EAT-021",
+  "title": "Workbench e controllo del progetto",
+  "order": 1,
+  "status": "draft",
+  "estimated_hours": 4,
+  "prerequisite_skill_ids": [],
+  "teaches_skill_ids": [],
+  "reinforces_skill_ids": [
+    "skill.cli.environment",
+    "skill.docs.markdown-latex",
+    "skill.agents.repo-workflows"
+  ],
+  "outcomes": [
+    "Riconoscere le aree della GUI, aprire il workspace corretto, diagnosticare le impostazioni e formulare una richiesta verificabile a un agente.",
+    "Distinguere una lezione letta da una capacità verificata attraverso il lab."
+  ],
+  "artifacts": [
+    "fixtures/run.mjs",
+    "fixtures/workbench-note.md",
+    "fixtures/settings-example.jsonc"
+  ],
+  "assessment_id": "ASM-EAT-021-M01",
+  "ironmath_anchors": [
+    "package.json",
+    ".github/workflows/core-bundle-ci.yml",
+    ".github/workflows/deploy-frontend-cloudflare.yml"
+  ],
+  "unit_ids": [
+    "EAT-021-M01-U01",
+    "EAT-021-M01-U02"
+  ]
+}

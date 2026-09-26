@@ -13,7 +13,7 @@ Sole label, URL candidate e relazioni. `taxonomy-label-only`. Reviewed_at è la 
 
 | Label / URL | Reviewed at | Verifica | Corsi | Skill |
 | --- | --- | --- | --- | --- |
-| [AI Agents](https://roadmap.sh/ai-agents) | 2026-09-05 | pending | EAT-019 | skill.agents.repo-workflows |
+| [AI Agents](https://roadmap.sh/ai-agents) | 2026-09-05 | pending | EAT-019, EAT-021 | skill.agents.repo-workflows |
 | [AI Engineer](https://roadmap.sh/ai-engineer) | 2026-09-05 | pending | EAT-017, EAT-018 | skill.llm.foundations, skill.llm.prompt-routing-retrieval, skill.llm.responses-streaming |
 | [AI Product Builders](https://roadmap.sh/ai-product-builder) | 2026-09-05 | pending | EAT-017, EAT-018 | skill.llm.conversation-pedagogy, skill.llm.foundations |
 | [AI Red Teaming](https://roadmap.sh/ai-red-teaming) | 2026-09-05 | pending | EAT-018 | skill.llm.safety-evals |
@@ -37,7 +37,7 @@ Sole label, URL candidate e relazioni. `taxonomy-label-only`. Reviewed_at è la 
 | [Git and GitHub](https://roadmap.sh/git-github) | 2026-09-05 | pending | EAT-002, EAT-013 | skill.cicd.github-actions, skill.git.internals, skill.git.multi-device, skill.github.collaboration |
 | [HTML](https://roadmap.sh/html) | 2026-09-05 | pending | EAT-003 | skill.web.html-semantic |
 | [JavaScript](https://roadmap.sh/javascript) | 2026-09-05 | pending | EAT-003 | skill.js.browser-async, skill.js.fundamentals |
-| [Linux](https://roadmap.sh/linux) | 2026-09-05 | pending | EAT-001 | skill.cli.environment |
+| [Linux](https://roadmap.sh/linux) | 2026-09-05 | pending | EAT-001, EAT-021 | skill.cli.environment |
 | [MLOps](https://roadmap.sh/mlops) | 2026-09-05 | pending | EAT-018 | skill.llm.safety-evals |
 | [Node.js](https://roadmap.sh/nodejs) | 2026-09-05 | pending | EAT-004, EAT-008 | skill.fastify.backend, skill.node.esm-vite, skill.node.npm-packages, skill.node.runtime |
 | [PostgreSQL](https://roadmap.sh/postgresql) | 2026-09-05 | pending | EAT-009 | skill.postgres.operations, skill.prisma.migrations |
@@ -49,5 +49,5 @@ Sole label, URL candidate e relazioni. `taxonomy-label-only`. Reviewed_at è la 
 | [Software Architect](https://roadmap.sh/software-architect) | 2026-09-05 | pending | EAT-020 | skill.architecture.monorepo-boundaries, skill.curriculum.knowledge-graph, skill.governance.adr-docs |
 | [SQL](https://roadmap.sh/sql) | 2026-09-05 | pending | EAT-009 | skill.db.sql-transactions |
 | [System Design](https://roadmap.sh/system-design) | 2026-09-05 | pending | EAT-014, EAT-020 | skill.cloud.environments-network-policy, skill.curriculum.knowledge-graph |
-| [Technical Writer](https://roadmap.sh/technical-writer) | 2026-09-05 | pending | EAT-001, EAT-020 | skill.docs.markdown-latex, skill.governance.adr-docs |
+| [Technical Writer](https://roadmap.sh/technical-writer) | 2026-09-05 | pending | EAT-001, EAT-020, EAT-021 | skill.docs.markdown-latex, skill.governance.adr-docs |
 | [TypeScript](https://roadmap.sh/typescript) | 2026-09-05 | pending | EAT-005 | skill.typescript.language |

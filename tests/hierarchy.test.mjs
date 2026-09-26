@@ -5,8 +5,18 @@ import { validateMetadata } from '../scripts/validate-metadata.mjs';
 import { validateGraph } from '../scripts/validate-graph.mjs';
 const base = loadModel();
 const mutate = fn => { const m = structuredClone(base); fn(m); return validateMetadata(m).join('\n'); };
+test('hierarchy: estensione VS Code limita unità e lezioni agli ID autorizzati', () => {
+  assert.match(mutate(m => { m.modules.find(x => x.id === 'EAT-021-M01').unit_ids.push('EAT-021-M01-U99'); }), /unit fuori scope autorizzato/);
+  assert.match(mutate(m => { m.units.find(x => x.id === 'EAT-021-M01-U01').lesson_ids.push('EAT-021-M01-U01-L99'); }), /lesson fuori scope autorizzato/);
+});
+test('hierarchy: il corso VS Code non rende facoltativa la ownership degli starter', () => {
+  assert.match(mutate(m => { m.courses.find(x => x.id === 'EAT-001').primary_skill_ids = []; }), /ownership primaria vuota non autorizzata/);
+  assert.match(mutate(m => { m.modules.find(x => x.id === 'EAT-001-M01').teaches_skill_ids = []; }), /modulo senza skill insegnata/);
+  assert.match(mutate(m => { m.courses.find(x => x.id === 'EAT-021').reinforced_skill_ids = []; }), /ownership primaria vuota non autorizzata/);
+});
 test('hierarchy: sette U01/L01 valide, ownership e grafo coerenti', () => {
-  assert.equal(base.units.length, 7); assert.equal(base.lessons.length, 7);
+  assert.equal(base.units.filter(u => !u.id.startsWith('EAT-021')).length, 7); assert.equal(base.lessons.filter(l => !l.id.startsWith('EAT-021')).length, 7);
+  assert.equal(base.units.length, 9); assert.equal(base.lessons.length, 11);
   assert.deepEqual(validateMetadata(base), []); assert.deepEqual(validateGraph(base), []);
 });
 test('hierarchy: unit ID e lesson ID rispettano pattern stabili', () => {

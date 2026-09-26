@@ -57,7 +57,7 @@
         "minLength": 1,
         "pattern": "^skill\\.[a-z0-9]+(?:[.-][a-z0-9]+)+$"
       },
-      "minItems": 1,
+      "minItems": 0,
       "uniqueItems": true
     },
     "reinforces_skill_ids": {

@@ -1254,6 +1254,60 @@
       "type": "lesson",
       "title": "Python: ambiente, package src e test standard-library; richiamo al core",
       "path": "curriculum/courses/EAT-016-python-fastapi/modules/EAT-016-M01-python-env-packaging/units/EAT-016-M01-U01-fondamenti/lessons/EAT-016-M01-U01-L01-python-env-packaging/lesson.json"
+    },
+    {
+      "id": "EAT-021",
+      "type": "course",
+      "title": "Visual Studio Code: ambiente professionale e lavoro con agenti",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/course.json"
+    },
+    {
+      "id": "EAT-021-M01",
+      "type": "module",
+      "title": "Workbench e controllo del progetto",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/module.json"
+    },
+    {
+      "id": "EAT-021-M01-U01",
+      "type": "unit",
+      "title": "Orientarsi e configurare",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/unit.json"
+    },
+    {
+      "id": "EAT-021-M01-U02",
+      "type": "unit",
+      "title": "Richieste verificabili agli agenti",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U02-lavorare-con-agenti/unit.json"
+    },
+    {
+      "id": "EAT-021-M01-U01-L01",
+      "type": "lesson",
+      "title": "Le aree dell’interfaccia e l’Activity Bar",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/lessons/EAT-021-M01-U01-L01-interfaccia-workbench/lesson.json"
+    },
+    {
+      "id": "EAT-021-M01-U01-L02",
+      "type": "lesson",
+      "title": "Workspace, percorsi e file che non si aprono",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/lessons/EAT-021-M01-U01-L02-workspace-e-file/lesson.json"
+    },
+    {
+      "id": "EAT-021-M01-U01-L03",
+      "type": "lesson",
+      "title": "Impostazioni e profili: scegliere lo scope corretto",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U01-orientamento/lessons/EAT-021-M01-U01-L03-settings-e-profili/lesson.json"
+    },
+    {
+      "id": "EAT-021-M01-U02-L01",
+      "type": "lesson",
+      "title": "Dal prompt al diff: mantenere il controllo",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/units/EAT-021-M01-U02-lavorare-con-agenti/lessons/EAT-021-M01-U02-L01-prompt-contesto-verifica/lesson.json"
+    },
+    {
+      "id": "ASM-EAT-021-M01",
+      "type": "assessment",
+      "title": "ASM-EAT-021-M01",
+      "path": "curriculum/courses/EAT-021-visual-studio-code/modules/EAT-021-M01-workbench-e-controllo/assessment.json"
     }
   ],
   "edges": [
@@ -4567,6 +4621,125 @@
       "type": "PART_OF",
       "strength": "structural",
       "rationale": "Ownership curricolare unica: figlio nel proprio contenitore canonico."
+    },
+    {
+      "from": "EAT-021",
+      "to": "skill.cli.environment",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Rinforzo di una skill esistente attraverso l’ambiente di sviluppo."
+    },
+    {
+      "from": "EAT-021",
+      "to": "skill.docs.markdown-latex",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Rinforzo di una skill esistente attraverso l’ambiente di sviluppo."
+    },
+    {
+      "from": "EAT-021",
+      "to": "skill.agents.repo-workflows",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Rinforzo di una skill esistente attraverso l’ambiente di sviluppo."
+    },
+    {
+      "from": "EAT-021",
+      "to": "taxonomy.linux",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione per label già autorizzata, senza importare contenuto esterno."
+    },
+    {
+      "from": "EAT-021",
+      "to": "taxonomy.technical-writer",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione per label già autorizzata, senza importare contenuto esterno."
+    },
+    {
+      "from": "EAT-021",
+      "to": "taxonomy.ai-agents",
+      "type": "MAPS_TO_TAXONOMY",
+      "strength": "supporting",
+      "rationale": "Classificazione per label già autorizzata, senza importare contenuto esterno."
+    },
+    {
+      "from": "EAT-021-M01",
+      "to": "EAT-021",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare esplicita della tranche VS Code."
+    },
+    {
+      "from": "EAT-021-M01",
+      "to": "skill.cli.environment",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Rinforzo di una skill esistente attraverso l’ambiente di sviluppo."
+    },
+    {
+      "from": "EAT-021-M01",
+      "to": "skill.docs.markdown-latex",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Rinforzo di una skill esistente attraverso l’ambiente di sviluppo."
+    },
+    {
+      "from": "EAT-021-M01",
+      "to": "skill.agents.repo-workflows",
+      "type": "REINFORCES",
+      "strength": "supporting",
+      "rationale": "Rinforzo di una skill esistente attraverso l’ambiente di sviluppo."
+    },
+    {
+      "from": "EAT-021-M01-U01",
+      "to": "EAT-021-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare esplicita della tranche VS Code."
+    },
+    {
+      "from": "EAT-021-M01-U02",
+      "to": "EAT-021-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare esplicita della tranche VS Code."
+    },
+    {
+      "from": "EAT-021-M01-U01-L01",
+      "to": "EAT-021-M01-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare esplicita della tranche VS Code."
+    },
+    {
+      "from": "EAT-021-M01-U01-L02",
+      "to": "EAT-021-M01-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare esplicita della tranche VS Code."
+    },
+    {
+      "from": "EAT-021-M01-U01-L03",
+      "to": "EAT-021-M01-U01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare esplicita della tranche VS Code."
+    },
+    {
+      "from": "EAT-021-M01-U02-L01",
+      "to": "EAT-021-M01-U02",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare esplicita della tranche VS Code."
+    },
+    {
+      "from": "ASM-EAT-021-M01",
+      "to": "EAT-021-M01",
+      "type": "PART_OF",
+      "strength": "structural",
+      "rationale": "Ownership curricolare esplicita della tranche VS Code."
     }
   ]
 }

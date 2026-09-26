@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { loadModel, ROOT, runCLI, walk } from './lib/repository.mjs';
+import { loadModel, ROOT, runCLI, walk, scopedModules } from './lib/repository.mjs';
 import { sensitiveName, secretLooking } from './lib/content-safety.mjs';
 export { sensitiveName, secretLooking } from './lib/content-safety.mjs';
 import { AUDIT_GZIP, validateProvenance } from './validate-provenance.mjs';
@@ -13,13 +13,13 @@ export const SECTIONS = {
 };
 export function checkContentFiles(files, scope, { requireSlice = true } = {}) {
   const errors = [], found = new Map();
-  const allowed = new Set(scope.starter_modules.map(s => s.directory));
+  const allowed = new Set(scopedModules(scope).map(s => s.directory));
   for (const [file, text] of Object.entries(files)) {
     if (!text.trim()) errors.push(`${file}: file vuoto`);
     const name = path.posix.basename(file);
     if (!SECTIONS[name]) continue;
     const parts = file.split('/'), dir = parts[4];
-    const owner = scope.starter_modules.find(s => s.directory === dir);
+    const owner = scopedModules(scope).find(s => s.directory === dir);
     const location = name === 'lesson.md'
       ? /^curriculum\/courses\/[^/]+\/modules\/[^/]+\/units\/[^/]+\/lessons\/[^/]+\/lesson\.md$/.test(file)
       : /^curriculum\/courses\/[^/]+\/modules\/[^/]+\/(?:lab|assessment)\.md$/.test(file);
@@ -57,7 +57,7 @@ export function validateContent(root = ROOT, m = loadModel(root)) {
     ...m.paths.lessons.map(p => p.replace(/lesson.json$/, 'lesson.md')),
   ]);
   for (const p of Object.keys(textFiles)) if (SECTIONS[path.posix.basename(p)] && !canonicalContentPaths.has(p)) errors.push(`${p}: contenuto senza module canonico nella posizione attesa`);
-  if (m.modules.length !== 7 || m.assessments.length !== 7) errors.push('richiesti 7 module e 7 assessment metadata');
+  if (m.modules.length !== scopedModules(m.scope).length || m.assessments.length !== m.modules.length) errors.push('module/assessment divergenti dallo scope autorizzato');
   for (const [i, a] of m.assessments.entries()) {
     const file = m.paths.assessments[i].replace(/\.json$/, '.md'), md = textFiles[file] ?? '';
     if (!md.includes(`Assessment ID: ${a.id}`) || !md.includes(`Module ID: ${a.module_id}`)) errors.push(`${file}: assessment ID/module incoerente`);

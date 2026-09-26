@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-021",
+  "slug": "visual-studio-code",
+  "title": "Visual Studio Code: ambiente professionale e lavoro con agenti",
+  "phase": "foundations",
+  "order": 21,
+  "priority": "P0",
+  "target_mastery": "M3",
+  "required_prerequisite_course_ids": [],
+  "recommended_prerequisite_course_ids": [],
+  "primary_skill_ids": [],
+  "reinforced_skill_ids": [
+    "skill.cli.environment",
+    "skill.docs.markdown-latex",
+    "skill.agents.repo-workflows"
+  ],
+  "roadmap_taxonomy": [
+    "Linux",
+    "Technical Writer",
+    "AI Agents"
+  ],
+  "outcomes": [
+    "Controllare editor, workspace, impostazioni e strumenti senza confondere interfaccia, repository e ambiente di esecuzione.",
+    "Usare Copilot, Codex e Claude Code con contesto delimitato, revisione dei cambiamenti e verifiche osservabili.",
+    "Programma in 12 moduli: soltanto il primo è avviato; la guida personale alle estensioni attende l’export."
+  ],
+  "planned_modules": [
+    {
+      "id": "EAT-021-M01",
+      "title": "Workbench e controllo del progetto",
+      "outcome": "Riconoscere le aree della GUI, aprire il workspace corretto, diagnosticare le impostazioni e formulare una richiesta verificabile a un agente.",
+      "status": "draft"
+    },
+    {
+      "id": "EAT-021-M02",
+      "title": "Editing, ricerca e navigazione del codice",
+      "outcome": "Unità: editing e cursori; ricerca con include/exclude e regex; simboli, riferimenti e refactoring. Una lezione per comando o modello mentale, con esercizi su codice locale.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M03",
+      "title": "Impostazioni, profili e sincronizzazione",
+      "outcome": "Unità: precedenza User/Remote/Workspace/linguaggio; settings di editor e file; terminale, Git, debug e AI; JSONC e policy; profili, export e Sync. Inventario delle impostazioni applicabili alla versione dichiarata, con effetto, trade-off e ripristino.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M04",
+      "title": "Estensioni del profilo personale",
+      "outcome": "Unità: leggere publisher, ID e versione; funzione e attivazione; configurazione; conflitti, prestazioni e bisect. Scheda per ogni estensione soltanto dopo ricezione e verifica dell’export del profilo principale.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M05",
+      "title": "Terminale, task e toolchain riproducibile",
+      "outcome": "Unità: shell, cwd e processi; script npm e task; runtime Node/Python; output, exit code e problem matcher. Riprodurre un comando e diagnosticare un errore senza cambiare ambiente alla cieca.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M06",
+      "title": "Debugging, test e diagnostica",
+      "outcome": "Unità: breakpoint, stack e variabili; configurazioni launch/attach; Test Explorer; debug Node e Python; browser, performance e log. Isolare la causa di un difetto mediante una prova ripetibile.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M07",
+      "title": "Git e GitHub dalla GUI",
+      "outcome": "Unità: diff e staging; branch, stash e worktree; conflitti; PR e review. Collegare ogni azione grafica al modello Git di EAT-002, evitando duplicazione del corso completo Git/GitHub.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M08",
+      "title": "Copilot: account, pannello e agenti",
+      "outcome": "Unità: accesso e piani da verificare nelle fonti correnti; completamenti e chat; contesto, modello, harness, ruolo e permessi; review e ripristino; istruzioni e consumo. Distinguere funzioni documentate, disponibili nel proprio piano e realmente osservate.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M09",
+      "title": "Codex in VS Code",
+      "outcome": "Unità: estensione, CLI e app; sessione e contesto; prompt e istruzioni; permessi e strumenti; diff e verifiche; interruzione e handoff. Ogni guida della GUI dichiara versione, piattaforma e data delle fonti OpenAI.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M10",
+      "title": "Claude Code in VS Code",
+      "outcome": "Unità: pannello ed estensione; riferimenti ai file; modalità e piani; modello e comandi; review e checkpoint; rapporto con CLI, CLAUDE.md e strumenti. Verificare menu e prerequisiti sulla versione effettiva.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M11",
+      "title": "Sviluppo remoto e ambienti isolati",
+      "outcome": "Unità: SSH e WSL; Dev Containers; estensioni locali/remote; porte e debugging; Codespaces e costi. Laboratori remoti separati e autorizzati, dopo Docker; nessuna modifica a infrastrutture reali durante la lettura.",
+      "status": "planned"
+    },
+    {
+      "id": "EAT-021-M12",
+      "title": "Laboratorio finale: orientarsi in IronMath",
+      "outcome": "Unità: confini del monorepo; leggere package e workflow; seguire un errore dalla GUI alla CI; proporre una modifica piccola, rivedere il diff e documentare la prova. Caso reale fissato a commit, senza eseguire deploy o usare dati reali.",
+      "status": "planned"
+    }
+  ],
+  "status": "in_progress"
+}

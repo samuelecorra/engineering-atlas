@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ASM-EAT-021-M01",
+  "module_id": "EAT-021-M01",
+  "target_mastery": "M2",
+  "evidence_required": [
+    "Nota con percorso prima/dopo e distinzione fra editor, workspace e cwd.",
+    "Confronto motivato di due valori effettivi dell’impostazione e prova del ripristino.",
+    "Due prompt originali con criteri osservabili e limiti operativi."
+  ],
+  "rubric": [
+    {
+      "id": "R1",
+      "criterion": "Orientamento e diagnosi del percorso",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Ricrea un file vuoto o interviene nel progetto sbagliato.",
+        "partial": "Ritrova il file con indicazioni, ma non distingue scheda e filesystem.",
+        "full": "Ritrova il file spostato e spiega percorso, contesto della finestra e cwd senza suggerimenti."
+      }
+    },
+    {
+      "id": "R2",
+      "criterion": "Scope e ripristino della configurazione",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Modifica il profilo principale o non sa ripristinare la scelta.",
+        "partial": "Ottiene il comportamento atteso, ma non spiega l’override di linguaggio.",
+        "full": "Predice due comportamenti, li verifica nella copia del lab e rimuove soltanto l’override introdotto."
+      }
+    },
+    {
+      "id": "R3",
+      "criterion": "Richiesta e review verificabili",
+      "max_score": 2,
+      "anchors": {
+        "zero": "Richiede azioni indefinite o accetta una dichiarazione senza prove.",
+        "partial": "Definisce un bersaglio e controlli generici, ma manca un criterio osservabile.",
+        "full": "Definisce contesto, perimetro e prova del risultato, distinguendo diagnosi da modifica e test eseguiti da test promessi."
+      }
+    }
+  ],
+  "pass_rule": {
+    "minimum_score": 5,
+    "blocking_errors": [
+      "Interviene fuori dalla copia del lab o modifica il profilo principale.",
+      "Usa dati o credenziali reali, oppure presenta un output dell’agente come tentativo personale."
+    ]
+  },
+  "retry_policy": "Ripeti nella sola copia didattica, annota la causa dell’errore e conserva prima e seconda prova; richiedi una nuova valutazione."
+}

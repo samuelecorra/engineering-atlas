@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-021-M01-U01",
+  "module_id": "EAT-021-M01",
+  "slug": "orientamento",
+  "title": "Orientarsi e configurare",
+  "order": 1,
+  "status": "draft",
+  "lesson_ids": [
+    "EAT-021-M01-U01-L01",
+    "EAT-021-M01-U01-L02",
+    "EAT-021-M01-U01-L03"
+  ]
+}

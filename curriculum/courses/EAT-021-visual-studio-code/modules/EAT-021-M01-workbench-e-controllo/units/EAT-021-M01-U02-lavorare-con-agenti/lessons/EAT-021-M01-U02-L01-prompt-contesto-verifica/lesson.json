@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-021-M01-U02-L01",
+  "unit_id": "EAT-021-M01-U02",
+  "slug": "prompt-contesto-verifica",
+  "title": "Dal prompt al diff: mantenere il controllo",
+  "order": 1,
+  "status": "draft",
+  "content_path": "lesson.md"
+}

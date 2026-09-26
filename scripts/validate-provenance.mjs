@@ -20,10 +20,11 @@ export const personalPath = text => /(?:^|[\s"'`(=:,])(?:\/(?:Users|home)\/|[A-Z
 
 export function compareCourseEdges(historical, current) {
   const errors = [];
+  const baselineIDs = new Set(historical.nodes.filter(n => n.type === 'course').map(n => n.id));
   const old = historical.edges.map(e => `${e.strength === 'required' ? 'PREREQUISITE_OF' : e.strength === 'recommended' ? 'RECOMMENDED_BEFORE' : 'INVALID'}|${e.from}|${e.to}`);
-  const now = current.edges.filter(e => ['PREREQUISITE_OF', 'RECOMMENDED_BEFORE'].includes(e.type)).map(e => `${e.type}|${e.from}|${e.to}`);
+  const now = current.edges.filter(e => ['PREREQUISITE_OF', 'RECOMMENDED_BEFORE'].includes(e.type) && baselineIDs.has(e.from) && baselineIDs.has(e.to)).map(e => `${e.type}|${e.from}|${e.to}`);
   const courses = g => g.nodes.filter(n => n.type === 'course').map(n => n.id).sort();
-  if (courses(historical).length !== 20 || JSON.stringify(courses(historical)) !== JSON.stringify(courses(current))) errors.push('baseline: 20 course node divergenti');
+  if (courses(historical).length !== 20 || JSON.stringify(courses(historical)) !== JSON.stringify(courses(current).filter(id => baselineIDs.has(id)))) errors.push('baseline: 20 course node divergenti');
   if (historical.edges.some(e => e.type !== 'prerequisite') || old.length !== 51 || new Set(old).size !== 51
     || old.filter(k => k.startsWith('PREREQUISITE_OF|')).length !== 37 || old.filter(k => k.startsWith('RECOMMENDED_BEFORE|')).length !== 14
     || JSON.stringify(old.sort()) !== JSON.stringify(now.sort())) errors.push('baseline: proiezione 51 archi course-level divergente (37 required, 14 recommended)');

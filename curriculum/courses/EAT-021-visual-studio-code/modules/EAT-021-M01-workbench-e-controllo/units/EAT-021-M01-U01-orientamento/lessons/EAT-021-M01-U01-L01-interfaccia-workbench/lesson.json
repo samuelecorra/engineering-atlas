@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "id": "EAT-021-M01-U01-L01",
+  "unit_id": "EAT-021-M01-U01",
+  "slug": "interfaccia-workbench",
+  "title": "Le aree dell’interfaccia e l’Activity Bar",
+  "order": 1,
+  "status": "draft",
+  "content_path": "lesson.md"
+}
