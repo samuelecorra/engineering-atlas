@@ -1,0 +1,15 @@
+# ADR-0009 — Frontend locale e toolchain delimitata
+
+Data: 2026-09-05. Stato: accepted. Autorità: richiesta esplicita dell'utente, che supera il divieto di framework e dipendenze della prima tranche.
+
+È autorizzata una sola applicazione React/TypeScript/Vite/Tailwind in `apps/web`, con routing client, Markdown/GFM/KaTeX, font locali e strumenti di lint/test/build motivati. Un solo workspace npm, `apps/web`, e un lockfile root deterministico tengono insieme l'installazione; le dipendenze sono dichiarate solo dal frontend. Le CLI curricolari root mantengono la standard library Node e funzionano senza import dal frontend. Nessuna configurazione proviene dai sibling.
+
+Il manifest web statico è generato da course/module/unit/lesson, Markdown, skill, graph e taxonomy canonici. Una roadmap iniziale è la proiezione ordinata dei 20 corsi per ID. Lab e assessment del modulo sono documenti consultabili della stessa proiezione. Il frontend non modifica le fonti e non legge il filesystem dei sibling. Il generatore verifica i riferimenti prima di scrivere; `check:generated` compara i byte senza rigenerare. Build e gate root devono rifiutare dati mancanti, incoerenti o obsoleti.
+
+Server dev e preview ascoltano solo `127.0.0.1`. Nessun backend, autenticazione, database server, cloud, analytics, hosting, Pages, workflow di pubblicazione, deploy, tag, release o push è autorizzato. Il repository GitHub esistente e i suoi metadata restano invariati. Lettura di secret e modifiche ai sibling restano vietate. Nessuna dipendenza runtime verso SSRI o IronMath.
+
+Il progresso browser è soltanto consultazione locale di lezioni, con contratto versionato e recupero degli errori di storage. Non rappresenta mastery o assessment superati. Esportazione/importazione potranno essere aggiunte in seguito; il profilo personale reale non entra in Git né nel manifest web. Draft, coverage SSRI e target IronMath restano distinti e visibili.
+
+Impeccable è installata ufficialmente nel progetto come strumento locale ignorato da Git; versione e inventario sono registrati nella documentazione di tooling. L'installer è eseguito senza hook, con cache e temporanei dentro Atlas. La skill è diventata disponibile nella sessione successiva; il fallback per reload non è più necessario. PRODUCT.md registra il brief esplicito dell'utente; DESIGN.md e le verifiche visuali vengono prodotti dal flusso Impeccable. Le API di design non sono dipendenze dell'applicazione.
+
+La policy ammette solo il workspace frontend e le sue dipendenze motivate, preservando i divieti non correlati. Il gate unico root include validazione curricolare, provenance, test, freshness, lint TypeScript/React, test frontend e build locale. La licenza di Atlas resta pendente; le licenze delle dipendenze mantengono la propria validità e non scelgono quella del progetto.

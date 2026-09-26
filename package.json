@@ -21,6 +21,20 @@
     "validate": "node scripts/validate.mjs",
     "check:generated": "node scripts/check-generated.mjs",
     "test": "node --test tests/*.test.mjs",
-    "validate:provenance": "node scripts/validate-provenance.mjs"
-  }
+    "validate:provenance": "node scripts/validate-provenance.mjs",
+    "dev:web": "npm run check:generated && npm run check:markdown && npm run dev --workspace apps/web",
+    "build:web-data": "node scripts/build-web-data.mjs",
+    "build:web": "npm run check:generated && npm run build --workspace apps/web",
+    "lint:web": "npm run lint --workspace apps/web",
+    "test:web": "npm run test --workspace apps/web",
+    "check:web": "npm run lint:web && npm run test:web && npm run build:web && npm run test:web-browser",
+    "check": "npm run validate && npm test && npm run check:web && npm run check:generated && git diff --check",
+    "install:web-browser": "node scripts/web-browser.mjs install",
+    "test:web-browser": "node scripts/web-browser.mjs test",
+    "dev": "npm run dev:web",
+    "check:markdown": "npm run check:markdown --workspace apps/web"
+  },
+  "workspaces": [
+    "apps/web"
+  ]
 }

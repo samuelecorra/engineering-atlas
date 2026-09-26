@@ -16,3 +16,11 @@ progress/learner-profile.json
 .work/
 # Official project-local design tool; installation provenance is documented separately.
 .agents/skills/impeccable/
+apps/web/dist/
+apps/web/test-results/
+apps/web/playwright-report/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/
+.impeccable/config.local.json
+.impeccable/questions/
