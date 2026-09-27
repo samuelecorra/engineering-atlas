@@ -49,6 +49,13 @@ test('policy: workflow e hosting rifiutati', t => {
   const dir = policyFixture(t); write(dir, '.github/workflows/publish.yml', 'name: forbidden\n'); write(dir, 'CNAME', 'example.invalid\n'); write(dir, '.openai/hosting.json', '{}\n');
   assert.equal(validatePolicy(dir).filter(e => /artifact vietato/.test(e)).length, 3);
 });
+test('policy: CI read-only per PR e main consentita, deploy rifiutato', t => {
+  const dir = policyFixture(t);
+  write(dir, '.github/workflows/ci.yml', 'name: CI\non:\n  pull_request:\n  push:\n    branches: [main]\npermissions:\n  contents: read\njobs:\n  verify:\n    runs-on: ubuntu-latest\n    steps:\n      - run: npm test\n');
+  assert.deepEqual(validatePolicy(dir), []);
+  write(dir, '.github/workflows/ci.yml', 'name: CI\non:\n  pull_request:\n  push:\npermissions:\n  contents: read\n  pages: write\n');
+  assert.match(validatePolicy(dir).join(), /artifact vietato/);
+});
 test('policy: adapter divergente o senza riferimento fallisce', t => { const dir = policyFixture(t); write(dir, 'AGENTS.md', 'Una policy copiata. '.repeat(160)); assert.match(validatePolicy(dir).join(), /riferimento policy canonica mancante/); assert.match(validatePolicy(dir).join(), /adapter esteso/); });
 test('policy: profilo deve essere ignorato', t => { const dir = policyFixture(t); write(dir, '.gitignore', 'node_modules/\n'); assert.match(validatePolicy(dir).join(), /progress privato non ignorato/); });
 test('policy: lockfile root obsoleto fallisce', t => { const dir = policyFixture(t); const pkg = JSON.parse(fs.readFileSync(path.join(dir, 'package.json'), 'utf8')); pkg.version = '9.0.0'; write(dir, 'package.json', JSON.stringify(pkg)); assert.match(validatePolicy(dir).join(), /lockfile root non allineato/); });

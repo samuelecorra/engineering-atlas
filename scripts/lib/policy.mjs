@@ -15,7 +15,12 @@ export function validatePolicy(root = ROOT) {
   const errors = [], files = walk(root);
   const forbidden = /(^|\/)(?:CNAME|_config\.ya?ml|wrangler\.(?:toml|jsonc?)|railway\.(?:toml|json)|vercel\.json|netlify\.toml|firebase\.json|Dockerfile|docker-compose\.ya?ml|\.gitmodules)$/i;
   for (const p of files) {
-    if (/^\.github\/workflows\/.*\.ya?ml$/i.test(p) || p.startsWith('.openai/') || p.startsWith('docs/_site/') || p.startsWith('_site/') || p.startsWith('dist/') || p.startsWith('public/') || p === 'index.html' || forbidden.test(p)) errors.push(`${p}: hosting/workflow/runtime artifact vietato`);
+    if (/^\.github\/workflows\/.*\.ya?ml$/i.test(p)) {
+      const workflow = fs.readFileSync(path.join(root, p), 'utf8');
+      const forbiddenWorkflow = /(?:workflow_dispatch|pull_request_target|secrets\.|actions\/(?:deploy-pages|upload-pages-artifact)|(?:pages|id-token|deployments):\s*write|\b(?:wrangler|railway|vercel|netlify)\b)/i;
+      if (p !== '.github/workflows/ci.yml' || !workflow.includes('pull_request:') || !workflow.includes('push:') || !workflow.includes('contents: read') || forbiddenWorkflow.test(workflow)) errors.push(`${p}: hosting/workflow/runtime artifact vietato`);
+    }
+    if (p.startsWith('.openai/') || p.startsWith('docs/_site/') || p.startsWith('_site/') || p.startsWith('dist/') || p.startsWith('public/') || p === 'index.html' || forbidden.test(p)) errors.push(`${p}: hosting/workflow/runtime artifact vietato`);
   }
   for (const [adapter, target] of [['AGENTS.md', 'governance/AGENT_POLICY.md'], ['CLAUDE.md', 'governance/AGENT_POLICY.md'], ['.github/copilot-instructions.md', '../governance/AGENT_POLICY.md']]) {
     const text = fs.readFileSync(path.join(root, adapter), 'utf8');
