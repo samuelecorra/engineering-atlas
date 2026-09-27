@@ -1,23 +1,23 @@
 # Engineering Atlas
 
-Curriculum personale di software engineering per collegare la baseline documentata in SSRI alla manutenzione end-to-end di IronMath, con evidenze, knowledge graph, lab offline e assessment. Repository pubblico: [samuelecorra/engineering-atlas](https://github.com/samuelecorra/engineering-atlas).
+A personal software-engineering curriculum that connects documented cybersecurity coursework to practical systems work. It organizes a knowledge graph, offline labs, assessments, evidence and provenance, while distinguishing source coverage from demonstrated learner mastery. Current content is draft; automated checks do not replace technical or pedagogical review. See the [repository](https://github.com/samuelecorra/engineering-atlas).
 
-Atlas, SSRI e IronMath restano repository separati: qui risiedono metadata, evidenze, grafo e percorsi didattici; nessuna dipendenza runtime li collega. I controlli e i lab si eseguono localmente.
+Atlas, SSRI, and IronMath are kept in separate repositories; this Atlas stores metadata, evidence, the graph, and learning paths, with no runtime dependencies connecting them. Checks and labs run locally.
 
-## Stato e percorso di lettura
+## Current state and suggested reading
 
-Il contenuto attivo resta **draft**: i controlli automatici non sostituiscono una review didattica o un assessment personale. I sette starter conservano U01/L01; il nuovo corso VS Code EAT-021 inizia con un modulo, due unità e quattro lezioni. I conteggi e il piano sono nel [report curricolare](reports/curriculum-roadmap.md). Gli originali dell'audit sono preservati nel [provenance pack](sources/audits/2026-09-05-initial/README.md).
+Active content remains **draft**: automated checks do not replace pedagogical review or a personal assessment. The seven starter modules retain U01/L01; the VS Code course EAT-021 begins with one module, two units, and four lessons. Counts and plans are in the [curriculum report](reports/curriculum-roadmap.md); original audit material is preserved in the [provenance pack](sources/audits/2026-09-05-initial/README.md).
 
-1. Leggi la [policy canonica](governance/AGENT_POLICY.md) e il [modello mastery](governance/MASTERY_MODEL.md).
-2. Consulta [baseline SSRI](reports/ssri-coverage.md), [requisiti IronMath](reports/ironmath-requirements.md) e [gap analysis](reports/gap-analysis.md).
-3. Segui la [roadmap](reports/curriculum-roadmap.md) e la [mappa di lettura IronMath](projects/ironmath-reading-map.md).
-4. Parti da EAT-001, poi EAT-002; prova personalmente i lab prima di una review con agente.
+1. Read the [canonical policy](governance/AGENT_POLICY.md) and [mastery model](governance/MASTERY_MODEL.md).
+2. Review the [SSRI baseline](reports/ssri-coverage.md), [IronMath requirements](reports/ironmath-requirements.md), and [gap analysis](reports/gap-analysis.md).
+3. Follow the [roadmap](reports/curriculum-roadmap.md) and [IronMath reading map](projects/ironmath-reading-map.md).
+4. Start with EAT-001, then EAT-002; try the labs yourself before an optional agent review.
 
-## Coverage e mastery
+## Coverage and mastery
 
-Coverage descrive la fonte: C0 nessuna evidenza, C1 concettuale, C2 esempi guidati, C3 laboratorio sostanziale, C4 sistema autentico mantenuto.
-Mastery descrive una persona: M0 Recognize, M1 Explain, M2 Apply with guidance, M3 Work independently, M4 Maintain and design.
-Una lezione presente, un test verde o un corso SSRI non dimostrano mastery. Nessun profilo personale reale viene creato. Vedi [progress](progress/README.md).
+Coverage describes source evidence: C0 none, C1 conceptual, C2 guided examples, C3 substantial lab, C4 maintained authentic system.
+Mastery describes a learner: M0 Recognize, M1 Explain, M2 Apply with guidance, M3 Work independently, M4 Maintain and design.
+A lesson, passing test, or completed SSRI course does not demonstrate mastery. No real learner profile is created. See [progress](progress/README.md).
 
 ## Struttura e fonti di verità
 
